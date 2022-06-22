@@ -24,7 +24,8 @@ public class CommandUtil {
 
     public static void goToPage(HttpServletRequest req, HttpServletResponse resp, String url) {
         System.out.println("Go to page method");
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher(url);
+        //RequestDispatcher requestDispatcher = req.getRequestDispatcher(url);
+        var requestDispatcher = req.getRequestDispatcher(url);
         try {
             requestDispatcher.forward(req, resp);
         } catch (ServletException | IOException e) {

@@ -17,7 +17,7 @@
 
 <body>
 
-<form action="${pageContext.request.contextPath}/login.jsp" method="post">
+<form action="${pageContext.request.contextPath}/view/login">
     Please enter your username
     <p>
         <label>
@@ -36,7 +36,7 @@
         </label>
     </p>
 
-    <a href=${pageContext.request.contextPath}/login.jsp>
+    <a href=${pageContext.request.contextPath}/view/login>
         <button>Login</button>
     </a>
 
@@ -53,8 +53,8 @@
         </div>
     </c:if>
 </form>
-<form action="${pageContext.request.contextPath}/WEB-INF/view/registration.jsp">
-    <a href=${pageContext.request.contextPath}/WEB-INF/view/registration.jsp>
+<form action="${pageContext.request.contextPath}/view/registration">
+    <a href=${pageContext.request.contextPath}/view/registration>
         <button>Sign up</button>
     </a>
 </form>

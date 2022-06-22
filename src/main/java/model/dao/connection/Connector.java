@@ -13,7 +13,7 @@ public class Connector {
 
     public Connector() throws NamingException{
         Context initialContext = new InitialContext();
-        dataSource = (DataSource) initialContext.lookup("java:comp/env/jdbc/library");
+        dataSource = (DataSource) initialContext.lookup("jdbc:mysql://localhost:3306");
     }
 
     public static synchronized Connector getInstance() throws NamingException {

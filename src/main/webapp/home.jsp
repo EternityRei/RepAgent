@@ -13,7 +13,7 @@
         <li><a href="#sec" id="btn_about">About</a></li>
         <li><a href="#">Workers</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="${pageContext.request.contextPath}/login.jsp" class="sign_in">Sign in</a></li>
+        <li><a href="${pageContext.request.contextPath}/view/login" class="sign_in">Sign in</a></li>
     </ul>
 </header>
 <section>

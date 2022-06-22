@@ -1,11 +1,11 @@
 package controller.command.utils;
 
 public interface OperationConstant {
-    String HOME = "/home.jsp";
-    String MANAGER = "/manager.jsp";
-    String LOGOUT = "/logout.jsp";
-    String CUSTOMER = "/customer.jsp";
-    String EMPLOYEE = "/employee.jsp";
-    String LOGIN = "/login.jsp";
-    String REGISTRATION = "/registration.jsp";
+    String HOME = "/view/home";
+    String MANAGER = "/view/manager";
+    String LOGOUT = "/view/logout";
+    String CUSTOMER = "/view/customer";
+    String EMPLOYEE = "/view/employee";
+    String LOGIN = "/view/login";
+    String REGISTRATION = "/view/registration";
 }

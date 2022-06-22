@@ -4,12 +4,12 @@
     <title>Sign up</title>
 </head>
 <body>
-<form action="${pageContext.request.contextPath}/registration.jsp" method="post">
+<form action="${pageContext.request.contextPath}/view/registration" method="post">
     Enter your email:
     <p>
         <label>
             <input class="profileEditorFields loginField" type="text" required
-                   placeholder=Login
+                   placeholder=Email
                    name="login">
         </label>
     </p>
@@ -31,7 +31,7 @@
         </label>
     </p>
 
-    <a href=${pageContext.request.contextPath}/registration.jsp>
+    <a href=${pageContext.request.contextPath}/view/registration>
         <button>Register</button>
     </a>
 </form>
