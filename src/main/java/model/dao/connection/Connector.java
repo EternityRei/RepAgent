@@ -1,29 +1,52 @@
 package model.dao.connection;
 
-import javax.naming.Context;
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
-import javax.sql.DataSource;
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
 
 public class Connector {
-    private static Connector pool;
-    private final DataSource dataSource;
+    private static volatile Connector instance;
 
-    public Connector() throws NamingException{
-        Context initialContext = new InitialContext();
-        dataSource = (DataSource) initialContext.lookup("jdbc:mysql://localhost:3306");
-    }
+    private final HikariDataSource ds;
 
-    public static synchronized Connector getInstance() throws NamingException {
-        if (pool == null) {
-            pool = new Connector();
-        }
-        return pool;
+    private Connector() {
+        HikariConfig config = new HikariConfig();
+        config.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        config.setJdbcUrl("jdbc:mysql://localhost:3306");
+        config.setUsername("root");
+        config.setPassword("Ntgksqkexbrrjvytecnhtvbkczyfrhf.jlbyjrjqrhjdfnb");
+        config.addDataSourceProperty("cachePrepStmts", "true");
+        config.addDataSourceProperty("prepStmtCacheSize", "250");
+        config.addDataSourceProperty("prepStmtCacheSqlLimit", "2048");
+        config.addDataSourceProperty("useServerPrepStmts", "true");
+        config.addDataSourceProperty("useLocalSessionState", "true");
+        config.addDataSourceProperty("rewriteBatchedStatements", "true");
+        config.addDataSourceProperty("cacheResultSetMetadata", "true");
+        config.addDataSourceProperty("cacheServerConfiguration", "true");
+        config.addDataSourceProperty("elideSetAutoCommits", "true");
+        config.addDataSourceProperty("maintainTimeStats", "false");
+
+        ds = new HikariDataSource(config);
     }
 
     public Connection getConnection() throws SQLException {
-        return dataSource.getConnection();
+        return ds.getConnection();
+    }
+
+    public void shutdown() {
+        ds.close();
+    }
+
+    public static Connector getInstance() {
+        Connector localInstance = instance;
+        if (localInstance == null) {
+            synchronized (Connector.class) {
+                localInstance = instance;
+                if (localInstance == null)
+                    instance = localInstance = new Connector();
+            }
+        }
+        return localInstance;
     }
 }

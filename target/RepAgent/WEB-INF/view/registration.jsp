@@ -10,7 +10,7 @@
         <label>
             <input class="profileEditorFields loginField" type="text" required
                    placeholder=Email
-                   name="login">
+                   name="email">
         </label>
     </p>
     Enter your password:
@@ -27,7 +27,7 @@
         <label>
             <input class="profileEditorFields loginField" type="text" required
                    placeholder=Name
-                   name="user-name">
+                   name="name">
         </label>
     </p>
 

@@ -75,7 +75,7 @@ public class OrderDatabaseDAO implements OrderDAO {
             pstmt.executeUpdate();
             log.info("Order was updated successful");
             return order;
-        } catch (SQLException | NamingException e){
+        } catch (SQLException e){
             throw new RuntimeException("Cannot update order ", e);
         }
     }
@@ -102,7 +102,7 @@ public class OrderDatabaseDAO implements OrderDAO {
             }
             log.info("All orders were found successful");
             return outputOrders;
-        } catch (SQLException | NamingException e){
+        } catch (SQLException e){
             throw new RuntimeException("Cannot find all orders ", e);
         }
     }
@@ -129,7 +129,7 @@ public class OrderDatabaseDAO implements OrderDAO {
                     .setWorker_mark(resultSet.getInt("worker_mark"))
                     .build();
 
-        } catch (SQLException | NamingException e){
+        } catch (SQLException e){
             throw new DatabaseException(String.format("Cannot get order by id = %d", id), e);
         }
     }
@@ -144,7 +144,7 @@ public class OrderDatabaseDAO implements OrderDAO {
             listOrders = initOrder(rs);
             log.info("successful getAllOrdersInProcess");
             return listOrders;
-        } catch (SQLException | NamingException e) {
+        } catch (SQLException e) {
             throw new RuntimeException("Cannot getAllOrdersInProcess order ", e);
         }
     }
@@ -159,7 +159,7 @@ public class OrderDatabaseDAO implements OrderDAO {
             listOrders = initOrder(rs);
             log.info("successful getAllOrderByWorkerID");
             return listOrders;
-        } catch (SQLException | NamingException e) {
+        } catch (SQLException e) {
             throw new RuntimeException("Cannot getAllBooksByWorkerID order ", e);
         }
     }
@@ -174,7 +174,7 @@ public class OrderDatabaseDAO implements OrderDAO {
             listOrders = initOrder(rs);
             log.info("successful getAllOrderByPersonID");
             return listOrders;
-        } catch (SQLException | NamingException e) {
+        } catch (SQLException e) {
             throw new RuntimeException("Cannot getAllBooksByPersonID order", e);
         }
     }

@@ -17,7 +17,7 @@
 
 <body>
 
-<form action="${pageContext.request.contextPath}/view/login">
+<form action="${pageContext.request.contextPath}/view/login" method="post">
     Please enter your username
     <p>
         <label>
@@ -41,11 +41,11 @@
     </a>
 
 
-    <c:if test="${requestScope.notFound}">
+<%--    <c:if test="${requestScope.notFound}">
         <div class="w3-container">
             <p>Invalid data</p>
         </div>
-    </c:if>
+    </c:if>--%>
 
     <c:if test="${requestScope.wrongData}">
         <div class="w3-container">

@@ -44,7 +44,7 @@ public class UserDatabaseDAO implements UserDAO {
     @Override
     public User getById(Integer id) throws DatabaseException {
         try(Connection con = Connector.getInstance().getConnection();
-        PreparedStatement pstmt = con.prepareStatement(Constants.SELECT_BY_USER_ID)){
+            PreparedStatement pstmt = con.prepareStatement(Constants.SELECT_BY_USER_ID)){
             pstmt.setInt(1, id);
 
             ResultSet resultSet = pstmt.executeQuery();
@@ -59,7 +59,7 @@ public class UserDatabaseDAO implements UserDAO {
                     .setMoney(resultSet.getFloat("money"))
                     .build();
 
-        } catch (SQLException | NamingException e){
+        } catch (SQLException e){
             throw new DatabaseException(String.format("Cannot get person by id = %d", id), e);
         }
     }
@@ -82,7 +82,7 @@ public class UserDatabaseDAO implements UserDAO {
     @Override
     public User updateEntity(User user) {
         try(Connection con = Connector.getInstance().getConnection();
-        PreparedStatement pstmt = con.prepareStatement(Constants.UPDATE_USER)){
+            PreparedStatement pstmt = con.prepareStatement(Constants.UPDATE_USER)){
             pstmt.setString(1, user.getEmail());
             pstmt.setString(2, user.getPasswd());
             pstmt.setString(3, user.getName());
@@ -92,7 +92,7 @@ public class UserDatabaseDAO implements UserDAO {
             pstmt.executeUpdate();
             log.info("User was updated successful");
             return user;
-        } catch (SQLException | NamingException e){
+        } catch (SQLException e){
             throw new RuntimeException("Cannot update user ", e);
         }
     }
@@ -101,7 +101,7 @@ public class UserDatabaseDAO implements UserDAO {
     public List<User> getAll() {
         List<User> outputUsers = new ArrayList<>();
         try(Connection con = Connector.getInstance().getConnection();
-        PreparedStatement pstmt = con.prepareStatement(Constants.ALL_USERS)){
+            PreparedStatement pstmt = con.prepareStatement(Constants.ALL_USERS)){
             ResultSet resultSet = pstmt.executeQuery();
             while (resultSet.next()){
                 User user = new User();
@@ -115,7 +115,7 @@ public class UserDatabaseDAO implements UserDAO {
             }
             log.info("All users were found successful");
             return outputUsers;
-        } catch (SQLException | NamingException e){
+        } catch (SQLException e){
             throw new RuntimeException("Cannot find all users ", e);
         }
     }
@@ -123,7 +123,7 @@ public class UserDatabaseDAO implements UserDAO {
     @Override
     public User getByLoginAndPass(String login, String password) {
         try(Connection con = Connector.getInstance().getConnection();
-        PreparedStatement pstmt = con.prepareStatement(Constants.SELECT_USER_BY_LOGIN_AND_PASSWD)){
+            PreparedStatement pstmt = con.prepareStatement(Constants.SELECT_USER_BY_LOGIN_AND_PASSWD)){
             pstmt.setString(1, login);
             pstmt.setString(2, password);
             ResultSet resultSet = pstmt.executeQuery();
@@ -140,7 +140,7 @@ public class UserDatabaseDAO implements UserDAO {
             }
             log.info("User was found successful by login and password");
             return user;
-        } catch (SQLException | NamingException e){
+        } catch (SQLException e){
             throw new RuntimeException("Cannot find user by login and password ", e);
         }
     }
@@ -164,7 +164,7 @@ public class UserDatabaseDAO implements UserDAO {
             }
             log.info("User was found successful by login and password");
             return user;
-        } catch (SQLException | NamingException e){
+        } catch (SQLException e){
             throw new RuntimeException("Cannot find user by login and password ", e);
         }
     }
