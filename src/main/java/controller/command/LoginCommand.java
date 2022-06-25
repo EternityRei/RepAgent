@@ -46,7 +46,8 @@ public class LoginCommand implements Command {
             }
         }
         CommandUtil.goToPage(req, resp, "/WEB-INF/view/login.jsp");
-    }}
+    }
+}
 
 
 

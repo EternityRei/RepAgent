@@ -146,10 +146,10 @@ public class UserDatabaseDAO implements UserDAO {
     }
 
     @Override
-    public User getByLogin(String login) {
+    public User getByLogin(String email) {
         try(Connection con = Connector.getInstance().getConnection();
             PreparedStatement pstmt = con.prepareStatement(Constants.SELECT_USER_BY_LOGIN)){
-            pstmt.setString(1, login);
+            pstmt.setString(1, email);
             ResultSet resultSet = pstmt.executeQuery();
             User user = null;
             while (resultSet.next()){
@@ -165,7 +165,8 @@ public class UserDatabaseDAO implements UserDAO {
             log.info("User was found successful by login and password");
             return user;
         } catch (SQLException e){
-            throw new RuntimeException("Cannot find user by login and password ", e);
+            System.out.println(e.getMessage());
+            throw new RuntimeException("Cannot find user by login ", e);
         }
     }
 

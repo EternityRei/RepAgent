@@ -68,6 +68,13 @@
             <button class="btn transparent" id="sing-up-btn">Sign up</button>
         </div>
         <img src="../../images/login.png" class="image" alt="">
+    </div>    <div class="panels-container">
+        <div class="panel left-panel">
+            <h3>New here ?</h3>
+            <p>Click button for registration</p>
+            <button class="btn transparent" id="sing-up-btn">Sign up</button>
+        </div>
+        <img src="../../images/login.png" class="image" alt="">
     </div>
 
     <div class="panel left-panel">

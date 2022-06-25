@@ -41,11 +41,11 @@
     </a>
 
 
-<%--    <c:if test="${requestScope.notFound}">
-        <div class="w3-container">
-            <p>Invalid data</p>
-        </div>
-    </c:if>--%>
+    <%--    <c:if test="${requestScope.notFound}">
+            <div class="w3-container">
+                <p>Invalid data</p>
+            </div>
+        </c:if>--%>
 
     <c:if test="${requestScope.wrongData}">
         <div class="w3-container">

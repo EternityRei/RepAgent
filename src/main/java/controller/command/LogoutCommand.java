@@ -15,6 +15,6 @@ public class LogoutCommand implements Command {
 
         request.getSession().invalidate();
 
-        CommandUtil.goToPage(request, response, "/home.jsp");
+        CommandUtil.goToPage(request, response, "/WEB-INF/view/home.jsp");
     }
 }

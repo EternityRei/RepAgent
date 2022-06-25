@@ -9,7 +9,7 @@ public interface UserDAO extends CrudDAO<Integer, User> {
 
     User getByLoginAndPass(String login, String password);
 
-    User getByLogin(String login);
+    User getByLogin(String email);
 
     int getCountBlocked(List<User> person);
 }

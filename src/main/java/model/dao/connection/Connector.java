@@ -2,6 +2,7 @@ package model.dao.connection;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -11,11 +12,13 @@ public class Connector {
     private final HikariDataSource ds;
 
     private Connector() {
+
+        //configuring db connection and pooling with recommended params
         HikariConfig config = new HikariConfig();
-        config.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        config.setJdbcUrl("jdbc:mysql://localhost:3306");
+        config.setDriverClassName("org.postgresql.Driver");
+        config.setJdbcUrl("jdbc:postgresql://localhost:5432/postgres");
         config.setUsername("root");
-        config.setPassword("Ntgksqkexbrrjvytecnhtvbkczyfrhf.jlbyjrjqrhjdfnb");
+        config.setPassword("root");
         config.addDataSourceProperty("cachePrepStmts", "true");
         config.addDataSourceProperty("prepStmtCacheSize", "250");
         config.addDataSourceProperty("prepStmtCacheSqlLimit", "2048");
