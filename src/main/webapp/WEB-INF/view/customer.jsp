@@ -11,6 +11,6 @@
     <title>Customer Page</title>
 </head>
 <body>
-
+    Welcome to customer page, buddy!
 </body>
 </html>

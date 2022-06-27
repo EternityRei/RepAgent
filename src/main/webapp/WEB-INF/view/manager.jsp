@@ -30,11 +30,11 @@
             </div>
 
             <div class="slidebar">
-                <a href="#">
+                <a href="#" class="active">
                     <span class="material-icons-sharp">grid_view</span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="#" class="active">
+                <a href="#">
                     <span class="material-icons-sharp">person</span>
                     <h3>Customers</h3>
                 </a>
@@ -250,7 +250,7 @@
                 </div>
                 <div class="update">
                     <div class="message">
-                        <p><b>{$user.name}</b>{$order.status}</p>
+                        <p><b>${user.name}</b>{$order.status}</p>
                         <small class="text-muted">2 Minutes Ago</small>
                     </div>
                 </div>

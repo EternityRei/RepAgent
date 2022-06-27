@@ -26,9 +26,9 @@ public class UserDatabaseDAO implements UserDAO {
         Connection con = Connector.getInstance().getConnection();
         con.setAutoCommit(false);
         try(PreparedStatement pstmt = con.prepareStatement(Constants.INSERT_USER)){
-            pstmt.setString(1, user.getEmail());
-            pstmt.setString(2, user.getPasswd());
-            pstmt.setString(3, user.getName());
+            pstmt.setString(1, user.getName());
+            pstmt.setString(2, user.getEmail());
+            pstmt.setString(3, user.getPasswd());
             pstmt.setFloat(4, user.getMoney());
             pstmt.setInt(5, user.getAccessLevel());
             pstmt.execute();

@@ -45,7 +45,9 @@ public class RegistrationCommand implements Command {
                             .setEmail(email)
                             .build();
                     var encrypt = CommandUtil.encrypt(password);
+
                     user.setPasswd(encrypt.orElseThrow(Exception::new));
+
                     user.setAccessLevel(2);
                     userService.add(user);
 
