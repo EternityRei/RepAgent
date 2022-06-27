@@ -15,7 +15,7 @@
 <head>
     <title>Manager page</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles/manager_style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/styles/manager_style.css">
 </head>
 <body>
     <div class="container">

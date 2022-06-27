@@ -29,13 +29,14 @@ public class UserDatabaseDAO implements UserDAO {
             pstmt.setString(1, user.getEmail());
             pstmt.setString(2, user.getPasswd());
             pstmt.setString(3, user.getName());
-            pstmt.setInt(4, user.getAccessLevel());
-            pstmt.setFloat(6, user.getMoney());
+            pstmt.setFloat(4, user.getMoney());
+            pstmt.setInt(5, user.getAccessLevel());
             pstmt.execute();
             log.info("User was added successful");
             con.commit();
             return true;
         } catch (SQLException e){
+            System.out.println(e.getMessage());
             con.rollback();
             throw new DatabaseException("Cannot add person", e);
         }
@@ -55,7 +56,7 @@ public class UserDatabaseDAO implements UserDAO {
                     .setName(resultSet.getString("name"))
                     .setEmail(resultSet.getString("email"))
                     .setPassword(resultSet.getString("passwd"))
-                    .setAccessLevel(resultSet.getInt("access_level"))
+                    .setAccessLevel(resultSet.getInt("role_access_level"))
                     .setMoney(resultSet.getFloat("money"))
                     .build();
 
@@ -87,8 +88,8 @@ public class UserDatabaseDAO implements UserDAO {
             pstmt.setString(2, user.getPasswd());
             pstmt.setString(3, user.getName());
             pstmt.setInt(4, user.getAccessLevel());
-            pstmt.setInt(6, user.getId());
-            pstmt.setFloat(7, user.getMoney());
+            pstmt.setInt(5, user.getId());
+            pstmt.setFloat(6, user.getMoney());
             pstmt.executeUpdate();
             log.info("User was updated successful");
             return user;
@@ -110,7 +111,7 @@ public class UserDatabaseDAO implements UserDAO {
                 user.setPasswd(resultSet.getString(3));
                 user.setName(resultSet.getString(4));
                 user.setAccessLevel(resultSet.getInt(5));
-                user.setMoney(resultSet.getFloat(7));
+                user.setMoney(resultSet.getFloat(6));
                 outputUsers.add(user);
             }
             log.info("All users were found successful");
@@ -128,13 +129,13 @@ public class UserDatabaseDAO implements UserDAO {
             pstmt.setString(2, password);
             ResultSet resultSet = pstmt.executeQuery();
             User user = null;
-            while (resultSet.next()){
+            if (resultSet.next()){
                 user = new User.UserBuilderImpl()
                         .setId(resultSet.getInt("id"))
                         .setName(resultSet.getString("name"))
                         .setEmail(resultSet.getString("email"))
                         .setPassword(resultSet.getString("passwd"))
-                        .setAccessLevel(resultSet.getInt("access_level"))
+                        .setAccessLevel(resultSet.getInt("role_access_level"))
                         .setMoney(resultSet.getFloat("money"))
                         .build();
             }
@@ -147,26 +148,25 @@ public class UserDatabaseDAO implements UserDAO {
 
     @Override
     public User getByLogin(String email) {
-        try(Connection con = Connector.getInstance().getConnection();
-            PreparedStatement pstmt = con.prepareStatement(Constants.SELECT_USER_BY_LOGIN)){
-            pstmt.setString(1, email);
-            ResultSet resultSet = pstmt.executeQuery();
-            User user = null;
-            while (resultSet.next()){
-                user = new User.UserBuilderImpl()
+        try (Connection connection = Connector.getInstance().getConnection();
+             PreparedStatement statement = connection.prepareStatement(Constants.SELECT_USER_BY_LOGIN)) {
+            statement.setString(1, email);
+            ResultSet resultSet = statement.executeQuery();
+            User person = null;
+            if (resultSet.next()) {
+                person = new User.UserBuilderImpl()
                         .setId(resultSet.getInt("id"))
                         .setName(resultSet.getString("name"))
                         .setEmail(resultSet.getString("email"))
                         .setPassword(resultSet.getString("passwd"))
-                        .setAccessLevel(resultSet.getInt("access_level"))
-                        .setMoney(resultSet.getFloat("money"))
+                        .setAccessLevel(resultSet.getInt("role_access_level"))
                         .build();
             }
-            log.info("User was found successful by login and password");
-            return user;
-        } catch (SQLException e){
+            log.info("successful getByLogin person");
+            return person;
+        } catch (SQLException e) {
             System.out.println(e.getMessage());
-            throw new RuntimeException("Cannot find user by login ", e);
+            throw new RuntimeException("Cannot getByLogin person", e);
         }
     }
 

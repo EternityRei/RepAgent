@@ -17,7 +17,7 @@ public class Connector {
         HikariConfig config = new HikariConfig();
         config.setDriverClassName("org.postgresql.Driver");
         config.setJdbcUrl("jdbc:postgresql://localhost:5432/postgres");
-        config.setUsername("root");
+        config.setUsername("postgres");
         config.setPassword("root");
         config.addDataSourceProperty("cachePrepStmts", "true");
         config.addDataSourceProperty("prepStmtCacheSize", "250");

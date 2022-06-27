@@ -14,5 +14,5 @@ public interface ReviewDAO extends CrudDAO<Integer, Review>{
 
     List<Review> getAllReviewsByOrderId(int orderId);
 
-    Map<User, Review> getAllReviewsByUserAndOrderId(int userId, int orderId);
+    List<Review> getAllReviewsByUserAndOrderId(int userId, int orderId);
 }

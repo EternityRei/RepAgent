@@ -56,20 +56,26 @@ public class RegistrationCommand implements Command {
                     CommandUtil.goToPage(req, resp, page);
 
                     log.info("successful registration");
+
+                    return;
                 }
             } catch (ServiceException e) {
+                System.out.println(e.getMessage());
                 log.error(e.getMessage());
                 req.setAttribute("not found", true);
                 CommandUtil.goToPage(req, resp, "/WEB-INF/view/registration.jsp");
             } catch (InvalidDataException e) {
+                System.out.println(e.getMessage());
                 req.setAttribute("wrongData", true);
                 log.error("Incorrect login or password");
                 CommandUtil.goToPage(req, resp, "/WEB-INF/view/registration.jsp");
             } catch (AlreadyExistsUserException e) {
+                System.out.println(e.getMessage());
                 req.setAttribute("alreadyExist", true);
                 log.error("person already exist");
                 CommandUtil.goToPage(req, resp, "/WEB-INF/view/registration.jsp");
             } catch (Exception e) {
+                System.out.println(e.getMessage());
                 System.out.println(e.getMessage());
                 log.error(e.getMessage());
             }

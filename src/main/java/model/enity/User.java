@@ -20,6 +20,7 @@ public class User extends Model{
         this.passwd = userBuilder.passwd;
         this.role = userBuilder.role;
         this.money = userBuilder.money;
+        this.accessLevel = userBuilder.accessLevel;
     }
 
     public static class UserBuilderImpl implements UserBuilder {
