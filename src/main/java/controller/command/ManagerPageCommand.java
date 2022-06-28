@@ -16,8 +16,7 @@ public class ManagerPageCommand implements Command {
 
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) {
-
-        CommandUtil.goToPage(req,resp,"/WEB-INF/view/manager.jsp");
+        CommandUtil.goToPage(req, resp, "/WEB-INF/view/manager.jsp");
 /*        var factory = ServiceFactory.getInstance();
         var orderService = factory.getOrderService();
         var userService = factory.getUserService();

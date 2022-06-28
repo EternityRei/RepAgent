@@ -35,6 +35,7 @@ public class LoginCommand implements Command {
                     String page = CommandUtil.getUserPageByRole(person.getAccessLevel());
 
                     CommandUtil.goToPage(req, resp, page);
+                    return;
                 } else {
                     req.setAttribute("errorMessage", true);
                 }

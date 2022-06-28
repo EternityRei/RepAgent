@@ -37,16 +37,16 @@ public class CommandUtil {
         String page = "";
         switch (accessLevel) {
             case 1:
-                page = "/WEB-INF/view/home.jsp";
+                page = "/view/home";
                 break;
             case 2:
-                page = "/WEB-INF/view/customer.jsp";
+                page = "/view/customer";
                 break;
             case 3:
-                page = "/WEB-INF/view/employee.jsp";
+                page = "/view/employee";
                 break;
             case 4:
-                page = "/WEB-INF/view/manager.jsp";
+                page = "/view/manager";
                 break;
             default:
         }

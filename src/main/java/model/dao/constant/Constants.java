@@ -29,4 +29,12 @@ public final class Constants {
     public static final String ALL_ORDER_USER_ID = "SELECT * FROM \"Order\" WHERE \"work_status_id\" = 1 and \"payment_id = 2\" and \"person_id\" = ? AND \"person_role_access_level\" = 2";
     public static final String ALL_ORDER_WORKER_ID = "SELECT * FROM \"Order\" WHERE \"work_status_id\" = 1 and \"payment_id = 2\" and \"person_id\" = ? and \"person_role_access_level\" = 3";
     public static final String ALL_ORDER_IN_PROCESS = "SELECT * FROM \"Order\" WHERE \"work_status_id\" = 1 and \"payment_id = 2\" and \"person_id\" = ?";
+    public static final String SELECT_MANAGER_NAME_TO_JSP = "SELECT FROM \"Person\" WHERE \"role_access_level\" = 4";
+
+
+    /*
+    * Constants for JSP pages
+    */
+    public static final String SELECT_USERS = "Select * from \"Person\" where \"role_access_level\" = 2";
 }
+

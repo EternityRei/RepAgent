@@ -1,19 +1,20 @@
 package controller.command.utils;
 
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
 public class Validation {
     public static boolean  isPasswordValid(String password) {
-        final String regex = "(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{4,15}";
-        java.util.regex.Pattern p = java.util.regex.Pattern.compile(regex);
-        java.util.regex.Matcher m = p.matcher(password);
+        final String regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{5,20}$";
+        Pattern p = Pattern.compile(regex);
+        Matcher m = p.matcher(password);
         return m.matches();
     }
 
     public static boolean isEmailValid(String email){
-        final String regex = "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;" +
-                ":\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\." +
-                "[0-9]{1,3}\\.[0-9]{1,3}\\])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$";
-        java.util.regex.Pattern p = java.util.regex.Pattern.compile(regex);
-        java.util.regex.Matcher m = p.matcher(email);
+        final String regex = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
+        Pattern p = Pattern.compile(regex);
+        Matcher m = p.matcher(email);
         return m.matches();
     }
 }

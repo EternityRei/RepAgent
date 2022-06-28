@@ -18,11 +18,12 @@
     <p>SOMETHING WENT WRONG/></p>
 </div>
 <form class="w3-container" align="center" method="post"
-      action="${pageContext.request.contextPath}/view/logout">
+      action="${pageContext.request.contextPath}/view/not_found">
     <div class="w3-container w3-grey w3-opacity w3-right-align w3-padding">
         <div>
-            <input class="w3-button w3-margin-bottom w3-green" type="submit"
-                   value="/logout">
+            <a href="${pageContext.request.contextPath}/view/login">
+                <button>Logout</button>
+            </a>
         </div>
     </div>
 </form>

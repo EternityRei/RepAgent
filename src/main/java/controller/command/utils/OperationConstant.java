@@ -8,4 +8,9 @@ public interface OperationConstant {
     String EMPLOYEE = "/view/employee";
     String LOGIN = "/view/login";
     String REGISTRATION = "/view/registration";
+    String CUSTOMERS_LIST = "/view/managerPack/customersList";
+    String ORDERS_LIST = "/view/managerPack/ordersList";
+    String EMPLOYEES_LIST = "/view/managerPack/employeesList";
+    String REVIEWS_LIST = "/view/managerPack/reviewsList";
+    String ADD_EMPLOYEE = "/view/managerPack/addEmployee";
 }

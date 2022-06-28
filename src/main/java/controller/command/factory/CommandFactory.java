@@ -1,6 +1,7 @@
 package controller.command.factory;
 
 import controller.command.*;
+import controller.command.admin.*;
 import controller.command.utils.OperationConstant;
 import model.exception.NotFoundOperationException;
 
@@ -17,6 +18,11 @@ public class CommandFactory {
                 commandMap.put(OperationConstant.MANAGER, new ManagerPageCommand());
                 commandMap.put(OperationConstant.CUSTOMER, new CustomerPageCommand());
                 commandMap.put(OperationConstant.EMPLOYEE, new EmployeePageCommand());
+                commandMap.put(OperationConstant.CUSTOMERS_LIST, new CustomersListCommand());
+                commandMap.put(OperationConstant.ORDERS_LIST, new OrdersListCommand());
+                commandMap.put(OperationConstant.EMPLOYEES_LIST, new EmloyeesListCommand());
+                commandMap.put(OperationConstant.REVIEWS_LIST, new ReviewsListCommand());
+                commandMap.put(OperationConstant.ADD_EMPLOYEE, new AddEmployeeCommand()); //????
                 //commandMap.put(OperationConstant.HOME, new HomePageCommand());
         }
 

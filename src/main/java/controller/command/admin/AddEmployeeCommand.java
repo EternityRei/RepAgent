@@ -1,4 +1,4 @@
-package controller.command;
+package controller.command.admin;
 
 import controller.command.utils.CommandUtil;
 import controller.command.utils.Validation;
@@ -14,12 +14,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Objects;
 
-public class RegistrationCommand implements Command {
-    private static Logger log = Logger.getLogger(RegistrationCommand.class);
+public class AddEmployeeCommand implements controller.command.Command {
+
+    private static final Logger log = Logger.getLogger(AddEmployeeCommand.class);
 
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) {
-        log.info("-----------Registration-----------");
+        log.info("-----------Employee Adding-----------");
         var serviceFactory = ServiceFactory.getInstance();
 
         String email = req.getParameter("email");
@@ -48,7 +49,7 @@ public class RegistrationCommand implements Command {
 
                     user.setPasswd(encrypt.orElseThrow(Exception::new));
 
-                    user.setAccessLevel(2);
+                    user.setAccessLevel(3);
                     userService.add(user);
 
                     req.getSession().setAttribute("user", user);
@@ -62,26 +63,21 @@ public class RegistrationCommand implements Command {
                     return;
                 }
             } catch (ServiceException e) {
-                System.out.println(e.getMessage());
                 log.error(e.getMessage());
                 req.setAttribute("not found", true);
-                CommandUtil.goToPage(req, resp, "/WEB-INF/view/registration.jsp");
+                CommandUtil.goToPage(req, resp, "/WEB-INF/view/managerPack/addEmployee.jsp");
             } catch (InvalidDataException e) {
-                System.out.println(e.getMessage());
                 req.setAttribute("wrongData", true);
                 log.error("Incorrect login or password");
-                CommandUtil.goToPage(req, resp, "/WEB-INF/view/registration.jsp");
+                CommandUtil.goToPage(req, resp, "/WEB-INF/view/managerPack/addEmployee.jsp");
             } catch (AlreadyExistsUserException e) {
-                System.out.println(e.getMessage());
                 req.setAttribute("alreadyExist", true);
                 log.error("person already exist");
-                CommandUtil.goToPage(req, resp, "/WEB-INF/view/registration.jsp");
+                CommandUtil.goToPage(req, resp, "/WEB-INF/view/managerPack/addEmployee.jsp");
             } catch (Exception e) {
-                System.out.println(e.getMessage());
-                System.out.println(e.getMessage());
                 log.error(e.getMessage());
             }
         }
-        CommandUtil.goToPage(req, resp, "/WEB-INF/view/registration.jsp");
+        CommandUtil.goToPage(req, resp, "/WEB-INF/view/managerPack/addEmployee.jsp");
     }
 }

@@ -1,8 +1,16 @@
+<%@ page import="java.sql.Connection" %>
+<%@ page import="model.dao.connection.Connector" %>
+<%@ page import="java.sql.PreparedStatement" %>
+<%@ page import="static model.dao.constant.Constants.SELECT_MANAGER_NAME_TO_JSP" %>
+<%@ page import="model.enity.User" %>
+<%@ page import="java.sql.SQLException" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<c:set var="language" value="${not empty param.language ? param.language : pageContext.request.locale}"
-       scope="application"/>
+<%!
+    private final User user = new User();
+%><c:set var="language" value="${not empty param.language ? param.language : pageContext.request.locale}"
+         scope="application"/>
 <fmt:setLocale value="${language}"/>
 <fmt:setBundle basename="text"/>
 
@@ -18,6 +26,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/styles/manager_style.css">
 </head>
 <body>
+<form action="${pageContext.request.contextPath}/view/manager" method="post">
     <div class="container">
         <aside>
             <div class="top">
@@ -30,30 +39,47 @@
             </div>
 
             <div class="slidebar">
-                <a href="#" class="active">
-                    <span class="material-icons-sharp">grid_view</span>
-                    <h3>Dashboard</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">person</span>
-                    <h3>Customers</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">receipt_long</span>
-                    <h3>Orders</h3>
-                </a>
+
+
+                    <a href="${pageContext.request.contextPath}/view/manager" class="active">
+                        <span class="material-icons-sharp">grid_view</span>
+                        <h3>Dashboard</h3>
+                    </a>
+
+
+                    <a href="${pageContext.request.contextPath}/view/managerPack/customersList">
+                        <span class="material-icons-sharp">person</span>
+                        <h3>Customers</h3>
+                    </a>
+
+
+
+                    <a href="${pageContext.request.contextPath}/view/managerPack/ordersList">
+                        <span class="material-icons-sharp">receipt_long</span>
+                        <h3>Orders</h3>
+                    </a>
+
+
                 <a href="#">
                     <span class="material-icons-sharp">insights</span>
                     <h3>Analytics</h3>
                 </a>
-                <a href="#">
-                    <span class="material-icons-sharp">engineering</span>
-                    <h3>Employees</h3>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">rate_review</span>
-                    <h3>Reviews</h3>
-                </a>
+
+
+                    <a href="${pageContext.request.contextPath}/view/managerPack/employeesList">
+                        <span class="material-icons-sharp">engineering</span>
+                        <h3>Employees</h3>
+                    </a>
+
+
+
+                    <a href="${pageContext.request.contextPath}/view/managerPack/reviewsList">
+                        <span class="material-icons-sharp">rate_review</span>
+                        <h3>Reviews</h3>
+                    </a>
+
+
+
                 <a href="#">
                     <span class="material-icons-sharp">report</span>
                     <h3>Reports</h3>
@@ -62,14 +88,16 @@
                     <span class="material-icons-sharp">settings</span>
                     <h3>Settings</h3>
                 </a>
-                <a href="#">
+
+                <a href="${pageContext.request.contextPath}/view/managerPack/addEmployee">
                     <span class="material-icons-sharp">add</span>
                     <h3>Add employee</h3>
                 </a>
-                <a href="#">
-                    <span class="material-icons-sharp">logout</span>
-                    <h3>Logout</h3>
-                </a>
+
+                    <a href="${pageContext.request.contextPath}/view/login">
+                        <span class="material-icons-sharp">logout</span>
+                        <h3>Logout</h3>
+                    </a>
             </div>
         </aside>
         <main>
@@ -142,64 +170,64 @@
                 <h2>Recent Orders</h2>
                 <table>
                     <thead>
-                        <tr>
-                            <th>Order title</th>
-                            <th>Order number</th>
-                            <th>Payment</th>
-                            <th>Status</th>
-                            <th></th>
-                        </tr>
+                    <tr>
+                        <th>Order title</th>
+                        <th>Order number</th>
+                        <th>Payment</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Gogogo</td>
-                            <td>19191</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
-                        </tr>
-                        <tr>
-                            <td>Drop</td>
-                            <td>12313</td>
-                            <td>Done</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
-                        </tr>
-                        <tr>
-                            <td>Gogogo</td>
-                            <td>19191</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
-                        </tr>
-                        <tr>
-                            <td>Gogogo</td>
-                            <td>19191</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
-                        </tr>
-                        <tr>
-                            <td>Gogogo</td>
-                            <td>19191</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
-                        </tr>
-                        <tr>
-                            <td>Gogogo</td>
-                            <td>19191</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
-                        </tr>
-                        <tr>
-                            <td>Gogogo</td>
-                            <td>19191</td>
-                            <td>Due</td>
-                            <td class="warning">Pending</td>
-                            <td class="primary">Details</td>
-                        </tr>
+                    <tr>
+                        <td>Gogogo</td>
+                        <td>19191</td>
+                        <td>Due</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Drop</td>
+                        <td>12313</td>
+                        <td>Done</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Gogogo</td>
+                        <td>19191</td>
+                        <td>Due</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Gogogo</td>
+                        <td>19191</td>
+                        <td>Due</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Gogogo</td>
+                        <td>19191</td>
+                        <td>Due</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Gogogo</td>
+                        <td>19191</td>
+                        <td>Due</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tr>
+                    <tr>
+                        <td>Gogogo</td>
+                        <td>19191</td>
+                        <td>Due</td>
+                        <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                    </tr>
 
                     </tbody>
                 </table>
@@ -214,7 +242,7 @@
                 </button>
                 <div class="profile">
                     <div class="info">
-                        <p>Hey, <b>{$user.name}</b></p>
+                        <p>Hey, <b>Julia</b></p>
                         <small class="text-muted">Manager</small>
                     </div>
                 </div>
@@ -225,33 +253,33 @@
                 <div class="updates">
                     <div class="update">
                         <div class="message">
-                             <p><b>Mike Jonson</b>Done</p>
+                            <p><b>Mike Jonson</b>Done</p>
                             <small class="text-muted">2 Minutes Ago</small>
                         </div>
                     </div>
                 </div>
                 <div class="update">
                     <div class="message">
-                        <p><b>{$user.name}</b>{$order.status}</p>
-                        <small class="text-muted">2 Minutes Ago</small>
+                        <p><b>Natalia Zavgorodniya</b>Done</p>
+                        <small class="text-muted">20 Minutes Ago</small>
                     </div>
                 </div>
                 <div class="update">
                     <div class="message">
-                        <p><b>{$user.name}</b>{$order.status}</p>
-                        <small class="text-muted">2 Minutes Ago</small>
+                        <p><b>Michelle Light</b>In process</p>
+                        <small class="text-muted">Started 12 Minutes Ago</small>
                     </div>
                 </div>
                 <div class="update">
                     <div class="message">
-                        <p><b>{$user.name}</b>{$order.status}</p>
-                        <small class="text-muted">2 Minutes Ago</small>
+                        <p><b>Michael Pattincson</b>Done</p>
+                        <small class="text-muted">50 Minutes Ago</small>
                     </div>
                 </div>
                 <div class="update">
                     <div class="message">
-                        <p><b>${user.name}</b>{$order.status}</p>
-                        <small class="text-muted">2 Minutes Ago</small>
+                        <p><b>Helen Watson</b>Done</p>
+                        <small class="text-muted">1 Hour Ago</small>
                     </div>
                 </div>
             </div>
@@ -308,5 +336,6 @@
             </div>
         </div>
     </div>
+</form>
 </body>
 </html>
