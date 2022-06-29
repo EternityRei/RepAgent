@@ -28,9 +28,9 @@ public class AddEmployeeCommand implements controller.command.Command {
         if (Objects.nonNull(email) && Objects.nonNull(password)) {
             try {
 
-                if (!Validation.isEmailValid(email) || !Validation.isPasswordValid(password)) {
+/*                if (!Validation.isEmailValid(email) || !Validation.isPasswordValid(password)) {
                     throw new InvalidDataException();
-                }
+                }*/
 
                 UserService userService = serviceFactory.getUserService();
 
@@ -52,29 +52,34 @@ public class AddEmployeeCommand implements controller.command.Command {
                     user.setAccessLevel(3);
                     userService.add(user);
 
-                    req.getSession().setAttribute("user", user);
+                    req.getSession().setAttribute("employee", user);
 
-                    String page = CommandUtil.getUserPageByRole(user.getAccessLevel());
+                    String page = "/view/managerPack/successAddEmployee";
 
                     CommandUtil.goToPage(req, resp, page);
 
-                    log.info("successful registration");
+                    log.info("employee was registered successful");
 
                     return;
                 }
             } catch (ServiceException e) {
+                System.out.println(e.getMessage());
                 log.error(e.getMessage());
                 req.setAttribute("not found", true);
                 CommandUtil.goToPage(req, resp, "/WEB-INF/view/managerPack/addEmployee.jsp");
             } catch (InvalidDataException e) {
+                System.out.println(e.getMessage());
                 req.setAttribute("wrongData", true);
                 log.error("Incorrect login or password");
                 CommandUtil.goToPage(req, resp, "/WEB-INF/view/managerPack/addEmployee.jsp");
             } catch (AlreadyExistsUserException e) {
+                System.out.println(e.getMessage());
                 req.setAttribute("alreadyExist", true);
                 log.error("person already exist");
                 CommandUtil.goToPage(req, resp, "/WEB-INF/view/managerPack/addEmployee.jsp");
             } catch (Exception e) {
+                System.out.println(e.getMessage());
+                System.out.println(e.getMessage());
                 log.error(e.getMessage());
             }
         }

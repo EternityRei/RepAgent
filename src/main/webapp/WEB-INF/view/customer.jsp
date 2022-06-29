@@ -205,11 +205,11 @@
             </div>
 
             <div class="recent-updates">
-                <h2>Recent Updates</h2>
+                <h2>Notifications</h2>
                 <div class="updates">
                     <div class="update">
                         <div class="message">
-                            <p><b>Your order was submited</b></p>
+                            <p><b>Your order was submitted</b></p>
                             <small class="text-muted">24.06.22 16:24</small>
                         </div>
                     </div>

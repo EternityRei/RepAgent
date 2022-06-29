@@ -1,8 +1,10 @@
 package model.enity;
 
 public enum WorkStatus {
-    IN_PROCCESS(1),
-    DONE(2);
+
+    NOT_STARTED(1),
+    IN_PROCCESS(2),
+    DONE(3);
 
     private int workStatus;
 

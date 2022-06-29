@@ -87,6 +87,16 @@ public class OrderServiceImpl implements OrderService {
     }
 
     @Override
+    public Order getByUserId(int userId) {
+        return orderDAO.getByUserId(userId);
+    }
+
+    @Override
+    public Order getByDescriptionAndUserId(String description, int userId) {
+        return orderDAO.getByDescriptionAndUserId(description, userId);
+    }
+
+    @Override
     public Order getEntity(Integer id) throws DatabaseException, ServiceException, DatabaseException, ServiceException {
         return orderDAO.getById(id);
     }

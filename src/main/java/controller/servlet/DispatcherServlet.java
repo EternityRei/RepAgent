@@ -30,7 +30,6 @@ public class DispatcherServlet extends HttpServlet {
 
         Command command = null;
         try {
-
             command = CommandFactory.getCommand(path);
             command.execute(req, resp);
         } catch (NotFoundOperationException e) {

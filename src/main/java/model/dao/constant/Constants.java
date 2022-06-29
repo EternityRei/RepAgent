@@ -3,15 +3,16 @@ package model.dao.constant;
 public final class Constants {
     private Constants(){}
     public static final String INSERT_USER = "INSERT INTO \"Person\" (\"name\", \"email\", \"passwd\", \"money\", \"role_access_level\") VALUES (?,?,?,?,?)";
-    public static final String INSERT_ORDER = "INSERT INTO \"ORDER\" (\"title\", \"description\", \"cost\", \"payment_id\", \"work_status_id\", \"person_id\", \"person_role_access_level\") VALUES (?,?,?,?,?,?,?)";
-    public static final String INSERT_REVIEW = "INSERT INTO \"REVIEW\" (\"content\", \"rating\", \"date_work_done\", \"person_id\", \"order_id\") VALUES (?,?,?,?,?)";
+    public static final String INSERT_ORDER = "INSERT INTO \"Order\" (\"title\", \"description\", \"cost\", \"payment_id\", \"work_status_id\", \"person_id\", \"employee_id\", \"date\") VALUES (?,?,?,?,?,?,?,?)";
+    public static final String INSERT_REVIEW = "INSERT INTO \"Review\" (\"content\", \"rating\", \"date_work_done\", \"person_id\", \"order_id\") VALUES (?,?,?,?,?)";
 
     public static final String SELECT_BY_USER_ID = "SELECT * FROM \"Person\" WHERE \"id\" = ?";
-    public static final String SELECT_BY_ORDER_ID = "SELECT * FROM \"ORDER\" WHERE \"id\" = ?";
-    public static final String SELECT_BY_REVIEW_ID = "SELECT * FROM \"REVIEW\" WHERE \"review_id\" = ?";
+    public static final String SELECT_BY_ORDER_ID = "SELECT * FROM \"Order\" WHERE \"id\" = ?";
+    public static final String SELECT_BY_REVIEW_ID = "SELECT * FROM \"Review\" WHERE \"review_id\" = ?";
+    public static final String SELECT_ORDER_BY_USER_ID = "SELECT * FROM \"Order\" WHERE \"person_id\" = ?";
 
     public static final String DELETE_USER = "DELETE FROM \"Person\" WHERE \"id\" = ?";
-    public static final String DELETE_ORDER = "DELETE FROM \"ORDER\" WHERE \"id\" = ?";
+    public static final String DELETE_ORDER = "DELETE FROM \"Order\" WHERE \"id\" = ?";
 
     public static final String UPDATE_USER = "UPDATE \"Person\" SET \"name\" = ?, \"email\" = ?, \"passwd\" = ?, \"money\" = ?, \"role_access_level\" = ? WHERE \"id\" = ?";
     public static final String UPDATE_ORDER = "UPDATE \"Order\" SET \"title\" = ?, \"description\" = ?, \"cost\" = ?, \"payment_id\" = ?, \"work_status_id\" = ?, \"person_id\", \"person_role_access_level\" WHERE \"id\" = ?";

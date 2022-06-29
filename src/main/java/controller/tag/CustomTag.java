@@ -1,5 +1,7 @@
 package controller.tag;
 
-public class CustomTag extends SimpleTagSupport{
+import javax.servlet.jsp.tagext.SimpleTagSupport;
+
+public class CustomTag extends SimpleTagSupport {
 
 }

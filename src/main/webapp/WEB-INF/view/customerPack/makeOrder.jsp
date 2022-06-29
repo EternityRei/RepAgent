@@ -7,7 +7,7 @@
 <body>
 <div class="container">
     <div class="title">Make an order form</div>
-    <form action="${pageContext.request.contextPath}/view/managerPack/makeOrder" method="post">
+    <form action="${pageContext.request.contextPath}/view/customerPack/makeOrder" method="post">
         <div class="order-details">
             <div class="input-box">
                 <span class="details">Title</span>
@@ -23,7 +23,9 @@
             </div>
         </div>
         <div class="button">
-            <input type="submit" value="Make">
+            <a href="${pageContext.request.contextPath}/view/customerPack/successMakeOrder">
+                <input type="submit" value="Make">
+            </a>
         </div>
     </form>
 </div>

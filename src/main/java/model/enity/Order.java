@@ -2,19 +2,22 @@ package model.enity;
 
 import model.builder.OrderBuilder;
 
+import java.sql.Date;
+import java.sql.Timestamp;
+
 import java.util.Objects;
 
 public class Order extends Model{
     private int id;
-    private float cost;
-    private String description;
-    private int workStatus;
-    private int paymentStatus;
     private String title;
+    private String description;
+    private float cost;
+    private int paymentStatus;
+    private int workStatus;
     private int user_id;
-    private String review;
-    private int user_role;
-    private int worker_mark;
+    private int workerId;
+    private Long currentTime = System.currentTimeMillis();
+    private Timestamp timestamp = new Timestamp(currentTime);
 
 
     public Order(OrderBuilderImpl orderBuilder){
@@ -25,24 +28,20 @@ public class Order extends Model{
         this.paymentStatus = orderBuilder.paymentStatus;
         this.title = orderBuilder.title;
         this.user_id = orderBuilder.user_id;
-        this.review = orderBuilder.review;
-        this.user_role = orderBuilder.user_role;
-        this.worker_mark = orderBuilder.worker_mark;
+        this.workerId = orderBuilder.workerId;
+        this.timestamp = orderBuilder.date;
     }
 
     public static class OrderBuilderImpl implements OrderBuilder {
         private int id;
-        private float cost;
-        private String description;
-        private int workStatus;
-        private int paymentStatus;
         private String title;
+        private String description;
+        private float cost;
+        private int paymentStatus;
+        private int workStatus;
         private int user_id;
-        private String review;
-        private int user_role;
-        private int worker_mark;
-
-
+        private int workerId;
+        private Timestamp date;
 
         @Override
         public OrderBuilder setId(int id) {
@@ -87,20 +86,14 @@ public class Order extends Model{
         }
 
         @Override
-        public OrderBuilder setReview(String review) {
-            this.review = review;
+        public OrderBuilder setEmployeeId(int employeeId) {
+            this.workerId = employeeId;
             return this;
         }
 
         @Override
-        public OrderBuilder setUser_role(int role) {
-            this.user_role = role;
-            return this;
-        }
-
-        @Override
-        public OrderBuilder setWorker_mark(int mark){
-            this.worker_mark = mark;
+        public OrderBuilder setDate(Timestamp date) {
+            this.date = date;
             return this;
         }
 
@@ -170,28 +163,21 @@ public class Order extends Model{
         this.user_id = user_id;
     }
 
-    public String getReview() {
-        return review;
+
+    public Timestamp getTimestamp() {
+        return timestamp;
     }
 
-    public void setReview(String review) {
-        this.review = review;
+    public void setTimestamp(Timestamp timestamp) {
+        this.timestamp = timestamp;
     }
 
-    public int getUser_role() {
-        return user_role;
+    public int getWorkerId() {
+        return workerId;
     }
 
-    public void setUser_role(int user_role) {
-        this.user_role = user_role;
-    }
-
-    public int getWorker_mark() {
-        return worker_mark;
-    }
-
-    public void setWorker_mark(int worker_mark) {
-        this.worker_mark = worker_mark;
+    public void setWorkerId(int workerId) {
+        this.workerId = workerId;
     }
 
     @Override
@@ -201,36 +187,36 @@ public class Order extends Model{
         Order order = (Order) o;
         return getId() == order.getId()
                 && Float.compare(order.getCost(), getCost()) == 0
-                && getWorkStatus() == order.getWorkStatus()
                 && getPaymentStatus() == order.getPaymentStatus()
+                && getWorkStatus() == order.getWorkStatus()
                 && getUser_id() == order.getUser_id()
-                && getUser_role() == order.getUser_role()
-                && getWorker_mark() == order.getWorker_mark()
-                && getDescription().equals(order.getDescription())
+                && getWorkerId() == order.getWorkerId()
                 && getTitle().equals(order.getTitle())
-                && getReview().equals(order.getReview());
+                && getDescription().equals(order.getDescription())
+                && currentTime.equals(order.currentTime)
+                && getTimestamp().equals(order.getTimestamp());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getCost(), getDescription(),
-                getWorkStatus(), getPaymentStatus(), getTitle(),
-                getUser_id(), getReview(), getUser_role(), getWorker_mark());
+        return Objects.hash(getId(), getTitle(),
+                getDescription(), getCost(), getPaymentStatus(),
+                getWorkStatus(), getUser_id(), getWorkerId(),
+                currentTime, getTimestamp());
     }
 
     @Override
     public String toString() {
         return "Order{" +
                 "id=" + id +
-                ", cost=" + cost +
-                ", description='" + description + '\'' +
-                ", workStatus=" + workStatus +
-                ", paymentStatus=" + paymentStatus +
                 ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", cost=" + cost +
+                ", paymentStatus=" + paymentStatus +
+                ", workStatus=" + workStatus +
                 ", user_id=" + user_id +
-                ", review='" + review + '\'' +
-                ", user_role=" + user_role +
-                ", worker_mark=" + worker_mark +
+                ", workerId=" + workerId +
+                ", timestamp=" + timestamp +
                 '}';
     }
 }

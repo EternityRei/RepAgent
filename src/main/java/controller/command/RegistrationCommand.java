@@ -27,9 +27,9 @@ public class RegistrationCommand implements Command {
         if (Objects.nonNull(email) && Objects.nonNull(password)) {
             try {
 
-                if (!Validation.isEmailValid(email) || !Validation.isPasswordValid(password)) {
+/*                if (!Validation.isEmailValid(email) || !Validation.isPasswordValid(password)) {
                     throw new InvalidDataException();
-                }
+                }*/
 
                 UserService userService = serviceFactory.getUserService();
 

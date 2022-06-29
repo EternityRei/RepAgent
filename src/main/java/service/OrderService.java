@@ -24,4 +24,9 @@ public interface OrderService extends ItemService<Integer, Order> {
     List<Order> getAllOrdersByUserIDandAddDebt(int user_id);
 
     List<Order> getAllOrderByUserID(int user_id);
+
+    Order getByUserId(int userId);
+
+    Order getByDescriptionAndUserId(String description, int userId);
+
 }

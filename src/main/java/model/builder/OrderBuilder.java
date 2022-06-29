@@ -2,6 +2,9 @@ package model.builder;
 
 import model.enity.Order;
 
+import java.sql.Timestamp;
+import java.util.Date;
+
 public interface OrderBuilder {
     OrderBuilder setId(int id);
     OrderBuilder setDescription(String description);
@@ -10,8 +13,7 @@ public interface OrderBuilder {
     OrderBuilder setUserId(int person_id);
     OrderBuilder setWorkStatus(int workStatus);
     OrderBuilder setTitle(String title);
-    OrderBuilder setReview(String review);
-    OrderBuilder setUser_role(int role);
-    OrderBuilder setWorker_mark(int mark);
+    OrderBuilder setEmployeeId(int employeeId);
+    OrderBuilder setDate(Timestamp date);
     Order build();
 }

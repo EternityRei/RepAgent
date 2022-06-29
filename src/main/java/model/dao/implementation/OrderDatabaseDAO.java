@@ -9,10 +9,8 @@ import model.exception.DatabaseException;
 import org.apache.log4j.Logger;
 
 import javax.naming.NamingException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,15 +22,14 @@ public class OrderDatabaseDAO implements OrderDAO {
         Connection con = Connector.getInstance().getConnection();
         con.setAutoCommit(false);
         try(PreparedStatement pstmt = con.prepareStatement(Constants.INSERT_ORDER)){
-            pstmt.setFloat(1, order.getCost());
+            pstmt.setString(1, order.getTitle());
             pstmt.setString(2, order.getDescription());
-            pstmt.setInt(3, order.getWorkStatus());
-            pstmt.setInt(4, order.getPaymentStatus());
-            pstmt.setInt(5, order.getUser_id());
-            pstmt.setString(6, order.getTitle());
-            pstmt.setInt(7, order.getUser_role());
-            pstmt.setString(8, order.getReview());
-            pstmt.setInt(9, order.getWorker_mark());
+            pstmt.setFloat(3, order.getCost());
+            pstmt.setInt(4, 1);
+            pstmt.setInt(5, 1);
+            pstmt.setInt(6, order.getUser_id());
+            pstmt.setInt(7, order.getWorkerId());
+            pstmt.setTimestamp(8, java.sql.Timestamp.from(Instant.now()));
             pstmt.execute();
             log.info("Order was added successful");
             con.commit();
@@ -62,16 +59,14 @@ public class OrderDatabaseDAO implements OrderDAO {
     public Order updateEntity(Order order) {
         try(Connection con = Connector.getInstance().getConnection();
             PreparedStatement pstmt = con.prepareStatement(Constants.UPDATE_ORDER)){
-            pstmt.setFloat(1, order.getCost());
+            pstmt.setString(1, order.getTitle());
             pstmt.setString(2, order.getDescription());
-            pstmt.setInt(3, order.getWorkStatus());
+            pstmt.setFloat(3, order.getCost());
             pstmt.setInt(4, order.getPaymentStatus());
-            pstmt.setInt(5, order.getUser_id());
-            pstmt.setInt(6, order.getId());
-            pstmt.setString(7, order.getTitle());
-            pstmt.setInt(8, order.getUser_role());
-            pstmt.setString(8, order.getReview());
-            pstmt.setInt(9, order.getWorker_mark());
+            pstmt.setInt(5, order.getWorkStatus());
+            pstmt.setInt(6, order.getUser_id());
+            pstmt.setInt(7, order.getWorkerId());
+            pstmt.setTimestamp(8, order.getTimestamp());
             pstmt.executeUpdate();
             log.info("Order was updated successful");
             return order;
@@ -89,15 +84,14 @@ public class OrderDatabaseDAO implements OrderDAO {
             while (resultSet.next()){
                 Order order = new Order();
                 order.setId(resultSet.getInt(1));
-                order.setCost(resultSet.getFloat(2));
+                order.setTitle(resultSet.getString(2));
                 order.setDescription(resultSet.getString(3));
-                order.setWorkStatus(resultSet.getInt(4));
+                order.setCost(resultSet.getFloat(4));
                 order.setPaymentStatus(resultSet.getInt(5));
-                order.setReview(resultSet.getString(6));
-                order.setWorker_mark(resultSet.getInt(7));
-                order.setUser_id(resultSet.getInt(8));
-                order.setTitle(resultSet.getString(9));
-                order.setUser_role(resultSet.getInt(10));
+                order.setWorkStatus(resultSet.getInt(6));
+                order.setUser_id(resultSet.getInt(7));
+                order.setWorkerId(resultSet.getInt(8));
+                order.setTimestamp(resultSet.getTimestamp(9));
                 outputOrders.add(order);
             }
             log.info("All orders were found successful");
@@ -118,15 +112,14 @@ public class OrderDatabaseDAO implements OrderDAO {
             log.info("successful getById order");
             return new Order.OrderBuilderImpl()
                     .setId(id)
-                    .setPrice(resultSet.getFloat("cost"))
-                    .setDescription(resultSet.getString("description"))
-                    .setWorkStatus(resultSet.getInt("work_status"))
-                    .setPaymentStatus(resultSet.getInt("payment_status"))
-                    .setUserId(resultSet.getInt("user_id"))
                     .setTitle(resultSet.getString("title"))
-                    .setUser_role(resultSet.getInt("user_role"))
-                    .setReview(resultSet.getString("review"))
-                    .setWorker_mark(resultSet.getInt("worker_mark"))
+                    .setDescription(resultSet.getString("description"))
+                    .setPrice(resultSet.getFloat("cost"))
+                    .setPaymentStatus(resultSet.getInt("payment_id"))
+                    .setWorkStatus(resultSet.getInt("work_status_id"))
+                    .setUserId(resultSet.getInt("person_id"))
+                    .setEmployeeId(resultSet.getInt("employee_id"))
+                    .setDate(resultSet.getTimestamp("date"))
                     .build();
 
         } catch (SQLException e){
@@ -179,20 +172,75 @@ public class OrderDatabaseDAO implements OrderDAO {
         }
     }
 
+    @Override
+    public Order getByDescriptionAndUserId(String description, int userId) {
+        try(Connection con = Connector.getInstance().getConnection();
+            PreparedStatement pstmt = con.prepareStatement(Constants.SELECT_BY_ORDER_ID)){
+            pstmt.setInt(1, userId);
+            pstmt.setString(2, description);
+
+            ResultSet resultSet = pstmt.executeQuery();
+            resultSet.next();
+            log.info("successful getByDescriptionAndUserId order");
+            return new Order.OrderBuilderImpl()
+                    .setUserId(userId)
+                    .setDescription(description)
+                    .setId(resultSet.getInt("id"))
+                    .setTitle(resultSet.getString("title"))
+                    .setPrice(resultSet.getFloat("cost"))
+                    .setPaymentStatus(resultSet.getInt("payment_id"))
+                    .setWorkStatus(resultSet.getInt("work_status_id"))
+                    .setUserId(resultSet.getInt("person_id"))
+                    .setEmployeeId(resultSet.getInt("employee_id"))
+                    .setDate(resultSet.getTimestamp("date"))
+                    .build();
+
+        } catch (SQLException e){
+            throw new RuntimeException("Cannot getByDescriptionAndUserId order " + e);
+        }
+    }
+
+    @Override
+    public Order getByUserId(int userId) {
+        try(Connection con = Connector.getInstance().getConnection();
+            PreparedStatement pstmt = con.prepareStatement(Constants.SELECT_ORDER_BY_USER_ID)){
+            pstmt.setInt(1, userId);
+
+            ResultSet resultSet = pstmt.executeQuery();
+            Order order = null;
+            if(resultSet.next()){
+                order = new Order.OrderBuilderImpl()
+                        .setId(resultSet.getInt("id"))
+                        .setTitle(resultSet.getString("title"))
+                        .setDescription(resultSet.getString("description"))
+                        .setPrice(resultSet.getFloat("cost"))
+                        .setPaymentStatus(resultSet.getInt("payment_id"))
+                        .setWorkStatus(resultSet.getInt("work_status_id"))
+                        .setUserId(resultSet.getInt("person_id"))
+                        .setDate(resultSet.getTimestamp("date"))
+                        .build();
+            }
+            log.info("Success getByUserId order");
+            return order;
+
+        } catch (SQLException e){
+            throw new RuntimeException(String.format("Cannot get order by getByUserId = %d", userId), e);
+        }
+    }
+
     private List<Order> initOrder(ResultSet rs) throws SQLException {
         List<Order> outerBooks = new ArrayList<>();
         while (rs.next()) {
             Order order = new Order();
             order.setId(rs.getInt(1));
-            order.setCost(rs.getFloat(2));
+            order.setTitle(rs.getString(2));
             order.setDescription(rs.getString(3));
-            order.setWorkStatus(rs.getInt(4));
+            order.setCost(rs.getFloat(4));
             order.setPaymentStatus(rs.getInt(5));
-            order.setReview(rs.getString(6));
-            order.setWorker_mark(rs.getInt(7));
-            order.setUser_id(rs.getInt(8));
-            order.setTitle(rs.getString(9));
-            order.setUser_role(rs.getInt(10));
+            order.setWorkStatus(rs.getInt(6));
+            order.setUser_id(rs.getInt(7));
+            order.setWorkerId(rs.getInt(8));
+            order.setTimestamp(rs.getTimestamp(9));
             outerBooks.add(order);
         }
         return outerBooks;

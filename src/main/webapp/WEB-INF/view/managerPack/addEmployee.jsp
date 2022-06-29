@@ -24,7 +24,7 @@
                 <div class="input-box">
                     <span class="details">Password</span>
                     <label>
-                        <input type="text" placeholder="Enter password" required name="password">
+                        <input type="password" placeholder="Enter password" required name="password">
                     </label>
                 </div>
             </div>
@@ -39,7 +39,9 @@
                 </div>
             </div>
             <div class="button">
-                <input type="submit" value="Register">
+                <a href="${pageContext.request.contextPath}/view/managerPack/successAddEmployee">
+                    <input type="submit" value="Register">
+                </a>
             </div>
         </form>
     </div>
