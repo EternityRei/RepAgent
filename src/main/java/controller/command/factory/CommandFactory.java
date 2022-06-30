@@ -30,6 +30,7 @@ public class CommandFactory {
                 commandMap.put(OperationConstant.ORDERS_LIST_CUSTOMER, new OrdersListCustomerCommand());
                 commandMap.put(OperationConstant.SUCCESS_ADD_EMPLOYEE, new SuccessAddEmployeeCommand());
                 commandMap.put(OperationConstant.SUCCESS_MAKE_ORDER, new SuccessMakeOrderCommand());
+                commandMap.put(OperationConstant.INCREASE_MONEY, new IncreaseMoneyCommand());
                 //commandMap.put(OperationConstant.HOME, new HomePageCommand());
         }
 

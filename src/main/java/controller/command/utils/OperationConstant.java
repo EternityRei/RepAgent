@@ -25,4 +25,6 @@ public interface OperationConstant {
     String ORDERS_LIST_CUSTOMER = "/view/customerPack/ordersList";
     String MAKE_AN_ORDER = "/view/customerPack/makeOrder";
     String SUCCESS_MAKE_ORDER = "/view/customerPack/successMakeOrder";
+
+    String INCREASE_MONEY = "/view/managerPack/increaseMoney";
 }
