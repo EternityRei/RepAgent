@@ -17,11 +17,19 @@ public class CustomersListCommand implements controller.command.Command {
 
     private static final Logger log = Logger.getLogger(CustomersListCommand.class);
 
+
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) {
         log.info("---------------Customers List---------------");
-        CommandUtil.goToPage(req, resp, "/WEB-INF/view/managerPack/customersList.jsp");
-        log.info("redirect success");
-
+        var serviceFactory = ServiceFactory.getInstance();
+        var userService = serviceFactory.getUserService();
+        try{
+            List<User> list = userService.getAllUsers();
+            req.setAttribute("people", list);
+            CommandUtil.goToPage(req, resp, "/WEB-INF/view/managerPack/customersList.jsp");
+        } catch (ServiceException e) {
+            log.error(e.getMessage());
+             CommandUtil.goToPage(req, resp, "/WEB-INF/view/managerPack/customersList.jsp");
+        }
     }
 }

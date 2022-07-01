@@ -17,7 +17,7 @@ public final class Constants {
     public static final String UPDATE_USER = "UPDATE \"Person\" SET \"name\" = ?, \"email\" = ?, \"passwd\" = ?, \"money\" = ?, \"role_access_level\" = ? WHERE \"id\" = ?";
     public static final String UPDATE_ORDER = "UPDATE \"Order\" SET \"title\" = ?, \"description\" = ?, \"cost\" = ?, \"payment_id\" = ?, \"work_status_id\" = ?, \"person_id\", \"person_role_access_level\" WHERE \"id\" = ?";
 
-    public static final String ALL_USERS = "SELECT * FROM \"Person\"";
+    public static final String ALL_USERS = "SELECT * FROM \"Person\" WHERE \"role_access_level\" = 2";
     public static final String ALL_ORDERS = "SELECT * FROM \"Order\"";
     public static final String ALL_REVIEWS = "SELECT * FROM \"Review\"";
 

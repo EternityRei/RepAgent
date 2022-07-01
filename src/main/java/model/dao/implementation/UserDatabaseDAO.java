@@ -107,11 +107,11 @@ public class UserDatabaseDAO implements UserDAO {
             while (resultSet.next()){
                 User user = new User();
                 user.setId(resultSet.getInt(1));
-                user.setEmail(resultSet.getString(2));
-                user.setPasswd(resultSet.getString(3));
-                user.setName(resultSet.getString(4));
-                user.setAccessLevel(resultSet.getInt(5));
-                user.setMoney(resultSet.getFloat(6));
+                user.setName(resultSet.getString(2));
+                user.setEmail(resultSet.getString(3));
+                user.setPasswd(resultSet.getString(4));
+                user.setMoney(resultSet.getFloat(5));
+                user.setAccessLevel(resultSet.getInt(6));
                 outputUsers.add(user);
             }
             log.info("All users were found successful");

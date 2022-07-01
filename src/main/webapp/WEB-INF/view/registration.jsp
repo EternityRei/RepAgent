@@ -2,38 +2,45 @@
 <html>
 <head>
     <title>Sign up</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/styles/reg_style.css">
 </head>
 <body>
-<form action="${pageContext.request.contextPath}/view/registration" method="post">
-    Enter your email:
-    <p>
-        <label>
-            <input class="profileEditorFields loginField" type="text" required
-                   placeholder=Email
-                   name="email">
-        </label>
-    </p>
-    Enter your password:
-    <p>
-        <label>
-            <input class="profileEditorFields loginField" type="password" required
-                   placeholder=Password
-                   name="password">
-        </label>
-    </p>
-
-    Enter your name:
-    <p>
-        <label>
-            <input class="profileEditorFields loginField" type="text" required
-                   placeholder=Name
-                   name="name">
-        </label>
-    </p>
-
-    <a href=${pageContext.request.contextPath}/view/registration>
-        <button>Register</button>
-    </a>
-</form>
+    <div class="container">
+        <div class="header">
+            <h2>Sign up</h2>
+        </div>
+        <form id="form" class="form" action="${pageContext.request.contextPath}/view/registration" method="post">
+            <div class="form-control">
+                <label>Username</label>
+                <input type="text" placeholder="florinpop17" id="name" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" placeholder="a@florin-pop.com" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" placeholder="Password" id="password"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label>Password check</label>
+                <input type="password" placeholder="Password two" id="password2"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button>Sign up</button>
+        </form>
+    </div>
+    <script src="${pageContext.request.contextPath}/js/regPageScript.js"></script>
 </body>
 </html>

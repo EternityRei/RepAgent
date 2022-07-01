@@ -1,4 +1,5 @@
-/* CSS styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Ubuntu:wght@300&display=swap');
+
 *::before,
 *::after{
     box-sizing: border-box;
@@ -7,14 +8,14 @@
 }
 
 body{
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     height: 100vh;
     display: grid;
     justify-content: center;
     align-items: center;
     color: #4f546c;
     font-size: 0.9rem;
-    background-color: #f9fbff;
+    background-color: #f6f6f9;
 }
 
 
@@ -47,12 +48,8 @@ body{
     text-align: right;
 }
 
-.table td .top-up-btn{
-    border-radius: 5px;
-    background-color: #41f1b6;
-    padding: 0.2rem 1rem;
-    text-align: center;
-    color: #f9fbff;
+.table td a{
+    text-decoration: none;
 }
 
 .top{
@@ -61,11 +58,14 @@ body{
     margin: 0 auto;
     gap: 1.8rem;
     grid-template-columns: 14rem auto;
+    margin-right: 240px;
+    margin-bottom: 600px;
+    position: absolute;
 }
 
 
 .top a{
-    color: #363949;
+    color: #677483;
     text-decoration: none;
 }
 
