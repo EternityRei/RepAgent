@@ -1,0 +1,70 @@
+login: postgres
+password: root
+
+CREATE TABLE "Person" (
+    "id" serial not null primary key,
+    "name" varchar(100) not null,
+    "email" varchar(100) not null,
+    "passwd" varchar(100) not null,
+    "money" decimal(9,2) not null default 0,
+    "role_access_level" int not null
+);
+
+CREATE TABLE "Role" (
+    "access_level" serial not null primary key,
+    "role_name" varchar(45) not null
+);
+
+CREATE TABLE "Work_status" (
+    "id" serial not null primary key,
+    "work_status_name" varchar(45) not null
+);
+
+
+CREATE TABLE "Payment_status" (
+    "id" serial not null primary key,
+    "payment_status_name" varchar(45) not null
+);
+
+CREATE TABLE "Order" (
+    "id" serial not null primary key default 1, 
+    "title" varchar(45) not null,
+    "description" varchar(45) not null,
+    "cost" decimal(9,2) not null,
+    "payment_id" int, 
+    "work_status_id" int,
+    "person_id" int,
+    "person_role_access_level" int
+);
+
+CREATE TABLE "Review" (
+    "review_id" serial not null primary key,
+    "content" varchar(45) not null,
+    "rating" decimal not null,
+    "date_work_done" date not null,
+    "person_id" int,
+    "order_id" int
+);
+
+ALTER TABLE "Person" ADD FOREIGN KEY ("role_access_level") REFERENCES "Role"("access_level") ON DELETE CASCADE; 
+
+ALTER TABLE "Order" ADD FOREIGN KEY ("payment_id") REFERENCES "Payment_status"("id") ON DELETE CASCADE;
+ALTER TABLE "Order" ADD FOREIGN KEY ("work_status_id") REFERENCES "Work_status"("id")  ON DELETE CASCADE;
+ALTER TABLE "Order" ADD FOREIGN KEY ("person_id") REFERENCES "Person"("id") ON DELETE CASCADE;
+ALTER TABLE "Order" ADD FOREIGN KEY ("person_role_access_level") REFERENCES "Role"("access_level") ON DELETE CASCADE;
+
+ALTER TABLE "Review" ADD FOREIGN KEY ("person_id") REFERENCES "Person"("id") ON DELETE CASCADE;
+ALTER TABLE "Review" ADD FOREIGN KEY ("order_id") REFERENCES "Order"("id") ON DELETE CASCADE;
+
+
+ CREATE TABLE "Order" (
+	"id" serial not null primary key,
+	"title" varchar(45) not null,
+	"description" varchar(250) not null,
+	"cost" decimal(9,2) not null,
+	"payment_id" int,
+	"work_status_id" int,
+	"person_id" int,
+	"employee_id" int,
+	"date" timestamp
+);
