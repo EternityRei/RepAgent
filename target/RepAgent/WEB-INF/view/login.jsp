@@ -17,31 +17,37 @@
 </head>
 
 <body>
+
+<form action="${pageContext.request.contextPath}/view/login" method="post">
     <div class="container">
         <div class="header">
-            <h2>Sign in</h2>
+            <header><h2>Sign in</h2></header>
         </div>
-        <form id="form" class="form" action="${pageContext.request.contextPath}/view/login" method="post">
-            <div class="form-control">
-                <label>Email</label>
-                <input type="email" placeholder="a@florin-pop.com" id="email" name="login"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <small>Error message</small>
-            </div>
-            <div class="form-control">
-                <label>Password</label>
-                <input type="password" placeholder="Password" id="password" name="password"/>
-                <i class="fas fa-check-circle"></i>
-                <i class="fas fa-exclamation-circle"></i>
-                <small>Error message</small>
-            </div>
-            <a href="${pageContext.request.contextPath}/view/login">Sign in</a>
-            <br>
-            <p class="sign-up">New there? <a href="${pageContext.request.contextPath}/view/registration">Sign up</a></p>
+
+        <h5 class="email">Email</h5>
+        <label>
+            <input class="profileEditorFields loginField" type="text" required
+                   placeholder=buba@coconat.af
+                   name="login">
+        </label>
+        <h5 class="password">Password</h5>
+        <label>
+            <input class="profileEditorFields loginField" type="password" required
+                   placeholder=Password
+                   name="password">
+        </label>
+        <div class="login-btn">
+            <a href=${pageContext.request.contextPath}/view/login>
+                <button>Login</button>
+            </a>
+        </div>
+        <form action="${pageContext.request.contextPath}/view/registration">
+            <p>
+                New there? <a href=${pageContext.request.contextPath}/view/registration>Sign up</a>
+            </p>
         </form>
     </div>
-    <script src="${pageContext.request.contextPath}/js/loginPageScript.js" type="text/javascript"></script>
+</form>
 </body>
 </html>
 

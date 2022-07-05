@@ -21,7 +21,9 @@
             <p>I approve to top up this user account</p>
         </label>
     </div>
-    <button name="btn" id="btn" disabled="disabled">Top up</button>
+        <a href=${pageContext.request.contextPath}/view/managerPack/increaseMoney>
+            <button name="btn" value="Top up">Top up</button>
+        </a>
     </form>
 </div>
 <script src="${pageContext.request.contextPath}/js/payment.js"></script>

@@ -27,14 +27,14 @@ public class OrderServiceImpl implements OrderService {
     public List<Order> findByStatusAndWorker(int workStatus, int payStatus, int worker_id) {
         return orderDAO.getAll().stream()
                 .filter(e -> e.getWorkStatus() == workStatus || e.getPaymentStatus() == payStatus
-                || e.getUser_id() == worker_id).collect(Collectors.toList());
+                || e.getUserid() == worker_id).collect(Collectors.toList());
     }
 
     @Override
     public boolean setOrderStatus(int payStatus, int workStatus, int user_id, int order_id) {
         Order order = null;
         User user = null;
-        Objects.requireNonNull(order).setUser_id(user_id);
+        Objects.requireNonNull(order).setUserid(user_id);
         order.setId(order_id);
         order.setPaymentStatus(payStatus);
         order.setWorkStatus(workStatus);
@@ -50,7 +50,7 @@ public class OrderServiceImpl implements OrderService {
         try {
             for (Order value : list) {
                 order = value;
-                user = userDAO.getById(order.getUser_id());
+                user = userDAO.getById(order.getUserid());
                 map.put(order, user);
             }
         } catch (DatabaseException e) {

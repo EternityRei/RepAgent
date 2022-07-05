@@ -17,4 +17,6 @@ public interface UserService extends ItemService<Integer, User> {
 
     List<User> getAllUsers() throws ServiceException;
 
+    List<User> getAllEmployees();
+
 }

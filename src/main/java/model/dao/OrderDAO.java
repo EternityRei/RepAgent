@@ -16,4 +16,6 @@ public interface OrderDAO extends CrudDAO<Integer, Order> {
     Order getByDescriptionAndUserId(String description, int userId);
 
     Order getByUserId(int userId);
+
+    List<Order> getAllOrdersByUserId(int userId);
 }

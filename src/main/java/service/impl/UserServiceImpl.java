@@ -52,6 +52,15 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public List<User> getAllEmployees() {
+        List<User> allEmpl = userDAO.getAllEmpl();
+
+        return allEmpl.stream()
+                .filter(p -> p.getAccessLevel() == 3)
+                .collect(Collectors.toList());
+    }
+
+    @Override
     public User getEntity(Integer id) throws DatabaseException, ServiceException {
         try{
             User user = userDAO.getById(id);

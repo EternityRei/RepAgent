@@ -1,5 +1,6 @@
-package controller.command.admin;
+package controller.command.employee;
 
+import controller.command.Command;
 import controller.command.utils.CommandUtil;
 import model.enity.Order;
 import model.enity.User;
@@ -13,41 +14,29 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.Objects;
 
-public class OrdersListCommand implements controller.command.Command {
+public class EmplOrdersListCommand implements Command {
 
-    private static final Logger log = Logger.getLogger(OrdersListCommand.class);
+    private static final Logger log = Logger.getLogger(EmplOrdersListCommand.class);
 
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) {
-        log.info("--------------Orders List Command--------------");
+        log.info("--------------Employee Orders List Command--------------");
 
         var serviceFactory = ServiceFactory.getInstance();
         var orderService = serviceFactory.getOrderService();
-        var userService = serviceFactory.getUserService();
         int id;
         Order order;
         try{
             List<Order> list = orderService.getAll();
             req.setAttribute("orders", list);
-            List<User> employeeList = userService.getAllEmployees();
-            req.setAttribute("employees", employeeList);
             String button = req.getParameter("btn");
             if(Objects.nonNull(button)){
                 if(button.equals("Submit")){
                     id = Integer.parseInt(req.getParameter("id"));
                     order = orderService.getEntity(id);
-                    float price = Float.parseFloat(req.getParameter("price"));
-                    order.setCost(price);
-                    int paymentStatus = Integer.parseInt(req.getParameter("paymentStatus"));
-                    order.setPaymentStatus(paymentStatus);
-                    int employeeId = Integer.parseInt(req.getParameter("worker"));
-                    order.setWorkerId(employeeId);
+                    int workStatus = Integer.parseInt(req.getParameter("workStatus"));
+                    order.setWorkStatus(workStatus);
                     orderService.update(order);
-                    CommandUtil.goToPage(req, resp, "/WEB-INF/view/managerPack/ordersList.jsp");
-                    return;
-                } else if (button.equals("delete")){
-                    id = Integer.parseInt("id");
-                    orderService.delete(id);
                     CommandUtil.goToPage(req, resp, "/WEB-INF/view/managerPack/ordersList.jsp");
                     return;
                 }

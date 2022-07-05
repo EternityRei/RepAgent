@@ -42,7 +42,7 @@
         <td><c:out value="${a.name}" /></td>
         <td><c:out value="${a.email}" /></td>
         <td><c:out value="${a.money}" /></td>
-        <td><a href="${pageContext.request.contextPath}/view/managerPack/increaseMoney?id=${a.id}&button=top-up">Top up</a></td>
+        <td><a href=${pageContext.request.contextPath}/view/managerPack/increaseMoney?id=${a.id}&button=top-up>Top up</a></td>
       </tr>
     </c:forEach>
 

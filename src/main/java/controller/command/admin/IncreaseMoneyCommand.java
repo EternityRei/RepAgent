@@ -25,14 +25,8 @@ public class IncreaseMoneyCommand implements controller.command.Command {
         String checkbox = req.getParameter("checkbox");
         if(Objects.nonNull(button) && Objects.nonNull(checkbox)){
             try{
-                if(button.equals("Top up") && checkbox.equals("on")){
-/*                    String path = req.getRequestURI();
-                    System.out.println(path);
-                    path = path.substring(path.indexOf("id"));
-                    System.out.println(path);
-                    path = path.substring(path.indexOf("&")+5);
-                    HttpSession session = req.getSession();*/
-                    id = Integer.parseInt(req.getParameter("user.id"));
+                if(button.equals("Top up")){
+                    id = Integer.parseInt(req.getParameter("id"));
                     user = userService.getEntity(id);
                     float money = Float.parseFloat(req.getParameter("sum"));
                     float existingMoney = user.getMoney();

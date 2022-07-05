@@ -27,7 +27,7 @@ public class OrderDatabaseDAO implements OrderDAO {
             pstmt.setFloat(3, order.getCost());
             pstmt.setInt(4, 1);
             pstmt.setInt(5, 1);
-            pstmt.setInt(6, order.getUser_id());
+            pstmt.setInt(6, order.getUserid());
             pstmt.setInt(7, order.getWorkerId());
             pstmt.setTimestamp(8, java.sql.Timestamp.from(Instant.now()));
             pstmt.execute();
@@ -64,10 +64,12 @@ public class OrderDatabaseDAO implements OrderDAO {
             pstmt.setFloat(3, order.getCost());
             pstmt.setInt(4, order.getPaymentStatus());
             pstmt.setInt(5, order.getWorkStatus());
-            pstmt.setInt(6, order.getUser_id());
+            pstmt.setInt(6, order.getUserid());
             pstmt.setInt(7, order.getWorkerId());
             pstmt.setTimestamp(8, order.getTimestamp());
+            pstmt.setInt(9, order.getId());
             pstmt.executeUpdate();
+            System.out.println(order.toString());
             log.info("Order was updated successful");
             return order;
         } catch (SQLException e){
@@ -89,7 +91,7 @@ public class OrderDatabaseDAO implements OrderDAO {
                 order.setCost(resultSet.getFloat(4));
                 order.setPaymentStatus(resultSet.getInt(5));
                 order.setWorkStatus(resultSet.getInt(6));
-                order.setUser_id(resultSet.getInt(7));
+                order.setUserid(resultSet.getInt(7));
                 order.setWorkerId(resultSet.getInt(8));
                 order.setTimestamp(resultSet.getTimestamp(9));
                 outputOrders.add(order);
@@ -228,6 +230,22 @@ public class OrderDatabaseDAO implements OrderDAO {
         }
     }
 
+    @Override
+    public List<Order> getAllOrdersByUserId(int userId) {
+        List<Order> listOrders = null;
+        try (Connection connection = Connector.getInstance().getConnection();
+             PreparedStatement statement = connection.prepareStatement(Constants.SELECT_USERS_ORDERS)) {
+            statement.setInt(1, userId);
+            ResultSet rs = statement.executeQuery();
+            listOrders = initOrder(rs);
+            log.info("successful getAllOrderByPersonID");
+            return listOrders;
+        } catch (SQLException e) {
+            throw new RuntimeException("Cannot getAllOrdersByUserId order", e);
+        }
+    }
+
+
     private List<Order> initOrder(ResultSet rs) throws SQLException {
         List<Order> outerBooks = new ArrayList<>();
         while (rs.next()) {
@@ -238,7 +256,7 @@ public class OrderDatabaseDAO implements OrderDAO {
             order.setCost(rs.getFloat(4));
             order.setPaymentStatus(rs.getInt(5));
             order.setWorkStatus(rs.getInt(6));
-            order.setUser_id(rs.getInt(7));
+            order.setUserid(rs.getInt(7));
             order.setWorkerId(rs.getInt(8));
             order.setTimestamp(rs.getTimestamp(9));
             outerBooks.add(order);

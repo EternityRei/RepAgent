@@ -155,11 +155,11 @@ public class Order extends Model{
         this.title = title;
     }
 
-    public int getUser_id() {
+    public int getUserid() {
         return user_id;
     }
 
-    public void setUser_id(int user_id) {
+    public void setUserid(int user_id) {
         this.user_id = user_id;
     }
 
@@ -189,7 +189,7 @@ public class Order extends Model{
                 && Float.compare(order.getCost(), getCost()) == 0
                 && getPaymentStatus() == order.getPaymentStatus()
                 && getWorkStatus() == order.getWorkStatus()
-                && getUser_id() == order.getUser_id()
+                && getUserid() == order.getUserid()
                 && getWorkerId() == order.getWorkerId()
                 && getTitle().equals(order.getTitle())
                 && getDescription().equals(order.getDescription())
@@ -201,7 +201,7 @@ public class Order extends Model{
     public int hashCode() {
         return Objects.hash(getId(), getTitle(),
                 getDescription(), getCost(), getPaymentStatus(),
-                getWorkStatus(), getUser_id(), getWorkerId(),
+                getWorkStatus(), getUserid(), getWorkerId(),
                 currentTime, getTimestamp());
     }
 

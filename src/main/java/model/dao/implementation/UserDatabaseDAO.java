@@ -175,4 +175,27 @@ public class UserDatabaseDAO implements UserDAO {
         return 0;
     }
 
+    @Override
+    public List<User> getAllEmpl() {
+        List<User> outputUsers = new ArrayList<>();
+        try(Connection con = Connector.getInstance().getConnection();
+            PreparedStatement pstmt = con.prepareStatement(Constants.SELECT_ALL_USERS_FOR_EMPLOYEES)){
+            ResultSet resultSet = pstmt.executeQuery();
+            while (resultSet.next()){
+                User user = new User();
+                user.setId(resultSet.getInt(1));
+                user.setName(resultSet.getString(2));
+                user.setEmail(resultSet.getString(3));
+                user.setPasswd(resultSet.getString(4));
+                user.setMoney(resultSet.getFloat(5));
+                user.setAccessLevel(resultSet.getInt(6));
+                outputUsers.add(user);
+            }
+            log.info("All employees were found successful");
+            return outputUsers;
+        } catch (SQLException e){
+            throw new RuntimeException("Cannot find all employees ", e);
+        }
+    }
+
 }

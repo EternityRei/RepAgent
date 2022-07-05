@@ -1,24 +1,21 @@
-import "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js";
+$(document).ready(function() {
+    $('#edit-modal').on('show.bs.modal', function (event) {
+        var btn = $(event.relatedTarget),
+            id = btn.data('id');
+            payment = btn.data('payment_id');
+            work_status = btn.data('work_status_id');
+            worker = btn.data('worker');
 
-$(document).on('click', '.edit', function() {
-    $(this).parent().siblings('td.data').each(function() {
-        var content = $(this).html();
-        $(this).html('<input value="' + content + '" />');
-    });
-    $(this).siblings('.save').show();
-    $(this).siblings('.delete').hide();
-    $(this).hide();
-});
-$(document).on('click', '.save', function() {
-    $('input').each(function() {
-        var content = $(this).val();
-        $(this).html(content);
-        $(this).contents().unwrap();
-    });
-    $(this).siblings('.edit').show();
-    $(this).siblings('.delete').show();
-    $(this).hide();
-});
-$(document).on('click', '.delete', function() {
-    $(this).parents('tr').remove();
-});
+        $('#edit-modal').find('#edit-id').val(id);
+        $('#edit-modal').find('#edit-payment').val(payment);
+        $('#edit-modal').find('#edit-work-status').val(work_status);
+        $('#edit-modal').find('#edit-worker').val(worker);
+    })
+
+    $('#delete-modal').on('show.bs.modal', function (event) {
+        var btn = $(event.relatedTarget),
+            title = btn.data('title');
+
+        $('#delete-modal').find('#delete-title').text(title);
+    })
+})

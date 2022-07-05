@@ -51,7 +51,7 @@ public class RegistrationCommand implements Command {
                     user.setAccessLevel(2);
                     userService.add(user);
 
-                    req.getSession().setAttribute("user", user);
+                    req.getSession().setAttribute("person", user);
 
                     String page = CommandUtil.getUserPageByRole(user.getAccessLevel());
 

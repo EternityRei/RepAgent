@@ -5,6 +5,7 @@ import controller.command.admin.*;
 import controller.command.customer.MakeAnOrderCommand;
 import controller.command.customer.OrdersListCustomerCommand;
 import controller.command.customer.SuccessMakeOrderCommand;
+import controller.command.employee.EmplOrdersListCommand;
 import controller.command.utils.OperationConstant;
 import model.exception.NotFoundOperationException;
 
@@ -31,6 +32,7 @@ public class CommandFactory {
                 commandMap.put(OperationConstant.SUCCESS_ADD_EMPLOYEE, new SuccessAddEmployeeCommand());
                 commandMap.put(OperationConstant.SUCCESS_MAKE_ORDER, new SuccessMakeOrderCommand());
                 commandMap.put(OperationConstant.INCREASE_MONEY, new IncreaseMoneyCommand());
+                commandMap.put(OperationConstant.EMPL_ORDERS_LIST, new EmplOrdersListCommand());
                 //commandMap.put(OperationConstant.HOME, new HomePageCommand());
         }
 

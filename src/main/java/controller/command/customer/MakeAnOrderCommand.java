@@ -40,11 +40,10 @@ public class MakeAnOrderCommand implements Command {
                 User user = (User) session.getAttribute("person");
                 int userId = user.getId();
 
-                var order = orderService.getByUserId(userId);
+                //var order = orderService.getByUserId(userId);
 
-                if (Objects.nonNull(order)) {
-                    throw new ServiceException();
-                } else {
+
+                Order order;
                     order = new Order.OrderBuilderImpl()
                             .setTitle(title)
                             .setDescription(description)
@@ -59,7 +58,7 @@ public class MakeAnOrderCommand implements Command {
 
                     return;
                 }
-            } catch (ServiceException e) {
+            catch (ServiceException e) {
                 System.out.println(e.getMessage());
                 log.error(e.getMessage());
                 req.setAttribute("cannot add order", true);

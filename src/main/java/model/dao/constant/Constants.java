@@ -15,7 +15,8 @@ public final class Constants {
     public static final String DELETE_ORDER = "DELETE FROM \"Order\" WHERE \"id\" = ?";
 
     public static final String UPDATE_USER = "UPDATE \"Person\" SET \"name\" = ?, \"email\" = ?, \"passwd\" = ?, \"money\" = ?, \"role_access_level\" = ? WHERE \"id\" = ?";
-    public static final String UPDATE_ORDER = "UPDATE \"Order\" SET \"title\" = ?, \"description\" = ?, \"cost\" = ?, \"payment_id\" = ?, \"work_status_id\" = ?, \"person_id\", \"person_role_access_level\" WHERE \"id\" = ?";
+    public static final String UPDATE_ORDER = "UPDATE \"Order\" SET \"title\" = ?, \"description\" = ?, \"cost\" = ?, \"payment_id\" = ?, " +
+            "\"work_status_id\" = ?, \"person_id\" = ?, \"employee_id\" = ?, \"date\" = ? WHERE \"id\" = ?";
 
     public static final String ALL_USERS = "SELECT * FROM \"Person\" WHERE \"role_access_level\" = 2";
     public static final String ALL_ORDERS = "SELECT * FROM \"Order\"";
@@ -27,9 +28,9 @@ public final class Constants {
     public static final String SELECT_REVIEW_BY_ORDER_ID = "SELECT * FROM \"Review\" WHERE \"order_id\" = ?";
     public static final String SELECT_REVIEW_BY_USER_AND_ORDER_ID = "SELECT * FROM \"Review\" WHERE \"person_id\" = ? AND \"order_id\" = ?";
 
-    public static final String ALL_ORDER_USER_ID = "SELECT * FROM \"Order\" WHERE \"work_status_id\" = 1 and \"payment_id = 2\" and \"person_id\" = ? AND \"person_role_access_level\" = 2";
-    public static final String ALL_ORDER_WORKER_ID = "SELECT * FROM \"Order\" WHERE \"work_status_id\" = 1 and \"payment_id = 2\" and \"person_id\" = ? and \"person_role_access_level\" = 3";
-    public static final String ALL_ORDER_IN_PROCESS = "SELECT * FROM \"Order\" WHERE \"work_status_id\" = 1 and \"payment_id = 2\" and \"person_id\" = ?";
+    public static final String ALL_ORDER_USER_ID = "SELECT * FROM \"Order\" WHERE \"person_id\" = ?";
+    public static final String ALL_ORDER_WORKER_ID = "SELECT * FROM \"Order\" WHERE and \"person_id\" = ?";
+    public static final String ALL_ORDER_IN_PROCESS = "SELECT * FROM \"Order\" WHERE \"person_id\" = ?";
     public static final String SELECT_MANAGER_NAME_TO_JSP = "SELECT FROM \"Person\" WHERE \"role_access_level\" = 4";
 
 
@@ -37,5 +38,8 @@ public final class Constants {
     * Constants for JSP pages
     */
     public static final String SELECT_USERS = "Select * from \"Person\" where \"role_access_level\" = 2";
+    public static final String SELECT_USERS_ORDERS = "SELECT * FROM \"Order\" WHERE \"person_id\" = ?";
+
+    public static final String SELECT_ALL_USERS_FOR_EMPLOYEES = "SELECT * FROM \"Person\"";
 }
 

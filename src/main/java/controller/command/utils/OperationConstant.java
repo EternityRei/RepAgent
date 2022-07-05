@@ -19,6 +19,8 @@ public interface OperationConstant {
     String ADD_EMPLOYEE = "/view/managerPack/addEmployee";
     String SUCCESS_ADD_EMPLOYEE = "/view/managerPack/successAddEmployee";
 
+    String INCREASE_MONEY = "/view/managerPack/increaseMoney";
+
     /*
     * Customer Constants
     */
@@ -26,5 +28,6 @@ public interface OperationConstant {
     String MAKE_AN_ORDER = "/view/customerPack/makeOrder";
     String SUCCESS_MAKE_ORDER = "/view/customerPack/successMakeOrder";
 
-    String INCREASE_MONEY = "/view/managerPack/increaseMoney";
+    String EMPL_ORDERS_LIST = "/view/employeePack/ordersList";
+
 }

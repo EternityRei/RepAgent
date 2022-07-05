@@ -12,4 +12,6 @@ public interface UserDAO extends CrudDAO<Integer, User> {
     User getByLogin(String email);
 
     int getCountBlocked(List<User> person);
+
+    List<User> getAllEmpl();
 }
