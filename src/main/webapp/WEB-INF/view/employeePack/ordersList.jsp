@@ -18,15 +18,15 @@
     <table>
         <thead>
         <tr>
-            <th col-index="1">Id</th>
-            <th col-index="2">Title</th>
-            <th col-index="3">Description</th>
-            <th col-index="4">Cost</th>
-            <th col-index="5">Payment</th>
-            <th col-index="6">Work status</th>
-            <th col-index="7">User Unique Code</th>
-            <th col-index="8">Employee Unique Code</th>
-            <th col-index="9">Date</th>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Cost</th>
+            <th>Payment</th>
+            <th>Work status</th>
+            <th>User Unique Code</th>
+            <th>Employee Unique Code</th>
+            <th>Date</th>
             <th></th>
         </tr>
         </thead>
@@ -39,58 +39,40 @@
                 <td><c:out value="${order.title}" /></td>
                 <td><c:out value="${order.description}" /></td>
                 <td><c:out value="${order.cost}" /></td>
-                <td><c:out value="${order.getPaymentStatus()}" /></td>
-                <td><c:out value="${order.getWorkStatus()}" /></td>
+                <td>
+                    <c:if test="${order.getPaymentStatus() == 1}">
+                        <c:out value="Not paid" />
+                    </c:if>
+                    <c:if test="${order.getPaymentStatus() == 2}">
+                        <c:out value="Paid" />
+                    </c:if>
+                    <c:if test="${order.getPaymentStatus() == 3}">
+                        <c:out value="Canceled" />
+                    </c:if>
+                </td>
+                <td>
+                    <c:if test="${order.getWorkStatus() == 1}">
+                        <c:out value="Not started" />
+                    </c:if>
+                    <c:if test="${order.getWorkStatus() == 2}">
+                        <c:out value="In process" />
+                    </c:if>
+                    <c:if test="${order.getWorkStatus() == 3}">
+                        <c:out value="Done" />
+                    </c:if>
+                </td>
                 <td><c:out value="${order.getUserid()}" /></td>
                 <td><c:out value="${order.getWorkerId()}" /></td>
                 <td><c:out value="${order.getTimestamp()}" /></td>
                 <td>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit-modal"
-                            data-price="" data-payment_id=""
-                            data-work_status_id="" data-employee_id="" name="btn">Edit</button>
+                    <a href="${pageContext.request.contextPath}/view/employeePack/editOrderData?id=${order.id}&workStatus=${order.getWorkStatus()}">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" name="btn">Edit</button>
+                    </a>
                 </td>
             </tr>
         </c:forEach>
         </tbody>
     </table>
-    <div class="modal fade" id="edit-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <form>
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="ModalLabel">Edit</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label>Order Unique Code</label>
-                            <input type="text" class="form-control" id="edit-id" name="id">
-                        </div>
-                        <div class="form-group">
-                            <label>Work status</label>
-                            <select name="workStatus" id="work_status">
-                                <option value="1">Not started</option>
-                                <option value="2">In process</option>
-                                <option value="3">Done</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <a href=${pageContext.request.contextPath}/view/employeePack/ordersList>
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </a>
-
-                        <a href="${pageContext.request.contextPath}/view/employeePack/ordersList">
-                            <button class="btn btn-primary" name="btn" value="Submit">Submit</button>
-                        </a>
-
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script href="${pageContext.request.contextPath}/js/editTableScript.js"></script>
 </div>

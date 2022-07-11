@@ -13,8 +13,10 @@ public final class Constants {
 
     public static final String DELETE_USER = "DELETE FROM \"Person\" WHERE \"id\" = ?";
     public static final String DELETE_ORDER = "DELETE FROM \"Order\" WHERE \"id\" = ?";
+    public static final String DELETE_REVIEW = "DELETE FROM \"Review\" WHERE \"id\" = ?";
 
     public static final String UPDATE_USER = "UPDATE \"Person\" SET \"name\" = ?, \"email\" = ?, \"passwd\" = ?, \"money\" = ?, \"role_access_level\" = ? WHERE \"id\" = ?";
+    public static final String UPDATE_REVIEW = "UPDATE \"Review\" SET \"content\" = ?, \"rating\" = ?, \"date_work_done\" = ?, \"person_id\" = ?, \"order_id\" = ? WHERE \"id\" = ?";
     public static final String UPDATE_ORDER = "UPDATE \"Order\" SET \"title\" = ?, \"description\" = ?, \"cost\" = ?, \"payment_id\" = ?, " +
             "\"work_status_id\" = ?, \"person_id\" = ?, \"employee_id\" = ?, \"date\" = ? WHERE \"id\" = ?";
 

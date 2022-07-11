@@ -9,6 +9,7 @@ import service.factory.ServiceFactory;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 public class ManagerPageCommand implements Command {
@@ -16,27 +17,12 @@ public class ManagerPageCommand implements Command {
 
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) {
+        HttpSession session = req.getSession();
+        User user = (User) session.getAttribute("person");
+        float balance = user.getMoney();
+        String name = user.getName();
+        req.setAttribute("balance", balance);
+        req.setAttribute("username", name);
         CommandUtil.goToPage(req, resp, "/WEB-INF/view/manager.jsp");
-/*        var factory = ServiceFactory.getInstance();
-        var orderService = factory.getOrderService();
-        var userService = factory.getUserService();
-
-        try {
-
-            List<User> userList = userService.getAllUsers();
-            List<Order> orderList = orderService.getAllOrder();
-            List<Order> allOrders = orderService.getAll();
-
-            req.setAttribute("users", userList.size());
-            req.setAttribute("active", userList.size() - factory.getUserService().getAllBlocked());
-            req.setAttribute("blocked", factory.getUserService().getAllBlocked());
-            req.setAttribute("orders", allOrders.size());
-            req.setAttribute("user_order", orderList.size());
-
-        } catch (ServiceException e) {
-            logger.error("serviceException in page admin ");
-            CommandUtil.goToPage(req, resp, "/WEB-INF/view/manager.jsp");
-        }
-        CommandUtil.goToPage(req, resp, "/WEB-INF/view/manager.jsp");*/
     }
 }

@@ -9,6 +9,7 @@ import service.factory.ServiceFactory;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 public class EmployeePageCommand implements Command {
@@ -17,6 +18,11 @@ public class EmployeePageCommand implements Command {
 
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) {
+        HttpSession session = req.getSession();
+        User user = (User) session.getAttribute("person");
+        float balance = user.getMoney();
+        req.setAttribute("balance", balance);
+
         var factory = ServiceFactory.getInstance();
         var orderService = factory.getOrderService();
         var userService = factory.getUserService();

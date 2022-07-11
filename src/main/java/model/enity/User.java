@@ -2,6 +2,7 @@ package model.enity;
 
 import model.builder.UserBuilder;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 public class User extends Model{
@@ -157,5 +158,14 @@ public class User extends Model{
                 ", accessLevel=" + accessLevel +
                 ", money=" + money +
                 '}';
+    }
+
+    public static class IdComparator implements Comparator<User>{
+        @Override
+        public int compare(User u1, User u2) {
+            String u1Id = String.valueOf(u1.getId());
+            String u2Id = String.valueOf(u2.getId());
+            return u1Id.compareTo(u2Id);
+        }
     }
 }

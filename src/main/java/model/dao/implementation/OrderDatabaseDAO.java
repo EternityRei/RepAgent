@@ -31,6 +31,8 @@ public class OrderDatabaseDAO implements OrderDAO {
             pstmt.setInt(7, order.getWorkerId());
             pstmt.setTimestamp(8, java.sql.Timestamp.from(Instant.now()));
             pstmt.execute();
+            log.info(order.toString());
+            log.info(order.getId());
             log.info("Order was added successful");
             con.commit();
             return true;
@@ -59,6 +61,7 @@ public class OrderDatabaseDAO implements OrderDAO {
     public Order updateEntity(Order order) {
         try(Connection con = Connector.getInstance().getConnection();
             PreparedStatement pstmt = con.prepareStatement(Constants.UPDATE_ORDER)){
+            con.setAutoCommit(false);
             pstmt.setString(1, order.getTitle());
             pstmt.setString(2, order.getDescription());
             pstmt.setFloat(3, order.getCost());
@@ -68,9 +71,9 @@ public class OrderDatabaseDAO implements OrderDAO {
             pstmt.setInt(7, order.getWorkerId());
             pstmt.setTimestamp(8, order.getTimestamp());
             pstmt.setInt(9, order.getId());
-            pstmt.executeUpdate();
-            System.out.println(order.toString());
+            pstmt.execute();
             log.info("Order was updated successful");
+            con.commit();
             return order;
         } catch (SQLException e){
             throw new RuntimeException("Cannot update order ", e);
@@ -113,7 +116,7 @@ public class OrderDatabaseDAO implements OrderDAO {
             resultSet.next();
             log.info("successful getById order");
             return new Order.OrderBuilderImpl()
-                    .setId(id)
+                    .setId(resultSet.getInt("id"))
                     .setTitle(resultSet.getString("title"))
                     .setDescription(resultSet.getString("description"))
                     .setPrice(resultSet.getFloat("cost"))

@@ -1,6 +1,7 @@
 package controller.command.admin;
 
 import controller.command.utils.CommandUtil;
+import controller.command.utils.Utils;
 import model.enity.User;
 import model.exception.DatabaseException;
 import model.exception.ServiceException;
@@ -25,6 +26,7 @@ public class CustomersListCommand implements controller.command.Command {
         var userService = serviceFactory.getUserService();
         try{
             List<User> list = userService.getAllUsers();
+            Utils.sortPeople(req, list);
             req.setAttribute("people", list);
             CommandUtil.goToPage(req, resp, "/WEB-INF/view/managerPack/customersList.jsp");
         } catch (ServiceException e) {

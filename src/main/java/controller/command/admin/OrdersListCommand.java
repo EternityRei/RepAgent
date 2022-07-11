@@ -1,6 +1,7 @@
 package controller.command.admin;
 
 import controller.command.utils.CommandUtil;
+import controller.command.utils.Utils;
 import model.enity.Order;
 import model.enity.User;
 import model.exception.DatabaseException;
@@ -29,6 +30,7 @@ public class OrdersListCommand implements controller.command.Command {
         try{
             List<Order> list = orderService.getAll();
             req.setAttribute("orders", list);
+            Utils.sortOrders(list);
             List<User> employeeList = userService.getAllEmployees();
             req.setAttribute("employees", employeeList);
             String button = req.getParameter("btn");
@@ -43,11 +45,6 @@ public class OrdersListCommand implements controller.command.Command {
                     int employeeId = Integer.parseInt(req.getParameter("worker"));
                     order.setWorkerId(employeeId);
                     orderService.update(order);
-                    CommandUtil.goToPage(req, resp, "/WEB-INF/view/managerPack/ordersList.jsp");
-                    return;
-                } else if (button.equals("delete")){
-                    id = Integer.parseInt("id");
-                    orderService.delete(id);
                     CommandUtil.goToPage(req, resp, "/WEB-INF/view/managerPack/ordersList.jsp");
                     return;
                 }

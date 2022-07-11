@@ -10,9 +10,11 @@ import java.util.Map;
 
 public interface ReviewService extends ItemService<Integer, Review> {
 
-    public List<User> findByUserId(int userId);
+    public List<Review> findByUserId(int userId);
 
-    public List<Order> findByOrderId(int orderId);
+    public List<Review> findByOrderId(int orderId);
 
-    public Map<User, Order> findByUserAndOrderId(int userId, int orderId);
+    public List<Review> findByUserAndOrderId(int userId, int orderId);
+
+    public List<Review> getAll();
 }

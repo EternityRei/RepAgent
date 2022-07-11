@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 
 import javax.naming.NamingException;
 import java.sql.*;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,8 +24,8 @@ public class ReviewDatabaseDAO implements ReviewDAO {
         con.setAutoCommit(false);
         try(PreparedStatement pstmt = con.prepareStatement(Constants.INSERT_REVIEW)){
             pstmt.setString(1, review.getContent());
-            pstmt.setDate(2, (Date) review.getDateWorkDone());
-            pstmt.setFloat(3, review.getRating());
+            pstmt.setFloat(2, review.getRating());
+            pstmt.setTimestamp(3, java.sql.Timestamp.from(Instant.now()));
             pstmt.setInt(4, review.getUserId());
             pstmt.setInt(5, review.getOrderId());
             pstmt.execute();
@@ -61,7 +62,7 @@ public class ReviewDatabaseDAO implements ReviewDAO {
     @Override
     public boolean deleteEntity(Integer reviewId) throws SQLException {
         Connection con = Connector.getInstance().getConnection();
-        try(PreparedStatement pstmt = con.prepareStatement(Constants.DELETE_USER)){
+        try(PreparedStatement pstmt = con.prepareStatement(Constants.DELETE_REVIEW)){
             pstmt.setInt(1, reviewId);
             pstmt.executeUpdate();
             log.info("Review was deleted successful");
@@ -76,7 +77,7 @@ public class ReviewDatabaseDAO implements ReviewDAO {
     @Override
     public Review updateEntity(Review review) {
         try(Connection con = Connector.getInstance().getConnection();
-            PreparedStatement pstmt = con.prepareStatement(Constants.UPDATE_USER)){
+            PreparedStatement pstmt = con.prepareStatement(Constants.UPDATE_REVIEW)){
             pstmt.setInt(1, review.getReviewId());
             pstmt.setString(2, review.getContent());
             pstmt.setDate(3, (Date) review.getDateWorkDone());

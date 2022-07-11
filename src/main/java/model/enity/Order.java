@@ -5,6 +5,7 @@ import model.builder.OrderBuilder;
 import java.sql.Date;
 import java.sql.Timestamp;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 public class Order extends Model{
@@ -21,7 +22,7 @@ public class Order extends Model{
 
 
     public Order(OrderBuilderImpl orderBuilder){
-        super(orderBuilder.id);
+        this.id = orderBuilder.id;
         this.cost = orderBuilder.cost;
         this.description = orderBuilder.description;
         this.workStatus = orderBuilder.workStatus;
@@ -218,5 +219,14 @@ public class Order extends Model{
                 ", workerId=" + workerId +
                 ", timestamp=" + timestamp +
                 '}';
+    }
+
+    public static class IdComparator implements Comparator<Order> {
+        @Override
+        public int compare(Order o1, Order o2) {
+            String o1Id = String.valueOf(o1.getId());
+            String o2Id = String.valueOf(o2.getId());
+            return o1Id.compareTo(o2Id);
+        }
     }
 }

@@ -198,7 +198,10 @@
                 </button>
                 <div class="profile">
                     <div class="info">
-                        <p>Hey, <b>customer</b></p>
+                        <div class="balance">
+                            <p>Balance: ${balance}</p>
+                        </div>
+                        <p>Hey, <b>${username}</b></p>
                         <small class="text-muted">Customer</small>
                     </div>
                 </div>

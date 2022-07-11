@@ -53,6 +53,7 @@ public class MakeAnOrderCommand implements Command {
                     orderService.add(order);
 
                     req.getSession().setAttribute("order", order);
+                    log.info(order.toString());
 
                     log.info("successful add order");
 

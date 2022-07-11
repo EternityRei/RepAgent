@@ -2,8 +2,10 @@ package service.factory;
 
 import org.apache.log4j.Logger;
 import service.OrderService;
+import service.ReviewService;
 import service.UserService;
 import service.impl.OrderServiceImpl;
+import service.impl.ReviewServiceImpl;
 import service.impl.UserServiceImpl;
 
 public class ServiceFactory {
@@ -11,6 +13,7 @@ public class ServiceFactory {
 
     private UserService userService = new UserServiceImpl();
     private OrderService orderService = new OrderServiceImpl();
+    private ReviewService reviewService = new ReviewServiceImpl();
 
     private static ServiceFactory instance;
 
@@ -30,5 +33,8 @@ public class ServiceFactory {
 
     public OrderService getOrderService(){
         return orderService;
+    }
+    public ReviewService getReviewService(){
+        return reviewService;
     }
 }

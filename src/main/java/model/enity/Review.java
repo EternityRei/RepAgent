@@ -14,7 +14,7 @@ public class Review extends Model{
     private int orderId;
 
     public Review(Review.ReviewBuilderImpl reviewBuilder){
-        super(reviewBuilder.reviewId);
+        this.reviewId = reviewBuilder.reviewId;
         this.content = reviewBuilder.content;
         this.dateWorkDone = reviewBuilder.dateWorkDone;
         this.rating = reviewBuilder.rating;

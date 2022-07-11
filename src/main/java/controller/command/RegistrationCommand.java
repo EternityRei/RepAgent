@@ -57,6 +57,8 @@ public class RegistrationCommand implements Command {
 
                     CommandUtil.goToPage(req, resp, page);
 
+                    log.info(user.toString());
+
                     log.info("successful registration");
 
                     return;

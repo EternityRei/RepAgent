@@ -1390,3 +1390,1451 @@ Stacktrace:
 19:11:19,928  INFO http-nio-8080-exec-2 OrdersListCommand:execute:22 - --------------Orders List Command--------------
 19:11:19,969  INFO http-nio-8080-exec-2 OrderDatabaseDAO:getAll:99 - All orders were found successful
 19:11:19,971  INFO http-nio-8080-exec-2 UserDatabaseDAO:getAllEmpl:194 - All employees were found successful
+19:15:11,075  INFO http-nio-8080-exec-3 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+19:15:12,325  INFO http-nio-8080-exec-3 OrderDatabaseDAO:getAll:99 - All orders were found successful
+19:15:12,329  INFO http-nio-8080-exec-3 UserDatabaseDAO:getAllEmpl:194 - All employees were found successful
+21:47:15,949  INFO http-nio-8080-exec-7 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+21:47:16,191  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+21:47:16,199  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+21:47:16,200  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+21:47:44,969  INFO http-nio-8080-exec-10 UserDatabaseDAO:getByLoginAndPass:142 - User was found successful by login and password
+21:47:56,827  INFO http-nio-8080-exec-1 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+21:47:57,014  INFO http-nio-8080-exec-1 OrderDatabaseDAO:getAllOrdersByPersonID:170 - successful getAllOrderByPersonID
+21:47:59,086  INFO http-nio-8080-exec-2 MakeAnOrderCommand:execute:28 - -----------Make An Order-----------
+21:49:25,267  INFO http-nio-8080-exec-4 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+21:49:25,274  INFO http-nio-8080-exec-5 MakeAnOrderCommand:execute:28 - -----------Make An Order-----------
+21:49:25,277  INFO http-nio-8080-exec-4 OrderDatabaseDAO:getAll:99 - All orders were found successful
+21:49:25,280  INFO http-nio-8080-exec-4 UserDatabaseDAO:getAllEmpl:194 - All employees were found successful
+21:49:26,025  INFO http-nio-8080-exec-5 OrderDatabaseDAO:add:34 - Order was added successful
+21:49:26,208  INFO http-nio-8080-exec-5 MakeAnOrderCommand:execute:57 - successful add order
+21:21:15,667  INFO http-nio-8080-exec-1 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+21:21:15,749  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+21:21:15,754  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+21:21:15,755  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+21:22:05,402  INFO http-nio-8080-exec-8 UserDatabaseDAO:getByLoginAndPass:142 - User was found successful by login and password
+21:22:13,283  INFO http-nio-8080-exec-9 CustomersListCommand:execute:23 - ---------------Customers List---------------
+21:22:13,288  INFO http-nio-8080-exec-9 UserDatabaseDAO:getAll:117 - All users were found successful
+21:28:58,744  INFO http-nio-8080-exec-3 CustomersListCommand:execute:23 - ---------------Customers List---------------
+21:29:01,313  INFO http-nio-8080-exec-3 UserDatabaseDAO:getAll:117 - All users were found successful
+21:33:16,269  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+21:33:16,343  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+21:33:16,348  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+21:33:16,350  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+21:33:29,802  INFO http-nio-8080-exec-1 UserDatabaseDAO:getByLoginAndPass:142 - User was found successful by login and password
+21:33:33,940  INFO http-nio-8080-exec-2 CustomersListCommand:execute:23 - ---------------Customers List---------------
+21:33:33,945  INFO http-nio-8080-exec-2 UserDatabaseDAO:getAll:117 - All users were found successful
+21:39:08,684  INFO http-nio-8080-exec-10 CustomersListCommand:execute:23 - ---------------Customers List---------------
+21:39:08,995  INFO http-nio-8080-exec-10 UserDatabaseDAO:getAll:117 - All users were found successful
+21:39:14,247  INFO http-nio-8080-exec-4 CustomersListCommand:execute:23 - ---------------Customers List---------------
+21:39:14,277  INFO http-nio-8080-exec-4 UserDatabaseDAO:getAll:117 - All users were found successful
+21:43:20,363  INFO http-nio-8080-exec-2 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+21:43:20,380  INFO http-nio-8080-exec-2 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+21:43:20,383  INFO http-nio-8080-exec-2 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+21:43:20,383  INFO http-nio-8080-exec-2 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+21:43:23,182  INFO http-nio-8080-exec-3 CustomersListCommand:execute:23 - ---------------Customers List---------------
+21:43:24,417  INFO http-nio-8080-exec-3 UserDatabaseDAO:getAll:117 - All users were found successful
+21:43:27,717  INFO http-nio-8080-exec-11 CustomersListCommand:execute:23 - ---------------Customers List---------------
+21:43:27,720  INFO http-nio-8080-exec-11 UserDatabaseDAO:getAll:117 - All users were found successful
+21:43:50,479  INFO http-nio-8080-exec-4 CustomersListCommand:execute:23 - ---------------Customers List---------------
+21:43:50,483  INFO http-nio-8080-exec-4 UserDatabaseDAO:getAll:117 - All users were found successful
+21:43:53,076  INFO http-nio-8080-exec-16 CustomersListCommand:execute:23 - ---------------Customers List---------------
+21:43:53,078  INFO http-nio-8080-exec-16 UserDatabaseDAO:getAll:117 - All users were found successful
+21:47:54,330  INFO http-nio-8080-exec-16 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+21:47:54,347  INFO http-nio-8080-exec-16 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+21:47:54,349  INFO http-nio-8080-exec-16 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+21:47:54,349  INFO http-nio-8080-exec-16 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+21:47:56,382  INFO http-nio-8080-exec-11 CustomersListCommand:execute:23 - ---------------Customers List---------------
+21:47:59,072  INFO http-nio-8080-exec-11 UserDatabaseDAO:getAll:117 - All users were found successful
+21:48:03,754  INFO http-nio-8080-exec-13 CustomersListCommand:execute:23 - ---------------Customers List---------------
+21:48:03,776  INFO http-nio-8080-exec-13 UserDatabaseDAO:getAll:117 - All users were found successful
+21:48:13,327  INFO http-nio-8080-exec-12 UserDatabaseDAO:getById:53 - successful getById user
+21:48:13,727  INFO http-nio-8080-exec-12 UserDatabaseDAO:updateEntity:94 - User was updated successful
+21:50:52,684  INFO http-nio-8080-exec-22 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+21:50:52,701  INFO http-nio-8080-exec-22 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+21:50:52,703  INFO http-nio-8080-exec-22 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+21:50:52,703  INFO http-nio-8080-exec-22 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+21:50:53,412  INFO http-nio-8080-exec-22 UserDatabaseDAO:getById:53 - successful getById user
+21:50:53,451  INFO http-nio-8080-exec-22 UserDatabaseDAO:updateEntity:94 - User was updated successful
+21:52:52,011  INFO http-nio-8080-exec-25 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+21:52:52,054  INFO http-nio-8080-exec-25 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+21:52:52,060  INFO http-nio-8080-exec-25 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+21:52:52,060  INFO http-nio-8080-exec-25 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+21:52:52,764  INFO http-nio-8080-exec-25 UserDatabaseDAO:getById:53 - successful getById user
+21:52:52,777  INFO http-nio-8080-exec-25 UserDatabaseDAO:updateEntity:94 - User was updated successful
+21:56:38,520  INFO http-nio-8080-exec-41 CustomersListCommand:execute:23 - ---------------Customers List---------------
+21:56:38,525  INFO http-nio-8080-exec-41 UserDatabaseDAO:getAll:117 - All users were found successful
+21:56:43,054  INFO http-nio-8080-exec-36 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+21:56:43,480  INFO http-nio-8080-exec-36 OrderDatabaseDAO:getAll:99 - All orders were found successful
+21:56:43,485  INFO http-nio-8080-exec-36 UserDatabaseDAO:getAllEmpl:194 - All employees were found successful
+21:57:22,986  INFO http-nio-8080-exec-39 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+21:57:22,990  INFO http-nio-8080-exec-39 OrderDatabaseDAO:getAll:99 - All orders were found successful
+21:57:22,992  INFO http-nio-8080-exec-39 UserDatabaseDAO:getAllEmpl:194 - All employees were found successful
+21:57:23,028  INFO http-nio-8080-exec-39 OrderDatabaseDAO:getById:114 - successful getById order
+21:57:23,915  INFO http-nio-8080-exec-39 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+22:14:35,533  INFO http-nio-8080-exec-42 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+22:14:35,923  INFO http-nio-8080-exec-42 OrderDatabaseDAO:getAll:99 - All orders were found successful
+22:14:35,939  INFO http-nio-8080-exec-42 UserDatabaseDAO:getAllEmpl:194 - All employees were found successful
+22:14:42,905  INFO http-nio-8080-exec-36 CustomersListCommand:execute:23 - ---------------Customers List---------------
+22:14:42,936  INFO http-nio-8080-exec-36 UserDatabaseDAO:getAll:117 - All users were found successful
+22:14:51,630  INFO http-nio-8080-exec-45 UserDatabaseDAO:getById:53 - successful getById user
+22:14:51,739  INFO http-nio-8080-exec-45 UserDatabaseDAO:updateEntity:94 - User was updated successful
+22:14:57,754  INFO http-nio-8080-exec-44 CustomersListCommand:execute:23 - ---------------Customers List---------------
+22:14:57,754  INFO http-nio-8080-exec-44 UserDatabaseDAO:getAll:117 - All users were found successful
+22:18:38,497  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+22:18:38,512  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+22:18:38,528  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+22:18:38,528  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+22:19:08,464  INFO http-nio-8080-exec-8 UserDatabaseDAO:getByLoginAndPass:142 - User was found successful by login and password
+22:19:12,523  INFO http-nio-8080-exec-9 CustomersListCommand:execute:23 - ---------------Customers List---------------
+22:19:12,523  INFO http-nio-8080-exec-9 UserDatabaseDAO:getAll:117 - All users were found successful
+22:20:06,646  INFO http-nio-8080-exec-2 UserDatabaseDAO:getById:53 - successful getById user
+22:20:31,748  INFO http-nio-8080-exec-2 UserDatabaseDAO:updateEntity:94 - User was updated successful
+22:26:28,668  INFO http-nio-8080-exec-2 CustomersListCommand:execute:23 - ---------------Customers List---------------
+22:26:28,856  INFO http-nio-8080-exec-2 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+22:26:28,887  INFO http-nio-8080-exec-2 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+22:26:28,887  INFO http-nio-8080-exec-2 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+22:26:28,887  INFO http-nio-8080-exec-2 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+22:26:29,590  INFO http-nio-8080-exec-2 UserDatabaseDAO:getAll:117 - All users were found successful
+22:26:31,727  INFO http-nio-8080-exec-4 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+22:26:44,867  INFO http-nio-8080-exec-11 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+22:26:44,882  INFO http-nio-8080-exec-11 UserDatabaseDAO:getById:53 - successful getById user
+22:26:44,898  INFO http-nio-8080-exec-11 UserDatabaseDAO:updateEntity:94 - User was updated successful
+22:26:44,898  INFO http-nio-8080-exec-11 IncreaseMoneyCommand:execute:40 - Success Increase Money Command
+22:31:44,263  INFO http-nio-8080-exec-5 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+22:31:44,325  INFO http-nio-8080-exec-5 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+22:31:44,356  INFO http-nio-8080-exec-5 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+22:31:44,356  INFO http-nio-8080-exec-5 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+22:32:35,334  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:142 - User was found successful by login and password
+22:33:08,957  INFO http-nio-8080-exec-8 CustomersListCommand:execute:23 - ---------------Customers List---------------
+22:33:57,629  INFO http-nio-8080-exec-8 UserDatabaseDAO:getAll:117 - All users were found successful
+22:34:26,601  INFO http-nio-8080-exec-9 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+22:34:52,818  INFO http-nio-8080-exec-10 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+22:35:05,678  INFO http-nio-8080-exec-10 UserDatabaseDAO:getById:53 - successful getById user
+22:40:34,311  INFO http-nio-8080-exec-10 UserDatabaseDAO:updateEntity:94 - User was updated successful
+22:40:34,342  INFO http-nio-8080-exec-10 IncreaseMoneyCommand:execute:40 - Success Increase Money Command
+22:41:43,053  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+22:41:43,084  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+22:41:43,084  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+22:41:43,084  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+22:41:55,024  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:145 - User was found successful by login and password
+22:42:00,110  INFO http-nio-8080-exec-8 CustomersListCommand:execute:23 - ---------------Customers List---------------
+22:42:00,110  INFO http-nio-8080-exec-8 UserDatabaseDAO:getAll:120 - All users were found successful
+22:42:02,009  INFO http-nio-8080-exec-10 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+22:42:24,097  INFO http-nio-8080-exec-9 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+22:43:19,194  INFO http-nio-8080-exec-9 UserDatabaseDAO:getById:53 - successful getById user
+14:18:26,187  INFO http-nio-8080-exec-5 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+14:18:26,235  INFO http-nio-8080-exec-5 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+14:18:26,240  INFO http-nio-8080-exec-5 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+14:18:26,241  INFO http-nio-8080-exec-5 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+14:18:45,018  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+14:18:49,944  INFO http-nio-8080-exec-8 CustomersListCommand:execute:23 - ---------------Customers List---------------
+14:18:49,948  INFO http-nio-8080-exec-8 UserDatabaseDAO:getAll:119 - All users were found successful
+14:18:52,909  INFO http-nio-8080-exec-2 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+14:19:27,955  INFO http-nio-8080-exec-6 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+14:19:43,552  INFO http-nio-8080-exec-6 UserDatabaseDAO:getById:53 - successful getById user
+14:20:57,703  INFO http-nio-8080-exec-6 UserDatabaseDAO:updateEntity:95 - User was updated successful
+14:21:06,231  INFO http-nio-8080-exec-6 IncreaseMoneyCommand:execute:40 - Success Increase Money Command
+14:32:06,521  INFO http-nio-8080-exec-9 CustomersListCommand:execute:23 - ---------------Customers List---------------
+14:32:06,581  INFO http-nio-8080-exec-9 UserDatabaseDAO:getAll:119 - All users were found successful
+17:32:48,192  INFO http-nio-8080-exec-1 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+17:32:48,348  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+17:32:48,364  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+17:32:48,364  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+17:33:10,563  INFO http-nio-8080-exec-2 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+17:33:17,359  INFO http-nio-8080-exec-3 CustomersListCommand:execute:24 - ---------------Customers List---------------
+17:33:17,359  INFO http-nio-8080-exec-3 UserDatabaseDAO:getAll:119 - All users were found successful
+17:33:17,405  INFO http-nio-8080-exec-3 Utils:sortPeople:17 - Sorting users by id
+17:33:33,385  INFO http-nio-8080-exec-5 CustomersListCommand:execute:24 - ---------------Customers List---------------
+17:33:33,401  INFO http-nio-8080-exec-5 UserDatabaseDAO:getAll:119 - All users were found successful
+17:33:33,401  INFO http-nio-8080-exec-5 Utils:sortPeople:17 - Sorting users by id
+17:33:53,926  INFO http-nio-8080-exec-7 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+17:34:04,644  INFO http-nio-8080-exec-10 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+17:34:04,784  INFO http-nio-8080-exec-10 UserDatabaseDAO:getById:53 - successful getById user
+17:34:04,972  INFO http-nio-8080-exec-10 UserDatabaseDAO:updateEntity:95 - User was updated successful
+17:34:05,035  INFO http-nio-8080-exec-10 IncreaseMoneyCommand:execute:40 - Success Increase Money Command
+17:34:08,889  INFO http-nio-8080-exec-1 CustomersListCommand:execute:24 - ---------------Customers List---------------
+17:34:08,890  INFO http-nio-8080-exec-1 UserDatabaseDAO:getAll:119 - All users were found successful
+17:34:08,891  INFO http-nio-8080-exec-1 Utils:sortPeople:17 - Sorting users by id
+17:34:53,112  INFO http-nio-8080-exec-4 AddEmployeeCommand:execute:23 - -----------Employee Adding-----------
+17:35:30,200  INFO http-nio-8080-exec-7 AddEmployeeCommand:execute:23 - -----------Employee Adding-----------
+17:35:30,200  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLogin:167 - successful getByLogin person
+17:35:30,778  INFO http-nio-8080-exec-7 UserDatabaseDAO:add:35 - User was added successful
+17:35:30,778  INFO http-nio-8080-exec-7 SuccessAddEmployeeCommand:execute:16 - ---------------Success Add Employee Command---------------
+17:35:30,996  INFO http-nio-8080-exec-7 SuccessAddEmployeeCommand:execute:20 - redirect success
+17:35:30,996  INFO http-nio-8080-exec-7 AddEmployeeCommand:execute:61 - employee was registered successful
+17:37:15,564  INFO http-nio-8080-exec-9 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+17:37:15,752  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAll:101 - All orders were found successful
+17:37:15,752  INFO http-nio-8080-exec-9 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+17:43:23,574  INFO http-nio-8080-exec-7 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+17:43:23,605  INFO http-nio-8080-exec-7 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+17:43:23,621  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+17:43:23,621  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+17:43:23,621  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+17:43:24,529  INFO http-nio-8080-exec-7 OrderDatabaseDAO:getAll:101 - All orders were found successful
+17:43:24,545  INFO http-nio-8080-exec-7 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+17:45:01,340  INFO http-nio-8080-exec-8 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+17:45:01,340  INFO http-nio-8080-exec-8 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+17:45:01,356  INFO http-nio-8080-exec-8 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+17:45:01,356  INFO http-nio-8080-exec-8 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+17:45:01,356  INFO http-nio-8080-exec-8 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+17:45:01,778  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAll:101 - All orders were found successful
+17:45:01,793  INFO http-nio-8080-exec-8 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+17:52:16,244  INFO http-nio-8080-exec-5 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+17:52:16,291  INFO http-nio-8080-exec-5 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+17:52:16,291  INFO http-nio-8080-exec-5 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+17:52:16,291  INFO http-nio-8080-exec-5 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+17:54:30,495  INFO http-nio-8080-exec-3 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+17:54:30,542  INFO http-nio-8080-exec-3 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+17:54:30,558  INFO http-nio-8080-exec-3 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+17:54:30,558  INFO http-nio-8080-exec-3 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+17:54:33,104  INFO http-nio-8080-exec-3 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+17:54:40,322  INFO http-nio-8080-exec-7 CustomersListCommand:execute:24 - ---------------Customers List---------------
+17:54:40,322  INFO http-nio-8080-exec-7 UserDatabaseDAO:getAll:119 - All users were found successful
+17:54:40,337  INFO http-nio-8080-exec-7 Utils:sortPeople:17 - Sorting users by id
+17:54:44,940  INFO http-nio-8080-exec-8 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+17:54:49,986  INFO http-nio-8080-exec-1 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+17:54:50,048  INFO http-nio-8080-exec-1 UserDatabaseDAO:getById:53 - successful getById user
+17:54:50,173  INFO http-nio-8080-exec-1 UserDatabaseDAO:updateEntity:95 - User was updated successful
+17:54:50,173  INFO http-nio-8080-exec-1 IncreaseMoneyCommand:execute:40 - Success Increase Money Command
+17:55:14,437  INFO http-nio-8080-exec-9 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+17:55:17,308  INFO http-nio-8080-exec-6 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+17:55:17,817  INFO http-nio-8080-exec-2 CustomersListCommand:execute:24 - ---------------Customers List---------------
+17:55:17,823  INFO http-nio-8080-exec-2 UserDatabaseDAO:getAll:119 - All users were found successful
+17:55:17,824  INFO http-nio-8080-exec-2 Utils:sortPeople:17 - Sorting users by id
+17:56:03,070  INFO http-nio-8080-exec-10 CustomersListCommand:execute:24 - ---------------Customers List---------------
+17:56:03,070  INFO http-nio-8080-exec-10 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+17:56:03,086  INFO http-nio-8080-exec-10 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+17:56:03,086  INFO http-nio-8080-exec-10 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+17:56:03,086  INFO http-nio-8080-exec-10 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+17:56:03,617  INFO http-nio-8080-exec-10 UserDatabaseDAO:getAll:119 - All users were found successful
+17:56:03,617  INFO http-nio-8080-exec-10 Utils:sortPeople:17 - Sorting users by id
+17:56:07,773  INFO http-nio-8080-exec-16 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+17:56:11,991  INFO http-nio-8080-exec-2 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+17:56:12,007  INFO http-nio-8080-exec-2 UserDatabaseDAO:getById:53 - successful getById user
+17:56:12,007  INFO http-nio-8080-exec-2 UserDatabaseDAO:updateEntity:95 - User was updated successful
+17:56:12,038  INFO http-nio-8080-exec-2 IncreaseMoneyCommand:execute:40 - Success Increase Money Command
+17:56:14,438  INFO http-nio-8080-exec-15 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+17:56:14,582  INFO http-nio-8080-exec-17 CustomersListCommand:execute:24 - ---------------Customers List---------------
+17:56:14,585  INFO http-nio-8080-exec-17 UserDatabaseDAO:getAll:119 - All users were found successful
+17:56:14,587  INFO http-nio-8080-exec-17 Utils:sortPeople:17 - Sorting users by id
+17:57:27,644  INFO http-nio-8080-exec-21 CustomersListCommand:execute:24 - ---------------Customers List---------------
+17:57:27,660  INFO http-nio-8080-exec-21 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+17:57:27,691  INFO http-nio-8080-exec-21 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+17:57:27,691  INFO http-nio-8080-exec-21 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+17:57:27,691  INFO http-nio-8080-exec-21 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+17:57:28,753  INFO http-nio-8080-exec-21 UserDatabaseDAO:getAll:119 - All users were found successful
+17:57:28,769  INFO http-nio-8080-exec-21 Utils:sortPeople:17 - Sorting users by id
+17:57:31,752  INFO http-nio-8080-exec-20 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+17:57:35,389  INFO http-nio-8080-exec-22 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+17:57:35,389  INFO http-nio-8080-exec-22 UserDatabaseDAO:getById:53 - successful getById user
+17:57:35,405  INFO http-nio-8080-exec-22 UserDatabaseDAO:updateEntity:95 - User was updated successful
+17:57:35,405  INFO http-nio-8080-exec-22 IncreaseMoneyCommand:execute:40 - Success Increase Money Command
+17:57:43,208  INFO http-nio-8080-exec-24 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+17:57:43,209  INFO http-nio-8080-exec-24 UserDatabaseDAO:getById:53 - successful getById user
+17:57:43,209  INFO http-nio-8080-exec-24 UserDatabaseDAO:updateEntity:95 - User was updated successful
+17:57:43,209  INFO http-nio-8080-exec-24 IncreaseMoneyCommand:execute:40 - Success Increase Money Command
+17:57:54,192  INFO http-nio-8080-exec-19 CustomersListCommand:execute:24 - ---------------Customers List---------------
+17:57:54,192  INFO http-nio-8080-exec-19 UserDatabaseDAO:getAll:119 - All users were found successful
+17:57:54,192  INFO http-nio-8080-exec-19 Utils:sortPeople:17 - Sorting users by id
+17:59:17,881  INFO http-nio-8080-exec-27 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+17:59:19,665  INFO http-nio-8080-exec-27 OrderDatabaseDAO:getAll:101 - All orders were found successful
+17:59:19,665  INFO http-nio-8080-exec-27 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+17:59:45,368  INFO http-nio-8080-exec-29 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+17:59:45,383  INFO http-nio-8080-exec-29 OrderDatabaseDAO:getAll:101 - All orders were found successful
+17:59:45,383  INFO http-nio-8080-exec-29 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+17:59:45,446  INFO http-nio-8080-exec-29 OrderDatabaseDAO:getById:116 - successful getById order
+17:59:45,696  INFO http-nio-8080-exec-29 OrderDatabaseDAO:updateEntity:74 - Order was updated successful
+17:59:52,313  INFO http-nio-8080-exec-30 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+17:59:52,313  INFO http-nio-8080-exec-30 OrderDatabaseDAO:getAll:101 - All orders were found successful
+17:59:52,313  INFO http-nio-8080-exec-30 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+17:59:52,313  INFO http-nio-8080-exec-30 OrderDatabaseDAO:getById:116 - successful getById order
+17:59:52,313  INFO http-nio-8080-exec-30 OrderDatabaseDAO:updateEntity:74 - Order was updated successful
+18:00:05,701  INFO http-nio-8080-exec-32 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:00:05,716  INFO http-nio-8080-exec-32 OrderDatabaseDAO:getAll:101 - All orders were found successful
+18:00:05,716  INFO http-nio-8080-exec-32 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:00:07,440  INFO http-nio-8080-exec-33 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:00:07,440  INFO http-nio-8080-exec-33 OrderDatabaseDAO:getAll:101 - All orders were found successful
+18:00:07,440  INFO http-nio-8080-exec-33 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:00:07,440  INFO http-nio-8080-exec-33 OrderDatabaseDAO:getById:116 - successful getById order
+18:00:07,440  INFO http-nio-8080-exec-33 OrderDatabaseDAO:updateEntity:74 - Order was updated successful
+18:00:10,268  INFO http-nio-8080-exec-34 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:00:10,409  INFO http-nio-8080-exec-34 OrderDatabaseDAO:getAll:101 - All orders were found successful
+18:00:10,409  INFO http-nio-8080-exec-34 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:00:12,730  INFO http-nio-8080-exec-35 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:00:12,730  INFO http-nio-8080-exec-35 OrderDatabaseDAO:getAll:101 - All orders were found successful
+18:00:12,730  INFO http-nio-8080-exec-35 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:00:12,730  INFO http-nio-8080-exec-35 OrderDatabaseDAO:getById:116 - successful getById order
+18:00:12,730  INFO http-nio-8080-exec-35 OrderDatabaseDAO:updateEntity:74 - Order was updated successful
+18:01:10,243  INFO http-nio-8080-exec-27 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:01:10,243  INFO http-nio-8080-exec-27 OrderDatabaseDAO:getAll:101 - All orders were found successful
+18:01:10,243  INFO http-nio-8080-exec-27 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:01:39,049  INFO http-nio-8080-exec-28 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:01:47,144  INFO http-nio-8080-exec-28 OrderDatabaseDAO:getAll:101 - All orders were found successful
+18:01:54,817  INFO http-nio-8080-exec-28 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:02:09,926  INFO http-nio-8080-exec-28 OrderDatabaseDAO:getById:116 - successful getById order
+18:03:44,716  INFO http-nio-8080-exec-28 OrderDatabaseDAO:updateEntity:74 - Order was updated successful
+18:09:29,635  INFO http-nio-8080-exec-34 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:09:29,667  INFO http-nio-8080-exec-34 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+18:09:29,667  INFO http-nio-8080-exec-34 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+18:09:29,682  INFO http-nio-8080-exec-34 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+18:09:29,682  INFO http-nio-8080-exec-34 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+18:09:45,784  INFO http-nio-8080-exec-34 OrderDatabaseDAO:getAll:100 - All orders were found successful
+18:09:45,800  INFO http-nio-8080-exec-34 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:09:45,878  INFO http-nio-8080-exec-34 OrderDatabaseDAO:getById:115 - successful getById order
+18:09:45,893  INFO http-nio-8080-exec-34 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+18:10:01,093  INFO http-nio-8080-exec-27 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:10:01,093  INFO http-nio-8080-exec-27 OrderDatabaseDAO:getAll:100 - All orders were found successful
+18:10:01,093  INFO http-nio-8080-exec-27 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:10:34,763  INFO http-nio-8080-exec-37 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:10:41,087  INFO http-nio-8080-exec-37 OrderDatabaseDAO:getAll:100 - All orders were found successful
+18:10:46,442  INFO http-nio-8080-exec-37 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:11:14,904  INFO http-nio-8080-exec-37 OrderDatabaseDAO:getById:115 - successful getById order
+18:11:53,036  INFO http-nio-8080-exec-37 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+18:12:42,189  INFO http-nio-8080-exec-39 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:12:42,189  INFO http-nio-8080-exec-39 OrderDatabaseDAO:getAll:100 - All orders were found successful
+18:12:42,205  INFO http-nio-8080-exec-39 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:12:42,205  INFO http-nio-8080-exec-39 OrderDatabaseDAO:getById:115 - successful getById order
+18:12:42,205  INFO http-nio-8080-exec-39 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+18:18:14,790  INFO http-nio-8080-exec-39 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:18:14,790  INFO http-nio-8080-exec-39 ServiceFactory:getInstance:19 - -------------Create ServiceFactory-------------
+18:18:14,805  INFO http-nio-8080-exec-39 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+18:18:14,821  INFO http-nio-8080-exec-39 DatabaseDAOFactory:getOrderDAO:24 - Get OrderDatabaseDAO
+18:18:14,821  INFO http-nio-8080-exec-39 DatabaseDAOFactory:getUserDAO:18 - Get UserDatabaseDAO
+18:18:15,665  INFO http-nio-8080-exec-39 OrderDatabaseDAO:getAll:100 - All orders were found successful
+18:18:15,665  INFO http-nio-8080-exec-39 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:18:28,296  INFO http-nio-8080-exec-38 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:18:28,296  INFO http-nio-8080-exec-38 OrderDatabaseDAO:getAll:100 - All orders were found successful
+18:18:28,296  INFO http-nio-8080-exec-38 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:18:28,374  INFO http-nio-8080-exec-38 OrderDatabaseDAO:getById:115 - successful getById order
+18:18:28,483  INFO http-nio-8080-exec-38 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+18:18:32,988  INFO http-nio-8080-exec-47 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:18:33,004  INFO http-nio-8080-exec-47 OrderDatabaseDAO:getAll:100 - All orders were found successful
+18:18:33,004  INFO http-nio-8080-exec-47 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:18:33,004  INFO http-nio-8080-exec-47 OrderDatabaseDAO:getById:115 - successful getById order
+18:18:33,004  INFO http-nio-8080-exec-47 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+18:48:35,836  INFO http-nio-8080-exec-55 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:48:35,914  INFO http-nio-8080-exec-55 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+18:48:35,961  INFO http-nio-8080-exec-55 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:48:35,961  INFO http-nio-8080-exec-55 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+18:48:35,961  INFO http-nio-8080-exec-55 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:48:35,977  INFO http-nio-8080-exec-55 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+18:48:37,648  INFO http-nio-8080-exec-55 OrderDatabaseDAO:getAll:100 - All orders were found successful
+18:48:37,664  INFO http-nio-8080-exec-55 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:48:37,853  INFO http-nio-8080-exec-55 OrderDatabaseDAO:getById:115 - successful getById order
+18:48:37,971  INFO http-nio-8080-exec-55 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+18:48:53,165  INFO http-nio-8080-exec-50 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:48:53,181  INFO http-nio-8080-exec-50 OrderDatabaseDAO:getAll:100 - All orders were found successful
+18:48:53,181  INFO http-nio-8080-exec-50 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:48:59,801  INFO http-nio-8080-exec-53 ReviewsListCommand:execute:20 - --------------Reviews List Command--------------
+18:48:59,801  INFO http-nio-8080-exec-53 ReviewDatabaseDAO:getAll:111 - All reviews were found successful
+17:00:47,710  INFO http-nio-8080-exec-7 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+17:00:47,929  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+17:00:47,929  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+17:00:47,950  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+17:00:47,950  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+17:01:26,847  INFO http-nio-8080-exec-10 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+17:01:35,168  INFO http-nio-8080-exec-2 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+17:01:35,346  INFO http-nio-8080-exec-2 OrderDatabaseDAO:getAllOrdersByPersonID:171 - successful getAllOrderByPersonID
+17:01:48,112  INFO http-nio-8080-exec-3 LeaveReviewCommand:execute:22 - ------------Leave Review Command------------
+17:01:51,038  INFO http-nio-8080-exec-6 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+17:01:51,038  INFO http-nio-8080-exec-6 OrderDatabaseDAO:getAllOrdersByPersonID:171 - successful getAllOrderByPersonID
+17:02:15,148  INFO http-nio-8080-exec-9 LeaveReviewCommand:execute:22 - ------------Leave Review Command------------
+17:02:18,581  INFO http-nio-8080-exec-10 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+17:02:18,597  INFO http-nio-8080-exec-10 OrderDatabaseDAO:getAllOrdersByPersonID:171 - successful getAllOrderByPersonID
+17:05:16,927  INFO http-nio-8080-exec-2 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+17:05:17,239  INFO http-nio-8080-exec-2 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+17:05:18,581  INFO http-nio-8080-exec-2 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+17:05:18,597  INFO http-nio-8080-exec-2 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+17:05:18,597  INFO http-nio-8080-exec-2 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+17:05:18,628  INFO http-nio-8080-exec-2 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+17:05:42,031  INFO http-nio-8080-exec-3 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+17:09:03,412  INFO http-nio-8080-exec-7 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+17:09:03,443  INFO http-nio-8080-exec-7 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+17:09:03,490  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+17:09:03,490  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+17:09:03,490  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+17:09:03,505  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+17:10:35,557  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+17:10:35,718  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+17:10:35,734  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+17:10:35,734  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+17:10:35,734  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+17:10:50,502  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+17:11:00,876  INFO http-nio-8080-exec-8 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+17:11:01,006  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAllOrdersByPersonID:171 - successful getAllOrderByPersonID
+17:11:07,949  INFO http-nio-8080-exec-10 LeaveReviewCommand:execute:22 - ------------Leave Review Command------------
+17:11:15,488  INFO http-nio-8080-exec-3 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+17:11:15,488  INFO http-nio-8080-exec-3 OrderDatabaseDAO:getAllOrdersByPersonID:171 - successful getAllOrderByPersonID
+13:57:58,217  INFO http-nio-8080-exec-1 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+13:57:58,314  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+13:57:58,329  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+13:57:58,329  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+13:57:58,348  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+13:58:21,967  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+13:58:25,469  INFO http-nio-8080-exec-9 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+13:58:25,638  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAll:100 - All orders were found successful
+13:58:25,641  INFO http-nio-8080-exec-9 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+14:00:42,881  INFO http-nio-8080-exec-9 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+14:00:42,889  INFO http-nio-8080-exec-9 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+14:00:42,905  INFO http-nio-8080-exec-9 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+14:00:42,908  INFO http-nio-8080-exec-9 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+14:00:42,908  INFO http-nio-8080-exec-9 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+14:00:42,910  INFO http-nio-8080-exec-9 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+14:00:43,396  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAll:100 - All orders were found successful
+14:00:43,404  INFO http-nio-8080-exec-9 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+14:51:30,931  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+14:51:31,317  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+14:51:31,356  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+14:51:31,357  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+14:51:31,395  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+14:51:50,093  INFO http-nio-8080-exec-10 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+14:51:54,025  INFO http-nio-8080-exec-1 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+14:51:54,089  INFO http-nio-8080-exec-1 OrderDatabaseDAO:getAll:100 - All orders were found successful
+14:51:54,091  INFO http-nio-8080-exec-1 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+14:56:12,882  INFO http-nio-8080-exec-10 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+14:56:12,891  INFO http-nio-8080-exec-10 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+14:56:12,910  INFO http-nio-8080-exec-10 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+14:56:12,912  INFO http-nio-8080-exec-10 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+14:56:12,912  INFO http-nio-8080-exec-10 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+14:56:12,914  INFO http-nio-8080-exec-10 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+14:56:13,381  INFO http-nio-8080-exec-10 OrderDatabaseDAO:getAll:100 - All orders were found successful
+14:56:13,387  INFO http-nio-8080-exec-10 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+14:57:46,308  INFO http-nio-8080-exec-7 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+14:57:46,323  INFO http-nio-8080-exec-7 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+14:57:46,359  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+14:57:46,362  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+14:57:46,372  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+14:57:46,377  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+14:57:46,874  INFO http-nio-8080-exec-7 OrderDatabaseDAO:getAll:100 - All orders were found successful
+14:57:46,879  INFO http-nio-8080-exec-7 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+15:02:12,083  INFO http-nio-8080-exec-19 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+15:02:12,091  INFO http-nio-8080-exec-19 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+15:02:12,104  INFO http-nio-8080-exec-19 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+15:02:12,106  INFO http-nio-8080-exec-19 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+15:02:12,107  INFO http-nio-8080-exec-19 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+15:02:12,108  INFO http-nio-8080-exec-19 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+15:02:13,517  INFO http-nio-8080-exec-19 OrderDatabaseDAO:getAll:100 - All orders were found successful
+15:02:13,527  INFO http-nio-8080-exec-19 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+15:04:04,685  INFO http-nio-8080-exec-25 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+15:04:04,694  INFO http-nio-8080-exec-25 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+15:04:04,713  INFO http-nio-8080-exec-25 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+15:04:04,715  INFO http-nio-8080-exec-25 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+15:04:04,715  INFO http-nio-8080-exec-25 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+15:04:04,720  INFO http-nio-8080-exec-25 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+15:04:05,196  INFO http-nio-8080-exec-25 OrderDatabaseDAO:getAll:100 - All orders were found successful
+15:04:05,201  INFO http-nio-8080-exec-25 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+15:05:15,444  INFO http-nio-8080-exec-26 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+15:05:15,460  INFO http-nio-8080-exec-26 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+15:05:15,486  INFO http-nio-8080-exec-26 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+15:05:15,489  INFO http-nio-8080-exec-26 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+15:05:15,489  INFO http-nio-8080-exec-26 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+15:05:15,491  INFO http-nio-8080-exec-26 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+15:05:16,056  INFO http-nio-8080-exec-26 OrderDatabaseDAO:getAll:100 - All orders were found successful
+15:05:16,061  INFO http-nio-8080-exec-26 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+15:07:15,136  INFO http-nio-8080-exec-32 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+15:07:15,144  INFO http-nio-8080-exec-32 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+15:07:15,159  INFO http-nio-8080-exec-32 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+15:07:15,161  INFO http-nio-8080-exec-32 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+15:07:15,161  INFO http-nio-8080-exec-32 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+15:07:15,163  INFO http-nio-8080-exec-32 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+15:07:15,623  INFO http-nio-8080-exec-32 OrderDatabaseDAO:getAll:100 - All orders were found successful
+15:07:15,629  INFO http-nio-8080-exec-32 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+15:08:09,716  INFO http-nio-8080-exec-33 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+15:08:09,724  INFO http-nio-8080-exec-33 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+15:08:09,779  INFO http-nio-8080-exec-33 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+15:08:09,781  INFO http-nio-8080-exec-33 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+15:08:09,781  INFO http-nio-8080-exec-33 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+15:08:09,808  INFO http-nio-8080-exec-33 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+15:08:10,231  INFO http-nio-8080-exec-33 OrderDatabaseDAO:getAll:100 - All orders were found successful
+15:08:10,236  INFO http-nio-8080-exec-33 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+15:10:05,353  INFO http-nio-8080-exec-36 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+15:10:05,358  INFO http-nio-8080-exec-36 OrderDatabaseDAO:getAll:100 - All orders were found successful
+15:10:05,362  INFO http-nio-8080-exec-36 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+15:10:05,791  INFO http-nio-8080-exec-36 OrderDatabaseDAO:getById:115 - successful getById order
+15:10:06,015  INFO http-nio-8080-exec-36 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+15:10:10,352  INFO http-nio-8080-exec-37 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+15:10:10,355  INFO http-nio-8080-exec-37 OrderDatabaseDAO:getAll:100 - All orders were found successful
+15:10:10,356  INFO http-nio-8080-exec-37 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+15:10:10,358  INFO http-nio-8080-exec-37 OrderDatabaseDAO:getById:115 - successful getById order
+15:10:10,360  INFO http-nio-8080-exec-37 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+15:16:19,473  INFO http-nio-8080-exec-39 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+15:16:19,504  INFO http-nio-8080-exec-39 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+15:16:19,537  INFO http-nio-8080-exec-39 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+15:16:19,539  INFO http-nio-8080-exec-39 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+15:16:19,539  INFO http-nio-8080-exec-39 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+15:16:19,541  INFO http-nio-8080-exec-39 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+15:16:21,623  INFO http-nio-8080-exec-39 OrderDatabaseDAO:getAll:100 - All orders were found successful
+15:16:21,634  INFO http-nio-8080-exec-39 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+15:16:21,721  INFO http-nio-8080-exec-39 OrderDatabaseDAO:getById:115 - successful getById order
+15:16:21,735  INFO http-nio-8080-exec-39 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+15:46:00,767  INFO http-nio-8080-exec-52 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+15:46:00,767  INFO http-nio-8080-exec-55 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+15:46:01,570  INFO http-nio-8080-exec-55 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+15:46:01,570  INFO http-nio-8080-exec-52 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+15:46:01,843  INFO http-nio-8080-exec-55 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+15:46:01,843  INFO http-nio-8080-exec-52 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+15:46:01,894  INFO http-nio-8080-exec-52 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+15:46:01,894  INFO http-nio-8080-exec-52 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+15:46:01,894  INFO http-nio-8080-exec-55 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+15:46:01,895  INFO http-nio-8080-exec-55 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+15:46:01,911  INFO http-nio-8080-exec-52 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+15:46:01,911  INFO http-nio-8080-exec-55 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+15:46:24,515  INFO http-nio-8080-exec-52 OrderDatabaseDAO:getAll:100 - All orders were found successful
+15:46:24,515  INFO http-nio-8080-exec-55 OrderDatabaseDAO:getAll:100 - All orders were found successful
+15:46:25,388  INFO http-nio-8080-exec-52 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+15:46:25,388  INFO http-nio-8080-exec-55 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+15:46:31,041  INFO http-nio-8080-exec-55 OrderDatabaseDAO:getById:115 - successful getById order
+15:46:31,041  INFO http-nio-8080-exec-52 OrderDatabaseDAO:getById:115 - successful getById order
+15:46:34,250  INFO http-nio-8080-exec-52 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+15:46:34,250  INFO http-nio-8080-exec-55 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+15:49:22,526  INFO http-nio-8080-exec-58 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+15:49:22,585  INFO http-nio-8080-exec-58 OrderDatabaseDAO:getAll:100 - All orders were found successful
+15:49:22,586  INFO http-nio-8080-exec-58 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+15:49:25,278  INFO http-nio-8080-exec-59 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+15:49:25,278  INFO http-nio-8080-exec-59 OrderDatabaseDAO:getAll:100 - All orders were found successful
+15:49:25,286  INFO http-nio-8080-exec-59 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+16:08:42,887  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+16:08:43,156  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+16:08:43,189  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+16:08:43,189  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+16:08:43,239  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+16:09:06,659  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+16:09:10,660  INFO http-nio-8080-exec-8 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+16:09:10,885  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAll:100 - All orders were found successful
+16:09:10,885  INFO http-nio-8080-exec-8 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+16:10:14,712  INFO http-nio-8080-exec-2 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+16:10:14,729  INFO http-nio-8080-exec-2 OrderDatabaseDAO:getAll:100 - All orders were found successful
+16:10:14,734  INFO http-nio-8080-exec-2 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+16:42:34,682  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+16:42:34,722  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+16:42:34,722  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+16:42:34,722  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+16:42:34,731  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+16:42:51,213  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+16:43:07,889  INFO http-nio-8080-exec-8 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+16:43:07,973  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAll:100 - All orders were found successful
+16:43:07,975  INFO http-nio-8080-exec-8 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+16:43:39,922  INFO http-nio-8080-exec-9 EditOrderDataCommand:execute:22 - -----------Edit Order Data Command-----------
+16:47:51,483  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+16:47:51,566  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+16:47:51,566  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+16:47:51,566  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+16:47:51,566  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+16:48:03,535  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+16:48:07,250  INFO http-nio-8080-exec-8 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+16:48:07,293  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAll:100 - All orders were found successful
+16:48:07,302  INFO http-nio-8080-exec-8 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+16:48:23,194  INFO http-nio-8080-exec-9 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+16:49:24,183  INFO http-nio-8080-exec-2 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+16:49:34,782  INFO http-nio-8080-exec-2 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+16:49:43,172  INFO http-nio-8080-exec-2 OrderDatabaseDAO:getById:115 - successful getById order
+16:51:02,459  INFO http-nio-8080-exec-1 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+16:54:26,188  INFO http-nio-8080-exec-8 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+16:54:26,937  INFO http-nio-8080-exec-8 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+16:54:28,059  INFO http-nio-8080-exec-8 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+16:54:28,059  INFO http-nio-8080-exec-8 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+16:54:28,059  INFO http-nio-8080-exec-8 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+16:54:28,067  INFO http-nio-8080-exec-8 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+16:57:39,917  INFO http-nio-8080-exec-4 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+16:57:39,934  INFO http-nio-8080-exec-4 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+16:57:39,950  INFO http-nio-8080-exec-4 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+16:57:39,958  INFO http-nio-8080-exec-4 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+16:57:39,958  INFO http-nio-8080-exec-4 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+16:57:39,958  INFO http-nio-8080-exec-4 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+16:57:51,070  INFO http-nio-8080-exec-4 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+17:00:34,774  INFO http-nio-8080-exec-17 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+17:00:46,349  INFO http-nio-8080-exec-17 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+17:00:59,273  INFO http-nio-8080-exec-17 OrderDatabaseDAO:getById:115 - successful getById order
+17:01:48,932  INFO http-nio-8080-exec-17 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+17:02:06,555  INFO http-nio-8080-exec-17 EditOrderDataCommand:execute:45 - Success Edit Order Data Command
+17:02:32,695  INFO http-nio-8080-exec-18 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+17:02:32,703  INFO http-nio-8080-exec-18 OrderDatabaseDAO:getAll:100 - All orders were found successful
+17:02:32,703  INFO http-nio-8080-exec-18 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:04:12,293  INFO http-nio-8080-exec-7 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+18:04:12,558  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:04:12,583  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+18:04:12,583  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:04:12,601  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+18:04:46,021  INFO http-nio-8080-exec-9 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+18:05:10,737  INFO http-nio-8080-exec-1 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:05:10,762  INFO http-nio-8080-exec-1 OrderDatabaseDAO:getAll:100 - All orders were found successful
+18:05:10,762  INFO http-nio-8080-exec-1 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:05:14,837  INFO http-nio-8080-exec-2 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+18:05:14,837  INFO http-nio-8080-exec-2 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:05:23,343  INFO http-nio-8080-exec-3 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+18:05:23,343  INFO http-nio-8080-exec-3 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:05:23,589  INFO http-nio-8080-exec-3 OrderDatabaseDAO:getById:115 - successful getById order
+18:05:23,833  INFO http-nio-8080-exec-3 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+18:05:23,907  INFO http-nio-8080-exec-3 EditOrderDataCommand:execute:45 - Order{id=0, title='Tap', description='Repair a tap', cost=34.0, paymentStatus=1, workStatus=1, user_id=1, workerId=4, timestamp=2022-07-05 17:51:46.921552}
+18:05:23,907  INFO http-nio-8080-exec-3 EditOrderDataCommand:execute:46 - Success Edit Order Data Command
+18:05:27,534  INFO http-nio-8080-exec-5 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:05:27,542  INFO http-nio-8080-exec-5 OrderDatabaseDAO:getAll:100 - All orders were found successful
+18:05:27,542  INFO http-nio-8080-exec-5 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:10:21,504  INFO http-nio-8080-exec-11 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:10:21,521  INFO http-nio-8080-exec-11 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+18:10:21,537  INFO http-nio-8080-exec-11 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:10:21,545  INFO http-nio-8080-exec-11 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+18:10:21,545  INFO http-nio-8080-exec-11 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:10:21,545  INFO http-nio-8080-exec-11 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+18:10:22,678  INFO http-nio-8080-exec-11 OrderDatabaseDAO:getAll:100 - All orders were found successful
+18:10:22,687  INFO http-nio-8080-exec-11 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:10:27,450  INFO http-nio-8080-exec-12 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+18:10:27,450  INFO http-nio-8080-exec-12 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:10:31,712  INFO http-nio-8080-exec-6 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+18:10:31,712  INFO http-nio-8080-exec-6 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:10:31,721  INFO http-nio-8080-exec-6 OrderDatabaseDAO:getById:115 - successful getById order
+18:10:31,729  INFO http-nio-8080-exec-6 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+18:10:31,738  INFO http-nio-8080-exec-6 EditOrderDataCommand:execute:46 - Success Edit Order Data Command
+18:14:31,162  INFO http-nio-8080-exec-17 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+18:14:31,179  INFO http-nio-8080-exec-18 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+18:14:31,390  INFO http-nio-8080-exec-17 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+18:14:31,390  INFO http-nio-8080-exec-18 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+18:14:31,826  INFO http-nio-8080-exec-17 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:14:31,826  INFO http-nio-8080-exec-18 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:14:31,861  INFO http-nio-8080-exec-17 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+18:14:31,861  INFO http-nio-8080-exec-17 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:14:31,861  INFO http-nio-8080-exec-18 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+18:14:31,862  INFO http-nio-8080-exec-18 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:14:31,909  INFO http-nio-8080-exec-18 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+18:14:31,896  INFO http-nio-8080-exec-17 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+18:14:33,073  INFO http-nio-8080-exec-18 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:14:33,081  INFO http-nio-8080-exec-17 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:14:33,089  INFO http-nio-8080-exec-18 OrderDatabaseDAO:getById:115 - successful getById order
+18:14:33,157  INFO http-nio-8080-exec-18 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+18:14:33,182  INFO http-nio-8080-exec-18 EditOrderDataCommand:execute:45 - Order{id=0, title='Tap', description='Repair a tap', cost=52.0, paymentStatus=1, workStatus=1, user_id=1, workerId=4, timestamp=2022-07-05 17:51:46.921552}
+18:14:33,182  INFO http-nio-8080-exec-18 EditOrderDataCommand:execute:46 - Success Edit Order Data Command
+18:30:02,951  INFO http-nio-8080-exec-19 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+18:30:02,951  INFO http-nio-8080-exec-19 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:30:04,437  INFO http-nio-8080-exec-18 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:30:04,437  INFO http-nio-8080-exec-18 OrderDatabaseDAO:getAll:100 - All orders were found successful
+18:30:04,437  INFO http-nio-8080-exec-18 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:30:07,046  INFO http-nio-8080-exec-17 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+18:30:07,046  INFO http-nio-8080-exec-17 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:30:13,774  INFO http-nio-8080-exec-20 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+18:30:13,877  INFO http-nio-8080-exec-20 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:30:13,877  INFO http-nio-8080-exec-20 OrderDatabaseDAO:getById:115 - successful getById order
+18:30:13,877  INFO http-nio-8080-exec-20 OrderDatabaseDAO:updateEntity:73 - Order was updated successful
+18:30:13,885  INFO http-nio-8080-exec-20 EditOrderDataCommand:execute:45 - Order{id=0, title='Printer', description='Printer does not print', cost=120.0, paymentStatus=1, workStatus=1, user_id=1, workerId=4, timestamp=2022-07-05 18:03:12.18381}
+18:30:13,885  INFO http-nio-8080-exec-20 EditOrderDataCommand:execute:46 - Success Edit Order Data Command
+18:37:15,930  INFO http-nio-8080-exec-26 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+18:37:15,931  INFO http-nio-8080-exec-18 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+18:37:15,931  INFO http-nio-8080-exec-17 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:37:15,939  INFO http-nio-8080-exec-18 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+18:37:15,941  INFO http-nio-8080-exec-17 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+18:37:15,941  INFO http-nio-8080-exec-26 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+18:37:15,954  INFO http-nio-8080-exec-18 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:37:15,955  INFO http-nio-8080-exec-26 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:37:15,954  INFO http-nio-8080-exec-17 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:37:15,958  INFO http-nio-8080-exec-26 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+18:37:15,958  INFO http-nio-8080-exec-18 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+18:37:15,959  INFO http-nio-8080-exec-18 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:37:15,958  INFO http-nio-8080-exec-17 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+18:37:15,976  INFO http-nio-8080-exec-17 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:37:15,976  INFO http-nio-8080-exec-17 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+18:37:15,959  INFO http-nio-8080-exec-26 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:37:15,976  INFO http-nio-8080-exec-26 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+18:37:15,976  INFO http-nio-8080-exec-18 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+18:37:16,011  INFO http-nio-8080-exec-24 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:37:16,400  INFO http-nio-8080-exec-23 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+18:37:16,530  INFO http-nio-8080-exec-21 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:37:16,692  INFO http-nio-8080-exec-17 OrderDatabaseDAO:getAll:100 - All orders were found successful
+18:37:16,692  INFO http-nio-8080-exec-17 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:37:16,701  INFO http-nio-8080-exec-23 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:37:16,706  INFO http-nio-8080-exec-24 OrderDatabaseDAO:getAll:100 - All orders were found successful
+18:37:16,710  INFO http-nio-8080-exec-24 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:37:16,713  INFO http-nio-8080-exec-26 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:37:16,719  INFO http-nio-8080-exec-21 OrderDatabaseDAO:getAll:100 - All orders were found successful
+18:37:16,721  INFO http-nio-8080-exec-21 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:37:16,731  INFO http-nio-8080-exec-18 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:39:00,377  INFO http-nio-8080-exec-29 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+18:39:16,077  INFO http-nio-8080-exec-21 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+18:39:16,077  INFO http-nio-8080-exec-21 OrderDatabaseDAO:getAllOrdersByPersonID:171 - successful getAllOrderByPersonID
+18:39:32,637  INFO http-nio-8080-exec-27 MakeAnOrderCommand:execute:28 - -----------Make An Order-----------
+18:40:12,008  INFO http-nio-8080-exec-31 MakeAnOrderCommand:execute:28 - -----------Make An Order-----------
+18:40:12,521  INFO http-nio-8080-exec-31 OrderDatabaseDAO:add:34 - Order was added successful
+18:40:12,787  INFO http-nio-8080-exec-31 MakeAnOrderCommand:execute:56 - Order{id=0, title='Conditioner', description='Conditioner does not cool', cost=0.0, paymentStatus=0, workStatus=0, user_id=5, workerId=0, timestamp=null}
+18:40:12,787  INFO http-nio-8080-exec-31 MakeAnOrderCommand:execute:58 - successful add order
+18:44:17,451  INFO http-nio-8080-exec-36 MakeAnOrderCommand:execute:28 - -----------Make An Order-----------
+18:44:17,452  INFO http-nio-8080-exec-28 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+18:44:17,457  INFO http-nio-8080-exec-33 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+18:44:17,457  INFO http-nio-8080-exec-28 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+18:44:17,457  INFO http-nio-8080-exec-31 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+18:44:17,457  INFO http-nio-8080-exec-36 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+18:44:17,473  INFO http-nio-8080-exec-33 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:44:17,473  INFO http-nio-8080-exec-36 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:44:17,473  INFO http-nio-8080-exec-31 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:44:17,473  INFO http-nio-8080-exec-28 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:44:17,475  INFO http-nio-8080-exec-33 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+18:44:17,475  INFO http-nio-8080-exec-33 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:44:17,475  INFO http-nio-8080-exec-31 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+18:44:18,057  INFO http-nio-8080-exec-31 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:44:18,066  INFO http-nio-8080-exec-31 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+18:44:17,475  INFO http-nio-8080-exec-36 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+18:44:18,066  INFO http-nio-8080-exec-36 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:44:18,066  INFO http-nio-8080-exec-36 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+18:44:17,475  INFO http-nio-8080-exec-28 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+18:44:18,073  INFO http-nio-8080-exec-28 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:44:18,074  INFO http-nio-8080-exec-28 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+18:44:17,477  INFO http-nio-8080-exec-33 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+18:44:34,496  INFO http-nio-8080-exec-32 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+18:44:34,564  INFO http-nio-8080-exec-32 LoginCommand:execute:37 - User{email='manager@gmail.com', name='Julia', passwd='6ee4a469cd4e91053847f5d3fcb61dbcc91e8f0ef10be7748da4c4a1ba382d17', id=3, accessLevel=4, money=12350.32}
+18:50:06,192  INFO http-nio-8080-exec-37 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+18:50:06,217  INFO http-nio-8080-exec-37 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:50:06,217  INFO http-nio-8080-exec-37 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+18:50:06,217  INFO http-nio-8080-exec-37 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+18:50:06,225  INFO http-nio-8080-exec-37 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+18:50:07,339  INFO http-nio-8080-exec-37 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+18:50:07,347  INFO http-nio-8080-exec-37 LoginCommand:execute:37 - User{email='buddy0102@hikar.com', name='Bob', passwd='0f35d6af917963270045e9fca8fc25df025d08642d1e81d5c96d0b714eefecfe', id=2, accessLevel=2, money=36.0}
+18:50:07,471  INFO http-nio-8080-exec-41 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+18:50:07,471  INFO http-nio-8080-exec-41 LoginCommand:execute:37 - User{email='buddy0102@hikar.com', name='Bob', passwd='0f35d6af917963270045e9fca8fc25df025d08642d1e81d5c96d0b714eefecfe', id=2, accessLevel=2, money=36.0}
+18:50:18,916  INFO http-nio-8080-exec-39 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+18:50:19,034  INFO http-nio-8080-exec-39 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+18:50:21,935  INFO http-nio-8080-exec-42 MakeAnOrderCommand:execute:28 - -----------Make An Order-----------
+18:50:23,931  INFO http-nio-8080-exec-40 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+18:50:23,932  INFO http-nio-8080-exec-40 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+18:50:35,208  INFO http-nio-8080-exec-47 MakeAnOrderCommand:execute:28 - -----------Make An Order-----------
+18:51:27,682  INFO http-nio-8080-exec-48 MakeAnOrderCommand:execute:28 - -----------Make An Order-----------
+18:51:27,873  INFO http-nio-8080-exec-48 OrderDatabaseDAO:add:34 - Order{id=0, title='Door', description='The main door has stacked and do not open', cost=0.0, paymentStatus=0, workStatus=0, user_id=2, workerId=0, timestamp=null}
+18:51:27,873  INFO http-nio-8080-exec-48 OrderDatabaseDAO:add:35 - 0
+18:51:27,873  INFO http-nio-8080-exec-48 OrderDatabaseDAO:add:36 - Order was added successful
+18:51:27,924  INFO http-nio-8080-exec-48 MakeAnOrderCommand:execute:56 - Order{id=0, title='Door', description='The main door has stacked and do not open', cost=0.0, paymentStatus=0, workStatus=0, user_id=2, workerId=0, timestamp=null}
+18:51:27,924  INFO http-nio-8080-exec-48 MakeAnOrderCommand:execute:58 - successful add order
+18:55:19,737  INFO http-nio-8080-exec-50 MakeAnOrderCommand:execute:28 - -----------Make An Order-----------
+18:55:20,538  INFO http-nio-8080-exec-47 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+18:55:20,547  INFO http-nio-8080-exec-47 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+18:55:30,934  INFO http-nio-8080-exec-52 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+18:55:30,934  INFO http-nio-8080-exec-52 LoginCommand:execute:37 - User{email='manager@gmail.com', name='Julia', passwd='6ee4a469cd4e91053847f5d3fcb61dbcc91e8f0ef10be7748da4c4a1ba382d17', id=3, accessLevel=4, money=12350.32}
+18:55:33,643  INFO http-nio-8080-exec-53 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+18:55:33,668  INFO http-nio-8080-exec-53 OrderDatabaseDAO:getAll:102 - All orders were found successful
+18:55:33,676  INFO http-nio-8080-exec-53 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:55:49,677  INFO http-nio-8080-exec-48 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+18:55:49,685  INFO http-nio-8080-exec-48 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:56:04,336  INFO http-nio-8080-exec-49 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+18:56:04,336  INFO http-nio-8080-exec-49 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+18:56:04,455  INFO http-nio-8080-exec-49 OrderDatabaseDAO:getById:117 - successful getById order
+18:56:04,529  INFO http-nio-8080-exec-49 OrderDatabaseDAO:updateEntity:75 - Order was updated successful
+18:56:04,529  INFO http-nio-8080-exec-49 EditOrderDataCommand:execute:45 - Order{id=0, title='Shelf', description='Need to fix a ancient book shelf', cost=52.0, paymentStatus=1, workStatus=1, user_id=5, workerId=4, timestamp=2022-07-05 17:59:40.661807}
+18:56:04,529  INFO http-nio-8080-exec-49 EditOrderDataCommand:execute:46 - Success Edit Order Data Command
+19:15:44,597  INFO http-nio-8080-exec-50 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+19:15:45,225  INFO http-nio-8080-exec-56 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+19:15:56,458  INFO http-nio-8080-exec-50 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+19:15:56,477  INFO http-nio-8080-exec-56 OrderDatabaseDAO:getAll:102 - All orders were found successful
+19:15:56,981  INFO http-nio-8080-exec-56 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+19:26:50,418  INFO http-nio-8080-exec-56 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+19:26:50,548  INFO http-nio-8080-exec-56 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+19:26:50,551  INFO http-nio-8080-exec-56 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+19:26:50,551  INFO http-nio-8080-exec-56 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+19:26:50,554  INFO http-nio-8080-exec-56 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+19:26:53,216  INFO http-nio-8080-exec-56 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+19:26:53,480  INFO http-nio-8080-exec-56 LoginCommand:execute:37 - User{email='manager@gmail.com', name='Julia', passwd='6ee4a469cd4e91053847f5d3fcb61dbcc91e8f0ef10be7748da4c4a1ba382d17', id=3, accessLevel=4, money=12350.32}
+19:27:14,225  INFO http-nio-8080-exec-55 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+19:27:14,291  INFO http-nio-8080-exec-55 OrderDatabaseDAO:getAll:102 - All orders were found successful
+19:27:14,292  INFO http-nio-8080-exec-55 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+19:27:25,847  INFO http-nio-8080-exec-50 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+19:27:25,850  INFO http-nio-8080-exec-50 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+19:27:37,602  INFO http-nio-8080-exec-52 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+19:27:37,780  INFO http-nio-8080-exec-52 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+19:27:39,445  INFO http-nio-8080-exec-52 OrderDatabaseDAO:getById:117 - successful getById order
+19:27:40,198  INFO http-nio-8080-exec-52 EditOrderDataCommand:execute:38 - id returned from jsp: 2
+19:27:40,199  INFO http-nio-8080-exec-52 EditOrderDataCommand:execute:39 - order id to check: 0
+19:27:41,582  INFO http-nio-8080-exec-52 OrderDatabaseDAO:updateEntity:75 - Order was updated successful
+19:27:41,664  INFO http-nio-8080-exec-52 EditOrderDataCommand:execute:47 - Order{id=0, title='Car', description='Power windows have broken', cost=321.0, paymentStatus=1, workStatus=1, user_id=2, workerId=4, timestamp=2022-07-05 17:57:51.215483}
+19:27:41,666  INFO http-nio-8080-exec-52 EditOrderDataCommand:execute:48 - Success Edit Order Data Command
+19:38:38,537  INFO http-nio-8080-exec-66 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+19:38:38,537  INFO http-nio-8080-exec-57 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+19:38:38,563  INFO http-nio-8080-exec-66 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+19:38:38,563  INFO http-nio-8080-exec-57 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+19:38:38,579  INFO http-nio-8080-exec-57 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+19:38:38,579  INFO http-nio-8080-exec-66 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+19:38:38,581  INFO http-nio-8080-exec-57 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+19:38:38,582  INFO http-nio-8080-exec-57 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+19:38:38,581  INFO http-nio-8080-exec-66 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+19:38:38,582  INFO http-nio-8080-exec-66 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+19:38:38,585  INFO http-nio-8080-exec-57 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+19:38:38,585  INFO http-nio-8080-exec-66 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+19:38:43,113  INFO http-nio-8080-exec-66 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+19:38:43,115  INFO http-nio-8080-exec-57 OrderDatabaseDAO:getAll:102 - All orders were found successful
+19:38:43,117  INFO http-nio-8080-exec-57 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+19:40:09,421  INFO http-nio-8080-exec-67 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+19:40:09,423  INFO http-nio-8080-exec-67 OrderDatabaseDAO:getAll:102 - All orders were found successful
+19:40:09,425  INFO http-nio-8080-exec-67 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+19:40:16,170  INFO http-nio-8080-exec-68 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+19:40:16,172  INFO http-nio-8080-exec-68 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+19:40:31,319  INFO http-nio-8080-exec-69 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+19:40:31,321  INFO http-nio-8080-exec-69 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+19:40:31,436  INFO http-nio-8080-exec-69 OrderDatabaseDAO:getById:117 - successful getById order
+19:40:31,529  INFO http-nio-8080-exec-69 EditOrderDataCommand:execute:38 - id returned from jsp: 2
+19:40:31,532  INFO http-nio-8080-exec-69 EditOrderDataCommand:execute:39 - order id to check: 0
+19:40:31,646  INFO http-nio-8080-exec-69 OrderDatabaseDAO:updateEntity:75 - Order was updated successful
+19:40:31,732  INFO http-nio-8080-exec-69 EditOrderDataCommand:execute:47 - Order{id=0, title='Car', description='Power windows have broken', cost=32.0, paymentStatus=1, workStatus=1, user_id=2, workerId=4, timestamp=2022-07-05 17:57:51.215483}
+19:40:31,733  INFO http-nio-8080-exec-69 EditOrderDataCommand:execute:48 - Success Edit Order Data Command
+19:47:48,078  INFO http-nio-8080-exec-1 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+19:47:48,166  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+19:47:48,201  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+19:47:48,201  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+19:47:48,204  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+19:48:03,887  INFO http-nio-8080-exec-3 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+19:48:04,000  INFO http-nio-8080-exec-3 LoginCommand:execute:37 - User{email='manager@gmail.com', name='Julia', passwd='6ee4a469cd4e91053847f5d3fcb61dbcc91e8f0ef10be7748da4c4a1ba382d17', id=3, accessLevel=4, money=12350.32}
+19:48:08,702  INFO http-nio-8080-exec-10 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+19:48:08,764  INFO http-nio-8080-exec-10 OrderDatabaseDAO:getAll:102 - All orders were found successful
+19:48:08,767  INFO http-nio-8080-exec-10 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+19:48:12,422  INFO http-nio-8080-exec-6 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+19:48:12,424  INFO http-nio-8080-exec-6 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+19:48:17,617  INFO http-nio-8080-exec-2 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+19:48:17,619  INFO http-nio-8080-exec-2 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+19:48:17,748  INFO http-nio-8080-exec-2 OrderDatabaseDAO:getById:117 - successful getById order
+19:48:17,779  INFO http-nio-8080-exec-2 EditOrderDataCommand:execute:38 - id returned from jsp: 1
+19:48:17,781  INFO http-nio-8080-exec-2 EditOrderDataCommand:execute:39 - order id to check: 0
+19:48:17,800  INFO http-nio-8080-exec-2 EditOrderDataCommand:execute:40 - All order log: Order{id=0, title='Tap', description='Repair a tap', cost=0.0, paymentStatus=1, workStatus=1, user_id=1, workerId=0, timestamp=2022-07-05 17:51:46.921552}
+19:48:17,960  INFO http-nio-8080-exec-2 OrderDatabaseDAO:updateEntity:75 - Order was updated successful
+19:48:17,973  INFO http-nio-8080-exec-2 EditOrderDataCommand:execute:48 - Order{id=0, title='Tap', description='Repair a tap', cost=552.0, paymentStatus=1, workStatus=1, user_id=1, workerId=4, timestamp=2022-07-05 17:51:46.921552}
+19:48:17,974  INFO http-nio-8080-exec-2 EditOrderDataCommand:execute:49 - Success Edit Order Data Command
+19:58:00,396  INFO http-nio-8080-exec-9 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+19:58:00,476  INFO http-nio-8080-exec-9 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+19:58:00,479  INFO http-nio-8080-exec-9 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+19:58:00,479  INFO http-nio-8080-exec-9 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+19:58:00,493  INFO http-nio-8080-exec-9 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+19:58:16,356  INFO http-nio-8080-exec-1 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+19:58:16,405  INFO http-nio-8080-exec-1 LoginCommand:execute:37 - User{email='manager@gmail.com', name='Julia', passwd='6ee4a469cd4e91053847f5d3fcb61dbcc91e8f0ef10be7748da4c4a1ba382d17', id=3, accessLevel=4, money=12350.32}
+19:58:23,820  INFO http-nio-8080-exec-2 OrdersListCommand:execute:22 - --------------Orders List Command--------------
+19:58:23,913  INFO http-nio-8080-exec-2 OrderDatabaseDAO:getAll:102 - All orders were found successful
+19:58:23,915  INFO http-nio-8080-exec-2 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+19:58:29,038  INFO http-nio-8080-exec-3 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+19:58:29,041  INFO http-nio-8080-exec-3 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+19:58:34,851  INFO http-nio-8080-exec-4 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+19:58:34,908  INFO http-nio-8080-exec-4 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+19:58:35,121  INFO http-nio-8080-exec-4 OrderDatabaseDAO:getById:117 - successful getById order
+19:58:35,184  INFO http-nio-8080-exec-4 EditOrderDataCommand:execute:38 - id returned from jsp: 1
+19:58:35,188  INFO http-nio-8080-exec-4 EditOrderDataCommand:execute:39 - order id to check: 1
+19:58:35,205  INFO http-nio-8080-exec-4 EditOrderDataCommand:execute:40 - All order log: Order{id=1, title='Tap', description='Repair a tap', cost=0.0, paymentStatus=1, workStatus=1, user_id=1, workerId=0, timestamp=2022-07-05 17:51:46.921552}
+19:58:35,360  INFO http-nio-8080-exec-4 OrderDatabaseDAO:updateEntity:75 - Order was updated successful
+19:58:35,380  INFO http-nio-8080-exec-4 EditOrderDataCommand:execute:48 - Order{id=1, title='Tap', description='Repair a tap', cost=42.0, paymentStatus=1, workStatus=1, user_id=1, workerId=4, timestamp=2022-07-05 17:51:46.921552}
+19:58:35,381  INFO http-nio-8080-exec-4 EditOrderDataCommand:execute:49 - Success Edit Order Data Command
+20:17:30,781  INFO http-nio-8080-exec-7 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+20:17:30,827  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+20:17:30,829  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+20:17:30,830  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+20:17:30,845  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+20:17:47,363  INFO http-nio-8080-exec-8 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+20:17:47,424  INFO http-nio-8080-exec-8 LoginCommand:execute:37 - User{email='manager@gmail.com', name='Julia', passwd='6ee4a469cd4e91053847f5d3fcb61dbcc91e8f0ef10be7748da4c4a1ba382d17', id=3, accessLevel=4, money=12350.32}
+20:17:57,074  INFO http-nio-8080-exec-9 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+20:17:57,087  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAll:102 - All orders were found successful
+20:17:57,141  INFO http-nio-8080-exec-9 Utils:sortOrders:23 - Sorting orders by id
+20:17:57,143  INFO http-nio-8080-exec-9 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+20:22:05,504  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+20:22:05,529  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+20:22:05,531  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+20:22:05,531  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+20:22:05,533  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+20:22:06,277  INFO http-nio-8080-exec-6 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+20:22:06,281  INFO http-nio-8080-exec-6 LoginCommand:execute:37 - User{email='manager@gmail.com', name='Julia', passwd='6ee4a469cd4e91053847f5d3fcb61dbcc91e8f0ef10be7748da4c4a1ba382d17', id=3, accessLevel=4, money=12350.32}
+20:22:14,389  INFO http-nio-8080-exec-1 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+20:22:14,405  INFO http-nio-8080-exec-1 OrderDatabaseDAO:getAll:102 - All orders were found successful
+20:22:14,409  INFO http-nio-8080-exec-1 Utils:sortOrders:23 - Sorting orders by id
+20:22:14,410  INFO http-nio-8080-exec-1 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+20:26:55,184  INFO http-nio-8080-exec-13 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+20:26:55,206  INFO http-nio-8080-exec-13 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+20:26:55,209  INFO http-nio-8080-exec-13 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+20:26:55,209  INFO http-nio-8080-exec-13 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+20:26:55,211  INFO http-nio-8080-exec-13 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+20:26:56,136  INFO http-nio-8080-exec-13 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+20:26:56,141  INFO http-nio-8080-exec-13 LoginCommand:execute:37 - User{email='manager@gmail.com', name='Julia', passwd='6ee4a469cd4e91053847f5d3fcb61dbcc91e8f0ef10be7748da4c4a1ba382d17', id=3, accessLevel=4, money=12350.32}
+20:26:59,985  INFO http-nio-8080-exec-18 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+20:27:00,005  INFO http-nio-8080-exec-18 OrderDatabaseDAO:getAll:102 - All orders were found successful
+20:27:00,010  INFO http-nio-8080-exec-18 Utils:sortOrders:23 - Sorting orders by id
+20:27:00,013  INFO http-nio-8080-exec-18 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+22:20:25,835  INFO http-nio-8080-exec-7 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+22:20:25,835  INFO http-nio-8080-exec-8 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+22:20:26,410  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:20:26,410  INFO http-nio-8080-exec-8 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:20:26,413  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+22:20:26,413  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:20:26,415  INFO http-nio-8080-exec-8 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+22:20:26,416  INFO http-nio-8080-exec-8 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:20:26,416  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+22:20:26,416  INFO http-nio-8080-exec-8 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+22:20:57,584  INFO http-nio-8080-exec-1 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+22:20:57,746  INFO http-nio-8080-exec-1 LoginCommand:execute:37 - User{email='manager@gmail.com', name='Julia', passwd='6ee4a469cd4e91053847f5d3fcb61dbcc91e8f0ef10be7748da4c4a1ba382d17', id=3, accessLevel=4, money=12350.32}
+22:21:18,556  INFO http-nio-8080-exec-2 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+22:21:18,649  INFO http-nio-8080-exec-2 OrderDatabaseDAO:getAll:102 - All orders were found successful
+22:21:18,713  INFO http-nio-8080-exec-2 Utils:sortOrders:23 - Sorting orders by id
+22:21:18,714  INFO http-nio-8080-exec-2 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+22:33:27,569  INFO http-nio-8080-exec-4 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+22:33:27,594  INFO http-nio-8080-exec-4 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+22:33:27,619  INFO http-nio-8080-exec-4 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:33:27,621  INFO http-nio-8080-exec-4 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+22:33:27,622  INFO http-nio-8080-exec-4 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:33:27,624  INFO http-nio-8080-exec-4 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+22:33:28,337  INFO http-nio-8080-exec-4 OrderDatabaseDAO:getAll:102 - All orders were found successful
+22:33:28,343  INFO http-nio-8080-exec-4 Utils:sortOrders:23 - Sorting orders by id
+22:33:28,346  INFO http-nio-8080-exec-4 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+22:35:07,951  INFO http-nio-8080-exec-7 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+22:35:07,991  INFO http-nio-8080-exec-7 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+22:35:08,008  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:35:08,010  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+22:35:08,010  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:35:08,012  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+22:35:09,340  INFO http-nio-8080-exec-7 OrderDatabaseDAO:getAll:102 - All orders were found successful
+22:35:09,345  INFO http-nio-8080-exec-7 Utils:sortOrders:23 - Sorting orders by id
+22:35:09,348  INFO http-nio-8080-exec-7 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+22:36:56,252  INFO http-nio-8080-exec-9 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+22:36:56,263  INFO http-nio-8080-exec-9 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+22:36:56,282  INFO http-nio-8080-exec-9 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:36:56,285  INFO http-nio-8080-exec-9 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+22:36:56,285  INFO http-nio-8080-exec-9 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:36:56,287  INFO http-nio-8080-exec-9 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+22:36:56,746  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAll:102 - All orders were found successful
+22:36:56,750  INFO http-nio-8080-exec-9 Utils:sortOrders:23 - Sorting orders by id
+22:36:56,753  INFO http-nio-8080-exec-9 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+22:38:30,033  INFO http-nio-8080-exec-17 ReviewsListCommand:execute:20 - --------------Reviews List Command--------------
+22:38:30,304  INFO http-nio-8080-exec-17 ReviewDatabaseDAO:getAll:112 - All reviews were found successful
+22:39:25,458  INFO http-nio-8080-exec-16 AddEmployeeCommand:execute:23 - -----------Employee Adding-----------
+22:39:50,469  INFO http-nio-8080-exec-19 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+22:40:28,495  INFO http-nio-8080-exec-18 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+22:40:28,511  INFO http-nio-8080-exec-18 LoginCommand:execute:37 - User{email='buddy0102@hikar.com', name='Bob', passwd='0f35d6af917963270045e9fca8fc25df025d08642d1e81d5c96d0b714eefecfe', id=2, accessLevel=2, money=36.0}
+22:40:41,455  INFO http-nio-8080-exec-17 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+22:40:41,616  INFO http-nio-8080-exec-17 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+22:46:17,443  INFO http-nio-8080-exec-20 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+22:46:17,465  INFO http-nio-8080-exec-20 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+22:46:17,522  INFO http-nio-8080-exec-20 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:46:17,528  INFO http-nio-8080-exec-20 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+22:46:17,530  INFO http-nio-8080-exec-20 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:46:17,535  INFO http-nio-8080-exec-20 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+22:47:15,825  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+22:47:15,866  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:47:15,870  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+22:47:15,871  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:47:15,873  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+22:47:27,427  INFO http-nio-8080-exec-8 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+22:47:27,492  INFO http-nio-8080-exec-8 LoginCommand:execute:37 - User{email='manager@gmail.com', name='Julia', passwd='6ee4a469cd4e91053847f5d3fcb61dbcc91e8f0ef10be7748da4c4a1ba382d17', id=3, accessLevel=4, money=12350.32}
+22:47:56,386  INFO http-nio-8080-exec-9 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+22:48:04,741  INFO http-nio-8080-exec-10 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+22:48:04,741  INFO http-nio-8080-exec-10 LoginCommand:execute:37 - User{email='buddy0102@hikar.com', name='Bob', passwd='0f35d6af917963270045e9fca8fc25df025d08642d1e81d5c96d0b714eefecfe', id=2, accessLevel=2, money=36.0}
+22:48:16,283  INFO http-nio-8080-exec-1 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+22:48:16,378  INFO http-nio-8080-exec-1 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+22:49:32,708  INFO http-nio-8080-exec-2 CannotLeaveReviewCommand:execute:15 - -------------Cannot Leave Review Command-------------
+22:51:38,342  INFO http-nio-8080-exec-7 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+22:51:38,355  INFO http-nio-8080-exec-7 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+22:51:38,387  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:51:38,395  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+22:51:38,399  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:51:38,402  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+22:51:42,084  INFO http-nio-8080-exec-9 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+22:52:52,061  INFO http-nio-8080-exec-7 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+22:52:52,089  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:52:52,105  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+22:52:52,105  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+22:52:52,108  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+22:53:16,903  INFO http-nio-8080-exec-9 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+22:53:16,954  INFO http-nio-8080-exec-9 LoginCommand:execute:37 - User{email='manager@gmail.com', name='Julia', passwd='6ee4a469cd4e91053847f5d3fcb61dbcc91e8f0ef10be7748da4c4a1ba382d17', id=3, accessLevel=4, money=12350.32}
+22:54:17,026  INFO http-nio-8080-exec-2 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+22:54:17,027  INFO http-nio-8080-exec-2 LoginCommand:execute:37 - User{email='buddy0102@hikar.com', name='Bob', passwd='0f35d6af917963270045e9fca8fc25df025d08642d1e81d5c96d0b714eefecfe', id=2, accessLevel=2, money=36.0}
+22:54:22,650  INFO http-nio-8080-exec-3 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+22:54:22,771  INFO http-nio-8080-exec-3 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+22:54:26,647  INFO http-nio-8080-exec-4 CannotLeaveReviewCommand:execute:15 - -------------Cannot Leave Review Command-------------
+22:55:50,739  INFO http-nio-8080-exec-7 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+22:55:50,741  INFO http-nio-8080-exec-7 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+22:56:42,783  INFO http-nio-8080-exec-9 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+22:56:42,833  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+22:57:16,894  INFO http-nio-8080-exec-1 CannotLeaveReviewCommand:execute:15 - -------------Cannot Leave Review Command-------------
+22:57:20,320  INFO http-nio-8080-exec-2 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+22:57:20,322  INFO http-nio-8080-exec-2 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+22:57:57,458  INFO http-nio-8080-exec-5 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+22:57:57,460  INFO http-nio-8080-exec-5 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+22:59:37,250  INFO http-nio-8080-exec-9 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+22:59:37,250  INFO http-nio-8080-exec-9 LoginCommand:execute:37 - User{email='worker1@gmail.com', name='Alexandr', passwd='34aa1081c5b63c28d0343512980e8df6c079c858172b7f5a5272b8e0605b90ad', id=4, accessLevel=3, money=0.0}
+22:59:37,252  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+22:59:37,254  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAll:102 - All orders were found successful
+22:59:37,257  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAll:102 - All orders were found successful
+22:59:55,823  INFO http-nio-8080-exec-10 EmplOrdersListCommand:execute:23 - --------------Employee Orders List Command--------------
+22:59:55,827  INFO http-nio-8080-exec-10 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:00:15,495  INFO http-nio-8080-exec-1 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+23:00:15,497  INFO http-nio-8080-exec-1 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+23:00:23,077  INFO http-nio-8080-exec-2 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+23:00:23,079  INFO http-nio-8080-exec-2 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:00:23,191  INFO http-nio-8080-exec-2 Utils:sortOrders:23 - Sorting orders by id
+23:00:23,193  INFO http-nio-8080-exec-2 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+23:00:26,516  INFO http-nio-8080-exec-3 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+23:00:26,518  INFO http-nio-8080-exec-3 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+23:00:27,950  INFO http-nio-8080-exec-4 EmplOrdersListCommand:execute:23 - --------------Employee Orders List Command--------------
+23:00:27,952  INFO http-nio-8080-exec-4 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:00:33,425  INFO http-nio-8080-exec-5 EmplOrdersListCommand:execute:23 - --------------Employee Orders List Command--------------
+23:00:33,504  INFO http-nio-8080-exec-5 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:18:07,550  INFO http-nio-8080-exec-6 EmplOrdersListCommand:execute:23 - --------------Employee Orders List Command--------------
+23:18:07,717  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+23:18:07,767  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+23:18:07,776  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+23:18:07,777  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+23:18:07,782  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+23:18:12,053  INFO http-nio-8080-exec-6 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:18:23,476  INFO http-nio-8080-exec-7 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+23:18:23,498  INFO http-nio-8080-exec-7 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+23:18:27,712  INFO http-nio-8080-exec-10 EmplOrdersListCommand:execute:23 - --------------Employee Orders List Command--------------
+23:18:27,714  INFO http-nio-8080-exec-10 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:24:40,356  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+23:24:40,597  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+23:24:40,604  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+23:24:40,604  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+23:24:40,607  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+23:25:00,330  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+23:25:00,374  INFO http-nio-8080-exec-7 LoginCommand:execute:37 - User{email='worker1@gmail.com', name='Alexandr', passwd='34aa1081c5b63c28d0343512980e8df6c079c858172b7f5a5272b8e0605b90ad', id=4, accessLevel=3, money=0.0}
+23:25:00,434  INFO http-nio-8080-exec-7 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+23:25:00,541  INFO http-nio-8080-exec-7 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:25:00,544  INFO http-nio-8080-exec-7 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:25:03,115  INFO http-nio-8080-exec-8 EmplOrdersListCommand:execute:23 - --------------Employee Orders List Command--------------
+23:25:03,119  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:25:31,628  INFO http-nio-8080-exec-10 EditOrderDataEmplCommand:execute:22 - ------------Edit Order Data Employee Command------------
+23:25:39,894  INFO http-nio-8080-exec-1 EditOrderDataEmplCommand:execute:22 - ------------Edit Order Data Employee Command------------
+23:25:39,973  INFO http-nio-8080-exec-1 OrderDatabaseDAO:getById:117 - successful getById order
+23:25:40,221  INFO http-nio-8080-exec-1 OrderDatabaseDAO:updateEntity:75 - Order was updated successful
+23:25:40,340  INFO http-nio-8080-exec-1 EditOrderDataEmplCommand:execute:37 - Order{id=1, title='Tap', description='Repair a tap', cost=42.0, paymentStatus=2, workStatus=1, user_id=1, workerId=4, timestamp=2022-07-05 17:51:46.921552}
+23:25:40,341  INFO http-nio-8080-exec-1 EditOrderDataEmplCommand:execute:38 - Success Edit Order Data Command
+23:25:42,513  INFO http-nio-8080-exec-2 EmplOrdersListCommand:execute:23 - --------------Employee Orders List Command--------------
+23:25:42,549  INFO http-nio-8080-exec-2 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:25:47,052  INFO http-nio-8080-exec-4 EmplOrdersListCommand:execute:23 - --------------Employee Orders List Command--------------
+23:25:47,056  INFO http-nio-8080-exec-4 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:25:53,093  INFO http-nio-8080-exec-5 EditOrderDataEmplCommand:execute:22 - ------------Edit Order Data Employee Command------------
+23:26:31,913  INFO http-nio-8080-exec-7 EmplOrdersListCommand:execute:23 - --------------Employee Orders List Command--------------
+23:26:31,983  INFO http-nio-8080-exec-7 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:28:07,479  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+23:28:07,568  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+23:28:07,584  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+23:28:07,595  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+23:28:07,606  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+23:28:27,120  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+23:28:27,223  INFO http-nio-8080-exec-7 LoginCommand:execute:37 - User{email='worker1@gmail.com', name='Alexandr', passwd='34aa1081c5b63c28d0343512980e8df6c079c858172b7f5a5272b8e0605b90ad', id=4, accessLevel=3, money=0.0}
+23:28:27,342  INFO http-nio-8080-exec-7 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+23:28:27,439  INFO http-nio-8080-exec-7 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:28:27,442  INFO http-nio-8080-exec-7 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:28:29,901  INFO http-nio-8080-exec-8 EmplOrdersListCommand:execute:24 - --------------Employee Orders List Command--------------
+23:28:29,904  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:28:29,930  INFO http-nio-8080-exec-8 Utils:sortOrders:23 - Sorting orders by id
+23:29:25,830  INFO http-nio-8080-exec-9 EditOrderDataEmplCommand:execute:22 - ------------Edit Order Data Employee Command------------
+23:30:25,327  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+23:30:25,363  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+23:30:25,363  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+23:30:25,363  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+23:30:25,363  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+23:30:44,444  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+23:30:44,505  INFO http-nio-8080-exec-7 LoginCommand:execute:37 - User{email='manager@gmail.com', name='Julia', passwd='6ee4a469cd4e91053847f5d3fcb61dbcc91e8f0ef10be7748da4c4a1ba382d17', id=3, accessLevel=4, money=12350.32}
+23:30:51,012  INFO http-nio-8080-exec-8 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+23:30:51,066  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:30:51,072  INFO http-nio-8080-exec-8 Utils:sortOrders:23 - Sorting orders by id
+23:30:51,074  INFO http-nio-8080-exec-8 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+23:30:58,114  INFO http-nio-8080-exec-9 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+23:30:58,117  INFO http-nio-8080-exec-9 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+23:31:08,324  INFO http-nio-8080-exec-10 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+23:31:08,326  INFO http-nio-8080-exec-10 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+23:31:08,575  INFO http-nio-8080-exec-10 OrderDatabaseDAO:getById:117 - successful getById order
+23:31:08,678  INFO http-nio-8080-exec-10 EditOrderDataCommand:execute:38 - id returned from jsp: 1
+23:31:08,679  INFO http-nio-8080-exec-10 EditOrderDataCommand:execute:39 - order id to check: 1
+23:31:08,695  INFO http-nio-8080-exec-10 EditOrderDataCommand:execute:40 - All order log: Order{id=1, title='Tap', description='Repair a tap', cost=42.0, paymentStatus=2, workStatus=1, user_id=1, workerId=4, timestamp=2022-07-05 17:51:46.921552}
+23:31:08,959  INFO http-nio-8080-exec-10 OrderDatabaseDAO:updateEntity:75 - Order was updated successful
+23:31:08,972  INFO http-nio-8080-exec-10 EditOrderDataCommand:execute:48 - Order{id=1, title='Tap', description='Repair a tap', cost=42.0, paymentStatus=1, workStatus=1, user_id=1, workerId=4, timestamp=2022-07-05 17:51:46.921552}
+23:31:08,974  INFO http-nio-8080-exec-10 EditOrderDataCommand:execute:49 - Success Edit Order Data Command
+23:31:11,575  INFO http-nio-8080-exec-1 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+23:31:11,591  INFO http-nio-8080-exec-1 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:31:11,591  INFO http-nio-8080-exec-1 Utils:sortOrders:23 - Sorting orders by id
+23:31:11,593  INFO http-nio-8080-exec-1 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+23:31:19,128  INFO http-nio-8080-exec-2 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+23:31:19,131  INFO http-nio-8080-exec-2 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+23:31:19,951  INFO http-nio-8080-exec-3 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+23:31:19,954  INFO http-nio-8080-exec-3 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:31:19,955  INFO http-nio-8080-exec-3 Utils:sortOrders:23 - Sorting orders by id
+23:31:19,993  INFO http-nio-8080-exec-3 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+23:31:33,628  INFO http-nio-8080-exec-5 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+23:31:33,629  INFO http-nio-8080-exec-5 LoginCommand:execute:37 - User{email='worker1@gmail.com', name='Alexandr', passwd='34aa1081c5b63c28d0343512980e8df6c079c858172b7f5a5272b8e0605b90ad', id=4, accessLevel=3, money=0.0}
+23:31:33,631  INFO http-nio-8080-exec-5 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+23:31:33,634  INFO http-nio-8080-exec-5 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:31:33,636  INFO http-nio-8080-exec-5 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:31:35,874  INFO http-nio-8080-exec-6 EmplOrdersListCommand:execute:24 - --------------Employee Orders List Command--------------
+23:31:35,904  INFO http-nio-8080-exec-6 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:31:35,904  INFO http-nio-8080-exec-6 Utils:sortOrders:23 - Sorting orders by id
+23:31:39,484  INFO http-nio-8080-exec-7 EditOrderDataEmplCommand:execute:22 - ------------Edit Order Data Employee Command------------
+23:31:42,097  INFO http-nio-8080-exec-8 EditOrderDataEmplCommand:execute:22 - ------------Edit Order Data Employee Command------------
+23:31:42,099  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getById:117 - successful getById order
+23:31:42,145  INFO http-nio-8080-exec-8 OrderDatabaseDAO:updateEntity:75 - Order was updated successful
+23:31:42,146  INFO http-nio-8080-exec-8 EditOrderDataEmplCommand:execute:37 - Order{id=1, title='Tap', description='Repair a tap', cost=42.0, paymentStatus=1, workStatus=2, user_id=1, workerId=4, timestamp=2022-07-05 17:51:46.921552}
+23:31:42,147  INFO http-nio-8080-exec-8 EditOrderDataEmplCommand:execute:38 - Success Edit Order Data Command
+23:31:43,690  INFO http-nio-8080-exec-9 EmplOrdersListCommand:execute:24 - --------------Employee Orders List Command--------------
+23:31:43,692  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAll:102 - All orders were found successful
+23:31:43,693  INFO http-nio-8080-exec-9 Utils:sortOrders:23 - Sorting orders by id
+09:39:16,368  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+09:39:16,535  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+09:39:16,542  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+09:39:16,543  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+09:39:16,576  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+09:40:20,234  INFO http-nio-8080-exec-9 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+09:40:20,276  INFO http-nio-8080-exec-9 LoginCommand:execute:37 - User{email='worker1@gmail.com', name='Alexandr', passwd='34aa1081c5b63c28d0343512980e8df6c079c858172b7f5a5272b8e0605b90ad', id=4, accessLevel=3, money=0.0}
+09:40:20,390  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+09:40:20,403  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAll:102 - All orders were found successful
+09:40:20,406  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAll:102 - All orders were found successful
+09:40:24,098  INFO http-nio-8080-exec-10 EmplOrdersListCommand:execute:24 - --------------Employee Orders List Command--------------
+09:40:24,103  INFO http-nio-8080-exec-10 OrderDatabaseDAO:getAll:102 - All orders were found successful
+09:40:24,153  INFO http-nio-8080-exec-10 Utils:sortOrders:23 - Sorting orders by id
+09:40:32,096  INFO http-nio-8080-exec-1 EditOrderDataEmplCommand:execute:22 - ------------Edit Order Data Employee Command------------
+09:40:35,378  INFO http-nio-8080-exec-2 EditOrderDataEmplCommand:execute:22 - ------------Edit Order Data Employee Command------------
+09:40:35,458  INFO http-nio-8080-exec-2 OrderDatabaseDAO:getById:117 - successful getById order
+09:40:35,685  INFO http-nio-8080-exec-2 OrderDatabaseDAO:updateEntity:75 - Order was updated successful
+09:40:35,709  INFO http-nio-8080-exec-2 EditOrderDataEmplCommand:execute:37 - Order{id=1, title='Tap', description='Repair a tap', cost=42.0, paymentStatus=1, workStatus=3, user_id=1, workerId=4, timestamp=2022-07-05 17:51:46.921552}
+09:40:35,710  INFO http-nio-8080-exec-2 EditOrderDataEmplCommand:execute:38 - Success Edit Order Data Command
+09:40:37,077  INFO http-nio-8080-exec-3 EmplOrdersListCommand:execute:24 - --------------Employee Orders List Command--------------
+09:40:37,129  INFO http-nio-8080-exec-3 OrderDatabaseDAO:getAll:102 - All orders were found successful
+09:40:37,130  INFO http-nio-8080-exec-3 Utils:sortOrders:23 - Sorting orders by id
+09:40:41,558  INFO http-nio-8080-exec-4 EditOrderDataEmplCommand:execute:22 - ------------Edit Order Data Employee Command------------
+09:40:43,039  INFO http-nio-8080-exec-5 EmplOrdersListCommand:execute:24 - --------------Employee Orders List Command--------------
+09:40:43,043  INFO http-nio-8080-exec-5 OrderDatabaseDAO:getAll:102 - All orders were found successful
+09:40:43,043  INFO http-nio-8080-exec-5 Utils:sortOrders:23 - Sorting orders by id
+09:40:59,736  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+09:40:59,737  INFO http-nio-8080-exec-7 LoginCommand:execute:37 - User{email='qwerty@qwert.qwe', name='Qwerty', passwd='65e84be33532fb784c48129675f9eff3a682b27168c0ea744b2cf58ee02337c5', id=1, accessLevel=2, money=43.0}
+09:41:02,630  INFO http-nio-8080-exec-8 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+09:41:02,634  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+09:41:08,510  INFO http-nio-8080-exec-10 LeaveReviewCommand:execute:22 - ------------Leave Review Command------------
+09:41:55,177  INFO http-nio-8080-exec-5 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+09:41:55,181  INFO http-nio-8080-exec-5 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+09:41:56,565  INFO http-nio-8080-exec-6 OrdersListCommand:execute:22 - --------------Orders List Customer Command--------------
+09:41:56,569  INFO http-nio-8080-exec-6 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+10:14:41,654  INFO http-nio-8080-exec-3 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+10:14:41,726  INFO http-nio-8080-exec-3 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+10:14:41,731  INFO http-nio-8080-exec-3 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+10:14:41,732  INFO http-nio-8080-exec-3 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+10:14:41,737  INFO http-nio-8080-exec-3 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+10:14:56,168  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+10:14:56,244  INFO http-nio-8080-exec-7 LoginCommand:execute:37 - User{email='qwerty@qwert.qwe', name='Qwerty', passwd='65e84be33532fb784c48129675f9eff3a682b27168c0ea744b2cf58ee02337c5', id=1, accessLevel=2, money=43.0}
+10:14:59,015  INFO http-nio-8080-exec-8 OrdersListCommand:execute:24 - --------------Orders List Customer Command--------------
+10:14:59,139  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+10:14:59,165  INFO http-nio-8080-exec-8 Utils:sortOrders:23 - Sorting orders by id
+10:16:05,134  INFO http-nio-8080-exec-9 LeaveReviewCommand:execute:22 - ------------Leave Review Command------------
+10:16:22,075  INFO http-nio-8080-exec-1 OrdersListCommand:execute:24 - --------------Orders List Customer Command--------------
+10:16:22,079  INFO http-nio-8080-exec-1 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+10:16:22,080  INFO http-nio-8080-exec-1 Utils:sortOrders:23 - Sorting orders by id
+10:19:34,847  INFO http-nio-8080-exec-1 OrdersListCommand:execute:24 - --------------Orders List Customer Command--------------
+10:19:34,858  INFO http-nio-8080-exec-1 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+10:19:34,880  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+10:19:34,882  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+10:19:34,883  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+10:19:34,885  INFO http-nio-8080-exec-1 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+10:21:04,728  INFO http-nio-8080-exec-7 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+10:21:04,754  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+10:21:04,758  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+10:21:04,759  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+10:21:04,762  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+10:21:16,225  INFO http-nio-8080-exec-8 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+10:21:16,273  INFO http-nio-8080-exec-8 LoginCommand:execute:37 - User{email='qwerty@qwert.qwe', name='Qwerty', passwd='65e84be33532fb784c48129675f9eff3a682b27168c0ea744b2cf58ee02337c5', id=1, accessLevel=2, money=43.0}
+10:21:19,078  INFO http-nio-8080-exec-9 OrdersListCommand:execute:24 - --------------Orders List Customer Command--------------
+10:21:19,096  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+10:21:19,104  INFO http-nio-8080-exec-9 Utils:sortOrders:23 - Sorting orders by id
+10:21:21,617  INFO http-nio-8080-exec-6 OrdersListCommand:execute:24 - --------------Orders List Customer Command--------------
+10:21:21,623  INFO http-nio-8080-exec-6 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+10:21:21,624  INFO http-nio-8080-exec-6 Utils:sortOrders:23 - Sorting orders by id
+10:21:49,601  INFO http-nio-8080-exec-10 OrdersListCommand:execute:24 - --------------Orders List Customer Command--------------
+10:22:57,382  INFO http-nio-8080-exec-10 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+10:23:04,941  INFO http-nio-8080-exec-10 Utils:sortOrders:23 - Sorting orders by id
+10:25:56,878  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+10:25:56,916  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+10:25:56,920  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+10:25:56,921  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+10:25:56,924  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+10:26:10,442  INFO http-nio-8080-exec-8 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+10:26:10,489  INFO http-nio-8080-exec-8 LoginCommand:execute:37 - User{email='qwerty@qwert.qwe', name='Qwerty', passwd='65e84be33532fb784c48129675f9eff3a682b27168c0ea744b2cf58ee02337c5', id=1, accessLevel=2, money=43.0}
+10:26:33,596  INFO http-nio-8080-exec-7 OrdersListCommand:execute:24 - --------------Orders List Customer Command--------------
+10:26:33,623  INFO http-nio-8080-exec-7 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+10:26:33,633  INFO http-nio-8080-exec-7 Utils:sortOrders:23 - Sorting orders by id
+10:26:54,463  INFO http-nio-8080-exec-10 OrdersListCommand:execute:24 - --------------Orders List Customer Command--------------
+10:27:28,384  INFO http-nio-8080-exec-10 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+10:27:31,246  INFO http-nio-8080-exec-10 Utils:sortOrders:23 - Sorting orders by id
+10:29:50,883  INFO http-nio-8080-exec-1 LeaveReviewCommand:execute:22 - ------------Leave Review Command------------
+10:30:23,976  INFO http-nio-8080-exec-2 OrdersListCommand:execute:24 - --------------Orders List Customer Command--------------
+10:30:23,981  INFO http-nio-8080-exec-2 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+10:30:23,985  INFO http-nio-8080-exec-2 Utils:sortOrders:23 - Sorting orders by id
+11:06:20,444  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+11:06:20,663  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+11:06:20,663  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+11:06:20,663  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+11:06:20,679  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+11:06:41,575  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:06:45,781  INFO http-nio-8080-exec-8 OrdersListCommand:execute:24 - --------------Orders List Customer Command--------------
+11:06:45,875  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:06:45,908  INFO http-nio-8080-exec-8 Utils:sortOrders:23 - Sorting orders by id
+11:07:24,067  INFO http-nio-8080-exec-10 OrdersListCommand:execute:24 - --------------Orders List Customer Command--------------
+11:07:36,741  INFO http-nio-8080-exec-10 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:07:39,373  INFO http-nio-8080-exec-10 Utils:sortOrders:23 - Sorting orders by id
+11:08:10,132  INFO http-nio-8080-exec-10 UserDatabaseDAO:updateEntity:95 - User was updated successful
+11:12:47,099  INFO http-nio-8080-exec-5 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+11:12:47,198  INFO http-nio-8080-exec-5 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+11:12:47,198  INFO http-nio-8080-exec-5 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+11:12:47,198  INFO http-nio-8080-exec-5 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+11:12:47,198  INFO http-nio-8080-exec-5 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+11:16:43,603  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:16:46,069  INFO http-nio-8080-exec-8 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:16:46,163  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:16:46,178  INFO http-nio-8080-exec-8 Utils:sortOrders:23 - Sorting orders by id
+11:17:15,118  INFO http-nio-8080-exec-9 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:17:25,711  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:17:28,650  INFO http-nio-8080-exec-9 Utils:sortOrders:23 - Sorting orders by id
+11:17:40,978 ERROR http-nio-8080-exec-9 OrdersListCommand:execute:43 - You don't have enough money on your account to pay the bill
+11:17:55,341  INFO http-nio-8080-exec-10 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:17:55,341  INFO http-nio-8080-exec-10 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:17:55,341  INFO http-nio-8080-exec-10 Utils:sortOrders:23 - Sorting orders by id
+11:18:14,876  INFO http-nio-8080-exec-1 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:27:08,474  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+11:27:08,505  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+11:27:08,505  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+11:27:08,505  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+11:27:08,505  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+11:27:18,061  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:29:09,129  INFO http-nio-8080-exec-2 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+11:29:09,161  INFO http-nio-8080-exec-2 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+11:29:09,161  INFO http-nio-8080-exec-2 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+11:29:09,161  INFO http-nio-8080-exec-2 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+11:29:09,161  INFO http-nio-8080-exec-2 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+11:29:09,637  INFO http-nio-8080-exec-2 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:29:44,980  INFO http-nio-8080-exec-11 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+11:29:45,386  INFO http-nio-8080-exec-11 OrderDatabaseDAO:getAll:102 - All orders were found successful
+11:29:45,417  INFO http-nio-8080-exec-11 Utils:sortOrders:23 - Sorting orders by id
+11:29:45,433  INFO http-nio-8080-exec-11 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+11:29:52,513  INFO http-nio-8080-exec-1 CustomersListCommand:execute:24 - ---------------Customers List---------------
+11:29:52,528  INFO http-nio-8080-exec-1 UserDatabaseDAO:getAll:119 - All users were found successful
+11:29:52,559  INFO http-nio-8080-exec-1 Utils:sortPeople:18 - Sorting users by id
+11:29:58,831  INFO http-nio-8080-exec-12 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+11:30:06,971  INFO http-nio-8080-exec-9 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+11:30:07,352  INFO http-nio-8080-exec-9 UserDatabaseDAO:getById:53 - successful getById user
+11:30:07,602  INFO http-nio-8080-exec-9 UserDatabaseDAO:updateEntity:95 - User was updated successful
+11:30:07,602  INFO http-nio-8080-exec-9 IncreaseMoneyCommand:execute:40 - Success Increase Money Command
+11:30:10,667  INFO http-nio-8080-exec-10 CustomersListCommand:execute:24 - ---------------Customers List---------------
+11:30:10,714  INFO http-nio-8080-exec-10 UserDatabaseDAO:getAll:119 - All users were found successful
+11:30:10,714  INFO http-nio-8080-exec-10 Utils:sortPeople:18 - Sorting users by id
+11:30:22,603  INFO http-nio-8080-exec-8 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+11:30:25,289  INFO http-nio-8080-exec-3 CustomersListCommand:execute:24 - ---------------Customers List---------------
+11:30:25,289  INFO http-nio-8080-exec-3 UserDatabaseDAO:getAll:119 - All users were found successful
+11:30:25,289  INFO http-nio-8080-exec-3 Utils:sortPeople:18 - Sorting users by id
+11:30:40,528  INFO http-nio-8080-exec-13 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:30:42,455  INFO http-nio-8080-exec-12 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:30:42,471  INFO http-nio-8080-exec-12 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:30:42,471  INFO http-nio-8080-exec-12 Utils:sortOrders:23 - Sorting orders by id
+11:31:29,459  INFO http-nio-8080-exec-15 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:31:39,794  INFO http-nio-8080-exec-15 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:31:42,213  INFO http-nio-8080-exec-15 Utils:sortOrders:23 - Sorting orders by id
+11:33:19,254  INFO http-nio-8080-exec-15 UserDatabaseDAO:updateEntity:95 - User was updated successful
+11:33:30,397  INFO http-nio-8080-exec-15 OrderDatabaseDAO:getById:117 - successful getById order
+11:34:11,441  INFO http-nio-8080-exec-15 OrderDatabaseDAO:updateEntity:75 - Order was updated successful
+11:35:37,859  INFO http-nio-8080-exec-16 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:35:37,859  INFO http-nio-8080-exec-16 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:35:37,859  INFO http-nio-8080-exec-16 Utils:sortOrders:23 - Sorting orders by id
+11:35:37,859 ERROR http-nio-8080-exec-16 OrdersListCommand:execute:43 - You don't have enough money on your account to pay the bill
+11:38:12,069  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+11:38:12,132  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+11:38:12,132  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+11:38:12,147  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+11:38:12,147  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+11:38:27,837  INFO http-nio-8080-exec-5 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:38:30,644  INFO http-nio-8080-exec-7 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:38:30,737  INFO http-nio-8080-exec-7 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:38:30,753  INFO http-nio-8080-exec-7 Utils:sortOrders:23 - Sorting orders by id
+11:39:29,438  INFO http-nio-8080-exec-10 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:39:37,628  INFO http-nio-8080-exec-1 CustomersListCommand:execute:24 - ---------------Customers List---------------
+11:39:37,628  INFO http-nio-8080-exec-1 UserDatabaseDAO:getAll:119 - All users were found successful
+11:39:37,644  INFO http-nio-8080-exec-1 Utils:sortPeople:18 - Sorting users by id
+11:39:40,355  INFO http-nio-8080-exec-2 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+11:39:45,399  INFO http-nio-8080-exec-4 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+11:39:45,482  INFO http-nio-8080-exec-4 UserDatabaseDAO:getById:53 - successful getById user
+11:39:45,670  INFO http-nio-8080-exec-4 UserDatabaseDAO:updateEntity:95 - User was updated successful
+11:39:45,686  INFO http-nio-8080-exec-4 IncreaseMoneyCommand:execute:40 - Success Increase Money Command
+11:39:47,944  INFO http-nio-8080-exec-6 CustomersListCommand:execute:24 - ---------------Customers List---------------
+11:39:47,944  INFO http-nio-8080-exec-6 UserDatabaseDAO:getAll:119 - All users were found successful
+11:39:47,944  INFO http-nio-8080-exec-6 Utils:sortPeople:18 - Sorting users by id
+11:39:50,269  INFO http-nio-8080-exec-5 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+11:39:55,786  INFO http-nio-8080-exec-7 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+11:39:55,786  INFO http-nio-8080-exec-7 UserDatabaseDAO:getById:53 - successful getById user
+11:39:55,818  INFO http-nio-8080-exec-7 UserDatabaseDAO:updateEntity:95 - User was updated successful
+11:39:55,818  INFO http-nio-8080-exec-7 IncreaseMoneyCommand:execute:40 - Success Increase Money Command
+11:39:58,113  INFO http-nio-8080-exec-9 CustomersListCommand:execute:24 - ---------------Customers List---------------
+11:39:58,113  INFO http-nio-8080-exec-9 UserDatabaseDAO:getAll:119 - All users were found successful
+11:39:58,113  INFO http-nio-8080-exec-9 Utils:sortPeople:18 - Sorting users by id
+11:40:04,717  INFO http-nio-8080-exec-10 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+11:40:10,890  INFO http-nio-8080-exec-1 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+11:40:10,890  INFO http-nio-8080-exec-1 UserDatabaseDAO:getById:53 - successful getById user
+11:40:10,890  INFO http-nio-8080-exec-1 UserDatabaseDAO:updateEntity:95 - User was updated successful
+11:40:10,890  INFO http-nio-8080-exec-1 IncreaseMoneyCommand:execute:40 - Success Increase Money Command
+11:40:13,116  INFO http-nio-8080-exec-4 CustomersListCommand:execute:24 - ---------------Customers List---------------
+11:40:13,116  INFO http-nio-8080-exec-4 UserDatabaseDAO:getAll:119 - All users were found successful
+11:40:13,116  INFO http-nio-8080-exec-4 Utils:sortPeople:18 - Sorting users by id
+11:40:14,675  INFO http-nio-8080-exec-3 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+11:40:19,653  INFO http-nio-8080-exec-6 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+11:40:19,653  INFO http-nio-8080-exec-6 UserDatabaseDAO:getById:53 - successful getById user
+11:40:19,653  INFO http-nio-8080-exec-6 UserDatabaseDAO:updateEntity:95 - User was updated successful
+11:40:19,653  INFO http-nio-8080-exec-6 IncreaseMoneyCommand:execute:40 - Success Increase Money Command
+11:40:21,633  INFO http-nio-8080-exec-7 CustomersListCommand:execute:24 - ---------------Customers List---------------
+11:40:21,633  INFO http-nio-8080-exec-7 UserDatabaseDAO:getAll:119 - All users were found successful
+11:40:21,633  INFO http-nio-8080-exec-7 Utils:sortPeople:18 - Sorting users by id
+11:40:39,115  INFO http-nio-8080-exec-10 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:40:40,567  INFO http-nio-8080-exec-1 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:40:40,567  INFO http-nio-8080-exec-1 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:40:40,567  INFO http-nio-8080-exec-1 Utils:sortOrders:23 - Sorting orders by id
+11:41:12,565  INFO http-nio-8080-exec-3 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:41:14,036  INFO http-nio-8080-exec-6 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+11:41:14,052  INFO http-nio-8080-exec-6 OrderDatabaseDAO:getAll:102 - All orders were found successful
+11:41:14,052  INFO http-nio-8080-exec-6 Utils:sortOrders:23 - Sorting orders by id
+11:41:14,052  INFO http-nio-8080-exec-6 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+11:41:28,299  INFO http-nio-8080-exec-5 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+11:41:28,299  INFO http-nio-8080-exec-5 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+11:41:39,707  INFO http-nio-8080-exec-7 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+11:41:39,707  INFO http-nio-8080-exec-7 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+11:41:39,707  INFO http-nio-8080-exec-7 OrderDatabaseDAO:getById:117 - successful getById order
+11:41:39,707  INFO http-nio-8080-exec-7 EditOrderDataCommand:execute:38 - id returned from jsp: 2
+11:41:39,707  INFO http-nio-8080-exec-7 EditOrderDataCommand:execute:39 - order id to check: 2
+11:41:39,738  INFO http-nio-8080-exec-7 EditOrderDataCommand:execute:40 - All order log: Order{id=2, title='Car', description='Power windows have broken', cost=0.0, paymentStatus=1, workStatus=1, user_id=2, workerId=0, timestamp=2022-07-05 17:57:51.215483}
+11:41:39,926  INFO http-nio-8080-exec-7 OrderDatabaseDAO:updateEntity:75 - Order was updated successful
+11:41:39,926  INFO http-nio-8080-exec-7 EditOrderDataCommand:execute:48 - Order{id=2, title='Car', description='Power windows have broken', cost=52.0, paymentStatus=1, workStatus=1, user_id=2, workerId=4, timestamp=2022-07-05 17:57:51.215483}
+11:41:39,926  INFO http-nio-8080-exec-7 EditOrderDataCommand:execute:49 - Success Edit Order Data Command
+11:41:41,784  INFO http-nio-8080-exec-8 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+11:41:41,784  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAll:102 - All orders were found successful
+11:41:41,784  INFO http-nio-8080-exec-8 Utils:sortOrders:23 - Sorting orders by id
+11:41:41,784  INFO http-nio-8080-exec-8 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+11:41:45,772  INFO http-nio-8080-exec-9 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+11:41:45,772  INFO http-nio-8080-exec-9 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+11:41:53,211  INFO http-nio-8080-exec-10 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+11:41:53,305  INFO http-nio-8080-exec-10 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+11:41:53,305  INFO http-nio-8080-exec-10 OrderDatabaseDAO:getById:117 - successful getById order
+11:41:53,305  INFO http-nio-8080-exec-10 EditOrderDataCommand:execute:38 - id returned from jsp: 3
+11:41:53,305  INFO http-nio-8080-exec-10 EditOrderDataCommand:execute:39 - order id to check: 3
+11:41:53,305  INFO http-nio-8080-exec-10 EditOrderDataCommand:execute:40 - All order log: Order{id=3, title='Shelf', description='Need to fix a ancient book shelf', cost=0.0, paymentStatus=1, workStatus=1, user_id=5, workerId=0, timestamp=2022-07-05 17:59:40.661807}
+11:41:53,305  INFO http-nio-8080-exec-10 OrderDatabaseDAO:updateEntity:75 - Order was updated successful
+11:41:53,305  INFO http-nio-8080-exec-10 EditOrderDataCommand:execute:48 - Order{id=3, title='Shelf', description='Need to fix a ancient book shelf', cost=42.0, paymentStatus=1, workStatus=1, user_id=5, workerId=6, timestamp=2022-07-05 17:59:40.661807}
+11:41:53,305  INFO http-nio-8080-exec-10 EditOrderDataCommand:execute:49 - Success Edit Order Data Command
+11:41:55,803  INFO http-nio-8080-exec-1 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+11:41:55,803  INFO http-nio-8080-exec-1 OrderDatabaseDAO:getAll:102 - All orders were found successful
+11:41:55,803  INFO http-nio-8080-exec-1 Utils:sortOrders:23 - Sorting orders by id
+11:41:55,803  INFO http-nio-8080-exec-1 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+11:42:04,830  INFO http-nio-8080-exec-2 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+11:42:04,846  INFO http-nio-8080-exec-2 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+11:42:05,398  INFO http-nio-8080-exec-4 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+11:42:05,398  INFO http-nio-8080-exec-4 OrderDatabaseDAO:getAll:102 - All orders were found successful
+11:42:05,398  INFO http-nio-8080-exec-4 Utils:sortOrders:23 - Sorting orders by id
+11:42:05,398  INFO http-nio-8080-exec-4 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+11:42:07,356  INFO http-nio-8080-exec-3 EditOrderDataCommand:execute:23 - -----------Edit Order Data Command-----------
+11:42:07,356  INFO http-nio-8080-exec-3 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+11:42:08,038  INFO http-nio-8080-exec-6 OrdersListCommand:execute:23 - --------------Orders List Command--------------
+11:42:08,038  INFO http-nio-8080-exec-6 OrderDatabaseDAO:getAll:102 - All orders were found successful
+11:42:08,038  INFO http-nio-8080-exec-6 Utils:sortOrders:23 - Sorting orders by id
+11:42:08,054  INFO http-nio-8080-exec-6 UserDatabaseDAO:getAllEmpl:196 - All employees were found successful
+11:42:20,114  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:42:29,863  INFO http-nio-8080-exec-8 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:42:29,863  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:42:29,863  INFO http-nio-8080-exec-8 Utils:sortOrders:23 - Sorting orders by id
+11:42:48,866  INFO http-nio-8080-exec-9 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:43:03,679  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:43:05,170  INFO http-nio-8080-exec-9 Utils:sortOrders:23 - Sorting orders by id
+11:43:42,552  INFO http-nio-8080-exec-9 UserDatabaseDAO:updateEntity:95 - User was updated successful
+11:43:42,552  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getById:117 - successful getById order
+11:43:42,599  INFO http-nio-8080-exec-9 OrderDatabaseDAO:updateEntity:75 - Order was updated successful
+11:44:40,999  INFO http-nio-8080-exec-7 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+11:44:41,078  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+11:44:41,078  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+11:44:41,094  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+11:44:41,094  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+11:45:00,835  INFO http-nio-8080-exec-5 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:45:22,898  INFO http-nio-8080-exec-8 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:46:07,136  INFO http-nio-8080-exec-1 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:46:18,066  INFO http-nio-8080-exec-2 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:46:18,113  INFO http-nio-8080-exec-2 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:46:18,113  INFO http-nio-8080-exec-2 Utils:sortOrders:23 - Sorting orders by id
+11:46:34,350  INFO http-nio-8080-exec-4 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:46:35,984  INFO http-nio-8080-exec-6 CustomersListCommand:execute:24 - ---------------Customers List---------------
+11:46:35,984  INFO http-nio-8080-exec-6 UserDatabaseDAO:getAll:119 - All users were found successful
+11:46:35,999  INFO http-nio-8080-exec-6 Utils:sortPeople:18 - Sorting users by id
+11:46:37,924  INFO http-nio-8080-exec-7 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+11:46:50,193  INFO http-nio-8080-exec-5 IncreaseMoneyCommand:execute:23 - -----------Increase Money Command-----------
+11:46:50,271  INFO http-nio-8080-exec-5 UserDatabaseDAO:getById:53 - successful getById user
+11:46:50,465  INFO http-nio-8080-exec-5 UserDatabaseDAO:updateEntity:95 - User was updated successful
+11:46:50,465  INFO http-nio-8080-exec-5 IncreaseMoneyCommand:execute:40 - Success Increase Money Command
+11:46:52,956  INFO http-nio-8080-exec-9 CustomersListCommand:execute:24 - ---------------Customers List---------------
+11:46:52,956  INFO http-nio-8080-exec-9 UserDatabaseDAO:getAll:119 - All users were found successful
+11:46:52,956  INFO http-nio-8080-exec-9 Utils:sortPeople:18 - Sorting users by id
+11:47:11,807  INFO http-nio-8080-exec-2 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:47:13,129  INFO http-nio-8080-exec-3 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:47:13,130  INFO http-nio-8080-exec-3 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:47:13,130  INFO http-nio-8080-exec-3 Utils:sortOrders:23 - Sorting orders by id
+11:47:20,905  INFO http-nio-8080-exec-4 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:47:20,905  INFO http-nio-8080-exec-4 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:47:20,905  INFO http-nio-8080-exec-4 Utils:sortOrders:23 - Sorting orders by id
+11:47:37,154  INFO http-nio-8080-exec-7 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:47:38,360  INFO http-nio-8080-exec-5 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:47:38,360  INFO http-nio-8080-exec-5 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:47:38,376  INFO http-nio-8080-exec-5 Utils:sortOrders:23 - Sorting orders by id
+11:47:42,055  INFO http-nio-8080-exec-8 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:47:42,055  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:47:42,055  INFO http-nio-8080-exec-8 Utils:sortOrders:23 - Sorting orders by id
+11:47:42,071  INFO http-nio-8080-exec-8 UserDatabaseDAO:updateEntity:95 - User was updated successful
+11:47:42,071  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getById:117 - successful getById order
+11:47:42,149  INFO http-nio-8080-exec-8 OrderDatabaseDAO:updateEntity:75 - Order was updated successful
+11:47:44,535  INFO http-nio-8080-exec-9 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:47:44,582  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:47:44,582  INFO http-nio-8080-exec-9 Utils:sortOrders:23 - Sorting orders by id
+11:47:44,582  INFO http-nio-8080-exec-9 UserDatabaseDAO:updateEntity:95 - User was updated successful
+11:47:44,582  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getById:117 - successful getById order
+11:47:44,598  INFO http-nio-8080-exec-9 OrderDatabaseDAO:updateEntity:75 - Order was updated successful
+11:47:51,667  INFO http-nio-8080-exec-2 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:47:51,667  INFO http-nio-8080-exec-2 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:47:51,682  INFO http-nio-8080-exec-2 Utils:sortOrders:23 - Sorting orders by id
+11:48:33,765  INFO http-nio-8080-exec-6 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:48:33,765  INFO http-nio-8080-exec-6 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:48:33,765  INFO http-nio-8080-exec-6 Utils:sortOrders:23 - Sorting orders by id
+11:48:36,435  INFO http-nio-8080-exec-7 CannotLeaveReviewCommand:execute:15 - -------------Cannot Leave Review Command-------------
+11:48:48,036  INFO http-nio-8080-exec-8 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:48:48,036  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:48:48,036  INFO http-nio-8080-exec-8 Utils:sortOrders:23 - Sorting orders by id
+11:48:51,003  INFO http-nio-8080-exec-9 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:48:51,003  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:48:51,003  INFO http-nio-8080-exec-9 Utils:sortOrders:23 - Sorting orders by id
+11:48:51,003  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getById:117 - successful getById order
+11:48:51,018  INFO http-nio-8080-exec-9 OrderDatabaseDAO:updateEntity:75 - Order was updated successful
+11:48:52,708  INFO http-nio-8080-exec-1 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:48:52,708  INFO http-nio-8080-exec-1 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:48:52,708  INFO http-nio-8080-exec-1 Utils:sortOrders:23 - Sorting orders by id
+11:48:52,723  INFO http-nio-8080-exec-1 OrderDatabaseDAO:getById:117 - successful getById order
+11:48:52,723 ERROR http-nio-8080-exec-1 OrdersListCommand:execute:65 - You cannot cancel the order, which was started and paid
+11:48:57,216  INFO http-nio-8080-exec-10 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:48:57,216  INFO http-nio-8080-exec-10 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:48:57,216  INFO http-nio-8080-exec-10 Utils:sortOrders:23 - Sorting orders by id
+11:50:07,084  INFO http-nio-8080-exec-3 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:50:07,099  INFO http-nio-8080-exec-3 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:50:07,099  INFO http-nio-8080-exec-3 Utils:sortOrders:23 - Sorting orders by id
+11:50:34,195  INFO http-nio-8080-exec-6 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:50:34,195  INFO http-nio-8080-exec-6 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:50:34,195  INFO http-nio-8080-exec-6 Utils:sortOrders:23 - Sorting orders by id
+11:50:54,888  INFO http-nio-8080-exec-7 CannotLeaveReviewCommand:execute:15 - -------------Cannot Leave Review Command-------------
+11:51:04,961  INFO http-nio-8080-exec-5 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:51:04,961  INFO http-nio-8080-exec-5 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:51:04,961  INFO http-nio-8080-exec-5 Utils:sortOrders:23 - Sorting orders by id
+11:51:16,793  INFO http-nio-8080-exec-9 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:51:18,001  INFO http-nio-8080-exec-1 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:51:18,001  INFO http-nio-8080-exec-1 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:51:18,001  INFO http-nio-8080-exec-1 Utils:sortOrders:23 - Sorting orders by id
+11:51:35,217  INFO http-nio-8080-exec-10 LeaveReviewCommand:execute:22 - ------------Leave Review Command------------
+11:52:14,089  INFO http-nio-8080-exec-3 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:52:14,089  INFO http-nio-8080-exec-3 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:52:14,089  INFO http-nio-8080-exec-3 Utils:sortOrders:23 - Sorting orders by id
+11:56:53,741  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+11:56:53,804  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+11:56:53,804  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+11:56:53,804  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+11:56:53,804  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+11:57:27,309  INFO http-nio-8080-exec-8 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+11:57:29,608  INFO http-nio-8080-exec-9 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+11:57:29,623  INFO http-nio-8080-exec-9 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+11:57:29,623  INFO http-nio-8080-exec-9 Utils:sortOrders:23 - Sorting orders by id
+11:57:35,564  INFO http-nio-8080-exec-10 LeaveReviewCommand:execute:22 - ------------Leave Review Command------------
+12:39:24,429  INFO http-nio-8080-exec-6 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+12:39:24,504  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+12:39:24,525  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+12:39:24,526  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+12:39:24,531  INFO http-nio-8080-exec-6 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+12:41:43,829  INFO http-nio-8080-exec-8 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+12:41:55,187  INFO http-nio-8080-exec-10 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+12:41:55,467  INFO http-nio-8080-exec-10 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+12:41:55,528  INFO http-nio-8080-exec-10 Utils:sortOrders:23 - Sorting orders by id
+12:42:04,226  INFO http-nio-8080-exec-9 LeaveReviewCommand:execute:22 - ------------Leave Review Command------------
+12:42:17,953  INFO http-nio-8080-exec-1 LeaveReviewCommand:execute:22 - ------------Leave Review Command------------
+12:42:48,335  INFO http-nio-8080-exec-2 LeaveReviewCommand:execute:22 - ------------Leave Review Command------------
+12:43:40,378  INFO http-nio-8080-exec-3 LeaveReviewCommand:execute:22 - ------------Leave Review Command------------

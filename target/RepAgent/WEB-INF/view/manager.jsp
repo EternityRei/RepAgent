@@ -241,8 +241,11 @@
                     <span class="material-icons-sharp">menu</span>
                 </button>
                 <div class="profile">
+                    <div class="balance">
+                        <p>Balance: ${balance}</p>
+                    </div>
                     <div class="info">
-                        <p>Hey, <b>Julia</b></p>
+                        <p>Hey, <b>${username}</b></p>
                         <small class="text-muted">Manager</small>
                     </div>
                 </div>

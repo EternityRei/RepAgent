@@ -1,8 +1,6 @@
 package controller.command.employee;
 
-import controller.command.Command;
 import controller.command.utils.CommandUtil;
-import controller.command.utils.Utils;
 import model.enity.Order;
 import model.enity.User;
 import model.exception.DatabaseException;
@@ -15,38 +13,37 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.Objects;
 
-public class EmplOrdersListCommand implements Command {
+public class EditOrderDataEmplCommand implements controller.command.Command {
 
-    private static final Logger log = Logger.getLogger(EmplOrdersListCommand.class);
+    private static final Logger log = Logger.getLogger(EditOrderDataEmplCommand.class);
 
     @Override
     public void execute(HttpServletRequest req, HttpServletResponse resp) {
-        log.info("--------------Employee Orders List Command--------------");
-
+        log.info("------------Edit Order Data Employee Command------------");
         var serviceFactory = ServiceFactory.getInstance();
-        var orderService = serviceFactory.getOrderService();
-        int id;
         Order order;
-        try{
-            List<Order> list = orderService.getAll();
-            req.setAttribute("orders", list);
-            Utils.sortOrders(list);
-            String button = req.getParameter("btn");
-            if(Objects.nonNull(button)){
+        int id;
+        var orderService = serviceFactory.getOrderService();
+        String button = req.getParameter("btn");
+        if(Objects.nonNull(button)){
+            try{
+
                 if(button.equals("Submit")){
                     id = Integer.parseInt(req.getParameter("id"));
                     order = orderService.getEntity(id);
                     int workStatus = Integer.parseInt(req.getParameter("workStatus"));
                     order.setWorkStatus(workStatus);
                     orderService.update(order);
-                    CommandUtil.goToPage(req, resp, "/WEB-INF/view/employeePack/ordersList.jsp");
+                    log.info(order.toString());
+                    log.info("Success Edit Order Data Command");
+                    CommandUtil.goToPage(req, resp, "/WEB-INF/view/employeePack/editOrderData.jsp");
                     return;
                 }
+            }catch (ServiceException | DatabaseException e) {
+                log.error("Error in Edit Order Data Employee Command " + e.getMessage());
+                throw new RuntimeException(e);
             }
-            CommandUtil.goToPage(req, resp, "/WEB-INF/view/employeePack/ordersList.jsp");
-        } catch (ServiceException | DatabaseException e) {
-            log.error(e.getMessage());
-            CommandUtil.goToPage(req, resp, "/WEB-INF/view/employeePack/ordersList.jsp");
         }
+        CommandUtil.goToPage(req, resp, "/WEB-INF/view/employeePack/editOrderData.jsp");
     }
 }

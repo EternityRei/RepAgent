@@ -84,14 +84,16 @@ public class UserDatabaseDAO implements UserDAO {
     public User updateEntity(User user) {
         try(Connection con = Connector.getInstance().getConnection();
             PreparedStatement pstmt = con.prepareStatement(Constants.UPDATE_USER)){
-            pstmt.setString(1, user.getEmail());
-            pstmt.setString(2, user.getPasswd());
-            pstmt.setString(3, user.getName());
-            pstmt.setInt(4, user.getAccessLevel());
-            pstmt.setInt(5, user.getId());
-            pstmt.setFloat(6, user.getMoney());
+            con.setAutoCommit(false);
+            pstmt.setString(1, user.getName());
+            pstmt.setString(2, user.getEmail());
+            pstmt.setString(3, user.getPasswd());
+            pstmt.setFloat(4, user.getMoney());
+            pstmt.setInt(5, user.getAccessLevel());
+            pstmt.setInt(6, user.getId());
             pstmt.executeUpdate();
             log.info("User was updated successful");
+            con.commit();
             return user;
         } catch (SQLException e){
             throw new RuntimeException("Cannot update user ", e);
