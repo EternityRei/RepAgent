@@ -5,13 +5,12 @@ import model.enity.User;
 import java.util.List;
 
 public interface UserDAO extends CrudDAO<Integer, User> {
-    List<User> getAll();
+    List<User> getAll(); //tested
 
-    User getByLoginAndPass(String login, String password);
+    User getByLoginAndPass(String login, String password); //no point in testing
+    User getByLogin(String email); //tested
 
-    User getByLogin(String email);
+    int getCountBlocked(List<User> person); //deprecated
 
-    int getCountBlocked(List<User> person);
-
-    List<User> getAllEmpl();
+    List<User> getAllEmpl(); //tested
 }

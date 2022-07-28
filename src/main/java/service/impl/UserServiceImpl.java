@@ -29,21 +29,21 @@ public class UserServiceImpl implements UserService {
         if(Objects.isNull(user)){
             throw new NotFoundUserException();
         }
-        return user;
+        return user; //no point in testing
     }
 
     @Override
     public User getByLogin(String login) {
         return userDAO.getByLogin(login);
-    }
+    } //tested
 
     @Override
     public int getAllBlocked() {
         return userDAO.getCountBlocked(userDAO.getAll());
-    }
+    } //deprecated
 
     @Override
-    public List<User> getAllUsers() throws ServiceException {
+    public List<User> getAllUsers() throws ServiceException { //tested
         List<User> all = userDAO.getAll();
 
         return all.stream()
@@ -61,7 +61,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User getEntity(Integer id) throws DatabaseException, ServiceException {
+    public User getEntity(Integer id) throws DatabaseException, ServiceException { //tested
         try{
             User user = userDAO.getById(id);
             return user;
@@ -72,7 +72,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public boolean add(User entity) throws ServiceException {
+    public boolean add(User entity) throws ServiceException { //tested
         try {
             userDAO.add(entity);
             return true;
@@ -84,10 +84,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public User update(User entity) {
         return userDAO.updateEntity(entity);
-    }
+    } //tested
 
     @Override
-    public boolean delete(Integer id) {
+    public boolean delete(Integer id) { //tested
         boolean flag = false;
         try {
             flag = userDAO.deleteEntity(id);

@@ -2838,3 +2838,16 @@ Stacktrace:
 12:42:17,953  INFO http-nio-8080-exec-1 LeaveReviewCommand:execute:22 - ------------Leave Review Command------------
 12:42:48,335  INFO http-nio-8080-exec-2 LeaveReviewCommand:execute:22 - ------------Leave Review Command------------
 12:43:40,378  INFO http-nio-8080-exec-3 LeaveReviewCommand:execute:22 - ------------Leave Review Command------------
+12:47:23,053  INFO http-nio-8080-exec-7 ServiceFactory:getInstance:22 - -------------Create ServiceFactory-------------
+12:47:23,100  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+12:47:23,103  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getOrderDAO:27 - Get OrderDatabaseDAO
+12:47:23,104  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getUserDAO:21 - Get UserDatabaseDAO
+12:47:23,109  INFO http-nio-8080-exec-7 DatabaseDAOFactory:getReviewDAO:33 - getReviewDAO
+12:47:37,486  INFO http-nio-8080-exec-5 UserDatabaseDAO:getByLoginAndPass:144 - User was found successful by login and password
+12:47:41,354  INFO http-nio-8080-exec-8 OrdersListCommand:execute:25 - --------------Orders List Customer Command--------------
+12:47:41,626  INFO http-nio-8080-exec-8 OrderDatabaseDAO:getAllOrdersByPersonID:173 - successful getAllOrderByPersonID
+12:47:41,632  INFO http-nio-8080-exec-8 Utils:sortOrders:23 - Sorting orders by id
+12:47:44,081  INFO http-nio-8080-exec-9 LeaveReviewCommand:execute:23 - ------------Leave Review Command------------
+12:48:08,831  INFO http-nio-8080-exec-10 LeaveReviewCommand:execute:23 - ------------Leave Review Command------------
+12:49:00,415  INFO http-nio-8080-exec-10 ReviewDatabaseDAO:add:32 - Review was added successful
+12:49:06,799  INFO http-nio-8080-exec-10 LeaveReviewCommand:execute:51 - successful add review
